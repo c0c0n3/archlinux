@@ -1,0 +1,13 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda1
+UUID=81cc2fa7-1a6d-4152-867f-7378e5e160a7	/         	ext4      	rw,relatime,data=ordered	0 1
+/swapfile	none	swap	defaults	0 0
+
+
+dropbox	/media/dropbox	vboxsf	uid=1000,gid=100,rw,dmode=700,fmode=600,comment=systemd.automount	0 0
+playground	/media/playground	vboxsf	uid=1000,gid=100,rw,dmode=700,fmode=600,comment=systemd.automount	0 0
+projects	/media/projects	vboxsf	uid=1000,gid=100,rw,dmode=700,fmode=600,comment=systemd.automount	0 0
+

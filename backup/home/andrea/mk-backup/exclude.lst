@@ -1,0 +1,7 @@
+# Exclude
+- /home/andrea/.cabal
+- /home/andrea/.cache
+- /home/andrea/.emacs.d/auto-save-list
+- /home/andrea/.ghc
+- /home/andrea/.vboxclient*
+- /home/andrea/mk-backup/log

@@ -1,8 +1,3 @@
-pwd
-cd `
-cd ~
-pwd
-less /etc/passwd
 less /etc/shadow
 sudo less /etc/shadow
 ls -al
@@ -396,4 +391,110 @@ sudo pacman -S rsync
 man rm
 pwd
 ls -al
+exit
+cd mk-backup/
+tail -f log 
+exit
+ls projects/archlinux/vm/
+mkdir projects/archlinux/vm/backup
+ls
+ls mk-backup/
+ls -al
+cd mk-backup/
+ls -al
+sudo ./rbackup.sh 
+exit
+sudo journalctl -b
+exi
+mount
+ls projects
+ls dropbox
+ls playground
+ping -c 1 8.8.8.8
+curl www.google.com
+exit
+xrandr 
+sudo journalctl -b
+exit
+ls .emacs.d
+exit
+ls -al
+exit
+pwd
+mkdir tmp
+pwd
+rm -rf tmp/
+exit
+sudo pacman -S aspell aspell-en
+exit
+mkdir tmp
+which gv
+which gsview
+pacman -Qs ghost
+pwd
+mv tmp/xxx.pdf dropbox/
+rm -rf tmp/
+exit
+rm dropbox/xxx.pdf 
+exit
+sudo pacman -S texlive-most
+sudo pacman -S auctex
+sudo pacman -Syy
+sudo pacman -Su
+pwd
+cabal update
+sudo pacman -S emacs-haskell-mode
+cd  /usr/share/emacs/site-lisp/haskell-mode
+ls -al
+ls
+ls | grep site
+pwd
+cabal --help
+cabal --version
+cabal install haskell-platform --dry-run
+ghc --version
+cabal install alex happy --dry-run -v
+cabal install alex happy
+which happy
+which haddoc
+whichalex
+which alex
+which haddock
+cabal list --installed
+exit
+cabal list --installed | grep alex
+which alex
+cabal install             async attoparsec case-insensitive cgi fgl GLUT GLURaw haskell-src             hashable html HTTP HUnit mtl network OpenGL OpenGLRaw parallel parsec             QuickCheck random regex-base regex-compat regex-posix split stm syb             text transformers unordered-containers vector xhtml zlib primitive
+sudo pacman -S git
+cabal install darcs
+which darcs
+which eject
+pacman -S aria2 hwinfo hwdetect hdparm sdparm smartmontools ntfs-3g        ethtool tcpdump dnsutils nmap tree bc fastjar unzip unrar cdrkit
+sudo pacman -S aria2 hwinfo hwdetect hdparm sdparm smartmontools ntfs-3g 
+sudo pacman -S aria2 hwinfo hwdetect hdparm sdparm smartmontools ntfs-3g        ethtool tcpdump dnsutils nmap tree bc fastjar unzip unrar cdrkit
+exit
+tree -L 2
+tree -Lp 2
+rm -rf tmo/
+ls -al
+sudo du -h /*
+sudo du -h /
+sudo du -hs /*
+sudo du -hs /home/andrea/*
+sudo du -hs /home/andrea
+sudo du -hs /home/andrea/.cabal/
+sudo du -hs /home/andrea/.ghc/
+sudo du -hs /usr/local/
+sudo du -hs /var/
+sudo du -hs /var/*
+sudo du -hs /var/cache/
+sudo du -hs /var/cache/*
+sudo ls -al /var/cache/pacman/ 
+sudo ls -al /var/cache/pacman/pkg/
+pacman -Qdt
+sudo find / -name '.pac*'
+sudo find / -name 'pacm*'
+exitsudo find / -name '.pac*'
+exit
+man pacman
 exit

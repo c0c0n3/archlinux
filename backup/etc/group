@@ -36,3 +36,4 @@ systemd-journal:x:190:
 vboxsf:x:109:andrea
 avahi:x:84:
 polkitd:x:102:
+git:x:999:

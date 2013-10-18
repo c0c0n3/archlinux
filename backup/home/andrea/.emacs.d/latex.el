@@ -22,8 +22,14 @@
 
 ;; Auctex
 (load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 
 (setq-default TeX-master nil) ; Query for master file.
 (setq TeX-PDF-mode t)  ;; set pdflatex default, not latex
+
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)  ;; integrate RefTeX
+(setq reftex-plug-into-AUCTeX t)             ;; into AucTeX

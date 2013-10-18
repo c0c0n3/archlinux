@@ -5,7 +5,7 @@
 (load-theme 'solarized-light t)
 ;;(load-theme 'solarized-[light|dark] t)
 
-(set-face-attribute 'default nil :font "Monaco-12")
+(set-face-attribute 'default nil :font "Monaco-12") 
 
 
 

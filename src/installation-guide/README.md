@@ -35,7 +35,29 @@ the system.
 To keep the system in good shape, refer to the [Arch General Recommendations][arch-gen-rec],
 especially to the System Maintenance pages listed in the [System Administration][arch-sys-adm]
 section.
- 
+
+
+Additional Applications
+-----------------------
+The following applications were installed after the last snapshot (Base Development 
+Environment) was taken, so if rolling back to this snapshot, you may want to reinstall
+them.
+
+#### Haskell
+* Got latest cabal from Hackage and uninstalled the system's one managed by pacman.
+
+            cabal install cabal-install
+            sudo pacman -Rn cabal-install
+
+* Shake build system: `cabal install shake`
+* Pandoc document converter: `cabal install pandoc`
+* Hakyll static website compiler:
+
+            cabal install hakyll -f-previewServer -f-watchServer -f-checkExternal
+
+  Note the flags set to false so to avoid installing Snap and all other deps; 
+  this is because I don't need a preview/watch server.
+
 
 
 

@@ -61,7 +61,7 @@ Known Issues
         (EE) AIGLX error: vboxvideo does not export required DRI extension
         (EE) AIGLX: reverting to software rendering
 
-However, it seems that the system still works decently, so I didn't find out more...
+    However, it seems that the system still works decently, so I didn't find out more...
 
 
 [vboxGuest]: https://wiki.archlinux.org/index.php/VirtualBox#Arch_Linux_as_a_guest_in_a_Virtual_Machine

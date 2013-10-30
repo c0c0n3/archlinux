@@ -46,7 +46,7 @@ Configure to work with SLiM:
 
 and add these two lines at the end of the file:
 
-    	xsetroot -cursor_name left_ptr
+        xsetroot -cursor_name left_ptr
         exec /home/andrea/.cabal/bin/xmonad
 
 To be able to start Xmonad, you'll need at least a bare-bones configuration.

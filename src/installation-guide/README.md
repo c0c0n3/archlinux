@@ -49,14 +49,18 @@ them.
             cabal install cabal-install
             sudo pacman -Rn cabal-install
 
+* [Unicode symbols][hask-unicode]: `cabal install base-unicode-symbols containers-unicode-symbols`
+
 * Shake build system: `cabal install shake`
+
 * Pandoc document converter: `cabal install pandoc`
+
 * Hakyll static website compiler:
 
             cabal install hakyll -f-previewServer -f-watchServer -f-checkExternal
 
-  Note the flags set to false so to avoid installing Snap and all other deps; 
-  this is because I don't need a preview/watch server.
+    Note the flags set to false so to avoid installing Snap and all other deps; 
+    this is because I don't need a preview/watch server.
 
 
 
@@ -66,3 +70,6 @@ them.
 
 [arch-sys-adm]: https://wiki.archlinux.org/index.php/General_Recommendations#System_administration
                 "Arch System Administration"
+
+[hask-unicode]: http://www.haskell.org/haskellwiki/Unicode-symbols
+                "Unicode Symbols in Haskell"

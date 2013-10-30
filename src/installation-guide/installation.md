@@ -27,9 +27,9 @@ Prepare Storage Drive
 
 1. Create single GPT partition with ext4 filesystem.
 
-   * List disks attached to the system: `lsblk`
-   * Create single GPT partition: `cgdisk /dev/sda`
-   * Create filesystem: `mkfs.ext4 /dev/sda1`
+    * List disks attached to the system: `lsblk`
+    * Create single GPT partition: `cgdisk /dev/sda`
+    * Create filesystem: `mkfs.ext4 /dev/sda1`
 
 2. Mount partition: `mount /dev/sda1 /mnt`
 
@@ -55,10 +55,10 @@ Configure Base System
 
 2. Locale.   
 
-   * Uncomment "`en_US.UTF-8 UTF-8`" in `/etc/locale.gen`
-   * `locale-gen`
-   * `echo LANG=en_US.UTF-8 > /etc/locale.conf`
-   * `export LANG=en_US.UTF-8`
+    * Uncomment "`en_US.UTF-8 UTF-8`" in `/etc/locale.gen`
+    * `locale-gen`
+    * `echo LANG=en_US.UTF-8 > /etc/locale.conf`
+    * `export LANG=en_US.UTF-8`
 
 3. Timezone: `ln -s /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime`
 
@@ -72,18 +72,18 @@ Configure Base System
 
 8. Install Syslinux boot loader.
 
-   * `pacman -S gptfdisk`  (needed because of GPT partition)
-   * `pacman -S syslinux` 
-   * `syslinux-install_update -i -a -m`
-   * `nano /boot/syslinux/syslinux.cfg` to change `/dev/sda3` to reflect root partition on
-     both `arch` and `archfallback`; use UUID, see [Syslinux][syslinux] for details.
+    * `pacman -S gptfdisk`  (needed because of GPT partition)
+    * `pacman -S syslinux` 
+    * `syslinux-install_update -i -a -m`
+    * `nano /boot/syslinux/syslinux.cfg` to change `/dev/sda3` to reflect root partition on
+      both `arch` and `archfallback`; use UUID, see [Syslinux][syslinux] for details.
 
 9. Unmount partition and reboot.
 
-   * `exit`
-   * `umount -R /mnt`
-   * `reboot`
-   * Virtual Box -> Devices -> CD/DV -> Remove ISO image
+    * `exit`
+    * `umount -R /mnt`
+    * `reboot`
+    * Virtual Box -> Devices -> CD/DV -> Remove ISO image
 
 
 Additional Tweaks
@@ -91,44 +91,46 @@ Additional Tweaks
 
 1. Create [swap file][swapF] of 1GB and tweak "swappiness".
 
-   * `fallocate -l 1024M /swapfile`
-   * `chmod 600 /swapfile`
-   * `mkswap /swapfile`
-   * `swapon /swapfile`
-   * `nano /etc/fstab` to add: `/swapfile none swap defaults 0 0`
-   * `nano /etc/sysctl.d/99-sysctl.conf` to add:
-     + `vm.swappiness=1`
-     + `vm.vfs_cache_pressure=50`
+    * `fallocate -l 1024M /swapfile`
+    * `chmod 600 /swapfile`
+    * `mkswap /swapfile`
+    * `swapon /swapfile`
+    * `nano /etc/fstab` to add: `/swapfile none swap defaults 0 0`
+    * `nano /etc/sysctl.d/99-sysctl.conf` to add:
+        + `vm.swappiness=1`
+        + `vm.vfs_cache_pressure=50`
 
 2. `syslinux.cfg` (see [Syslinux][syslinux])
 
-   * Hide menu, auto-boot: set `PROMT`, `TIMEOUT` to `0`; comment out Menu Configuration
-     lines
-   * Bigger console: add kernel param: `vga=795` 
+    * Hide menu, auto-boot: set `PROMT`, `TIMEOUT` to `0`; comment out Menu Configuration
+      lines
+    * Bigger console: add kernel param: `vga=795` 
 
 3. Pacman Mirror List: install [Reflector][reflector] to [sort mirrors][mirrors] and 
    generate it.
 
+    ~~~~
         pacman -S reflector
         cd /etc/pacman.d
         cp -vf mirrorlist mirrorlist.backup
         reflector --verbose -l 5 -p http --sort rate --save mirrorlist
-   
-   (The last command verbosely rates the 5 most recently synchronized HTTP servers, sorts
-   them by download rate, and overwrites the file `mirrorlist`.)
+    ~~~~
+
+    (The last command verbosely rates the 5 most recently synchronized HTTP servers, sorts
+    them by download rate, and overwrites the file `mirrorlist`.)
 
 4. Fix any issues.
 
-   * `journalctl -b` (logs since boot, see [systemd][systemd] for more on journal)
-   * `journalctl | grep fail`
-   * systemctl --failed
+    * `journalctl -b` (logs since boot, see [systemd][systemd] for more on journal)
+    * `journalctl | grep fail`
+    * systemctl --failed
 
 5. Clean up packages:
 
         pacman -Rn $(pacman -Qdtq) 
 
-   until there are no more orphans left. (This is just a sanity check as it shouldn't 
-   happen at this stage.)
+    until there are no more orphans left. (This is just a sanity check as it shouldn't 
+    happen at this stage.)
 
 
 Notes

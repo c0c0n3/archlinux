@@ -42,12 +42,12 @@ By default it will be 10% of the partition it's on; limit it to 500M:
 
 Fonts
 -----
-Install Infinality from bohoomil's repository.  (Details on [Arch wiki][infin].)
+Install Infinality from bohoomil's repository.  (Details on [Arch wiki 1][infin], [Arch wiki 2][bohoomil].)
 
 Add repository to `/etc/pacman.conf`:
 
         [infinality-bundle]
-        Server = http://ibn.net63.net/infinality-bundle/$arch
+        Server = http://bohoomil.com/repo/$arch
 
 Import and sign the key:
 
@@ -263,6 +263,7 @@ then add it to `~/.xinitrc` (command: `conky`) just before launching XMondad.  H
 [emacs-solar]: https://github.com/sellout/emacs-color-theme-solarized
 
 [infin]:https://wiki.archlinux.org/index.php/Font_Configuration#Install_from_custom_repository
+[bohoomil]:https://wiki.archlinux.org/index.php/Infinality-bundle%2Bfonts
 
 [bash]: http://wiki.archlinux.org/index.php/Bash,
 	"Bash"

@@ -62,6 +62,13 @@ them.
     Note the flags set to false so to avoid installing Snap and all other deps; 
     this is because I don't need a preview/watch server.
 
+* XML libraries: `cabal install xml-conduit hxt hexpat hxt-expat`
+
+* Here docs: `cabal install heredoc`
+
+* Persistence: `cabal install acid-state`
+
+* Web Apps: make Yesod sandbox... 
 
 
 

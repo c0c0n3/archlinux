@@ -2,7 +2,7 @@
 #
 # smartd warning script
 #
-# Copyright (C) 2012-13 Christian Franke <smartmontools-support@lists.sourceforge.net>
+# Copyright (C) 2012-14 Christian Franke <smartmontools-support@lists.sourceforge.net>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -12,22 +12,23 @@
 # You should have received a copy of the GNU General Public License
 # (for example COPYING); If not, see <http://www.gnu.org/licenses/>.
 #
-# $Id: smartd_warning.sh.in 3809 2013-04-18 19:41:40Z chrfranke $
+# $Id: smartd_warning.sh.in 3932 2014-06-29 19:02:38Z chrfranke $
 #
 
 set -e
 
 # Set by config.status
 PACKAGE="smartmontools"
-VERSION="6.2"
+VERSION="6.3"
 prefix="/usr"
 sysconfdir="/etc"
+smartdscriptdir="${sysconfdir}"
 
 # Default mailer
 os_mailer="mail"
 
-# Plugin directory
-plugindir="$sysconfdir/smartd_warning.d"
+# Plugin directory (disabled if empty)
+plugindir="${smartdscriptdir}/smartd_warning.d"
 
 # Parse options
 dryrun=
@@ -127,7 +128,8 @@ export SMARTD_FULLMESSAGE="$fullmessage
 "
 
 # Run plugin scripts if requested
-case " $SMARTD_ADDRESS" in
+if test -n "$plugindir"; then
+ case " $SMARTD_ADDRESS" in
   *\ @*)
     if [ -n "$dryrun" ]; then
       echo "export SMARTD_SUBJECT='$SMARTD_SUBJECT'"
@@ -177,7 +179,8 @@ case " $SMARTD_ADDRESS" in
     # Send email to remaining addresses
     test -n "$SMARTD_ADDRESS" || exit 0
     ;;
-esac
+ esac
+fi
 
 # Send mail or run command
 if [ -n "$SMARTD_ADDRESS" ]; then

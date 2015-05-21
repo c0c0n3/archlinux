@@ -1,500 +1,241 @@
-less /etc/shadow
-sudo less /etc/shadow
+cd playground/
+ls
+cd audidoza/
 ls -al
-less .bashrc 
-nano .bashrc 
-pwd
-ls -al
-nano .bashrc 
-poweroff
+cabal clean
+cabal build
+ghc-pkg list | grep ixset-typed
+ghc-pkg list | grep aeson
+cabal build
+ghc-pkg list | grep wai-logger
+cabal build
+cabal clean
+cabal build
+cabal clean
 exit
-ls /
-ls /mnt/
-ls /dev
-mount
-poweroff
-sudo poweroff
-man colordiff
-which diffcolor
-diff /etc/skel/.bash_profile .bash_profile 
-which poweroff
-less /usr/bin/poweroff 
-sudo systemctl reboot
-man dircolors
-dircolors -b
-ls -al
-sudo systemctl --failed
-sudo pacman -Syy
-sudo pacman -S xorg-server
-sudo pacman -Su
-sudo pacman -S xorg-apps
-sudo pacman -S xorg-xinit
-sudo pacman -S xorg-xinit xorg-server xorg-apps mesa
-lspci | grep VGA
-sudo pacman -S mesa
-sudo pacman -S xorg-xinit xorg-server xorg-apps
-sudo pacman -S mesa
-sudo ls -al /var/log
-sudo systemdctl --failed
-sudo sys
-sudo systemdctl reboot
-sudo systemctl reboot
-sudp pacman -Syy
-sudo pacman -Syy
-sudo pacman -Su
-journalctl -b
-sudo journalctl -b
-sudo systemctl --failed
-whcih X
-which X
-sudo pacman -S slim
-sudo systemctl enable slim.service
-sudo pacman -S cabal-install
-sudo pacman -S ghc cabal-install
+pwd
+rm -rf .cabal/ .ghc/
 cabal update
-sudo pacman -S pkg-config
-ls -al
-cabal install xmonad xmonad-contrib
-cp /etc/skel/.xinitrc ~
-ls -al
-chmod +x .xinitrc 
-ls -al
-nano .xinitrc 
-ls -al
-mkdir .xmonad
-cat > .xmonad/xmonad.hs
-less .xmonad/xmonad.hs 
-.cabal/bin/xmonad --recompile
-ls -al
-ls -al .xmonad/
-cat .xmonad/xmonad.errors 
-sudo systemctl poweroff
-sudo pacman -S virtualbox-guest-utils
-sudo nano /etc/modules-load.d/virtualbox.conf
-nano .xinitrc 
-which VBoxClient-all
-which VBoxClient-all >> .xinitrc 
-nano .xinitrc 
-cat .xinitrc 
-sudo systemctl enable vboxservice.service
-sudo groupadd vboxsf
-sudo gpasswd -a $USER vboxsf
-id
-sudo nano /etc/fstab 
-sudo systemctl reboot
-sudo journalctl -b
-ping -c 1 8.8.8.8
-ps -ejH
-ls /media/
-ls /media/dropbox/
-ls -al /media/dropbox/
+rm -rf .cabal/packages/hackage.haskell.org/
+cabal update
+cabal install cgi --dry-run
+cabal install cgi-3001 --dry-run
+cabal install alex happy hscolour haddock     async attoparsec case-insensitive fgl haskell-src     hashable html HTTP HUnit mtl network parallel parsec     QuickCheck random regex-base regex-compat regex-posix split stm syb     text transformers unordered-containers vector xhtml zlib primitive --dry-run
+cabal install alex happy hscolour     async attoparsec case-insensitive fgl     hashable html HTTP HUnit mtl network parallel parsec     QuickCheck random regex-base regex-compat regex-posix split stm syb     text transformers unordered-containers vector xhtml zlib primitive --dry-run
+cabal install pandoc --dry-run
+cabal install shake --dry-run
+cabal install hackyl --dry-run
+cabal install hakyll --dry-run
+cabal install clay --dry-run
+cabal install acid-state ixset-typed --dry-run
 pwd
 ls -al
-ln -s /media/dropbox dropbox
-ln -s /media/projects projects
-ln -s /media/playground playground
+rm -rf .cabal .ghc
+cabal update
+rm -rf .cabal/packages/hackage.haskell.org/
+cabal update
+cabal install cgi --dry-run
+cabal install alex happy hscolour haddock         async attoparsec case-insensitive cgi fgl hashable haskell-src         html HTTP HUnit mtl network parallel parsec primitive         QuickCheck random regex-base regex-compat regex-posix split stm syb         text transformers unordered-containers vector xhtml zlib --dry-run
+cabal install alex happy hscolour haddock         async attoparsec case-insensitive cgi fgl hashable haskell-src         html HTTP HUnit mtl network parallel parsec primitive         QuickCheck random regex-base regex-compat regex-posix split stm syb         text transformers unordered-containers vector xhtml zlib
+cabal install alex happy hscolour haddock         async attoparsec case-insensitive fgl hashable haskell-src         html HTTP HUnit mtl network parallel parsec primitive         QuickCheck random regex-base regex-compat regex-posix split stm syb         text transformers unordered-containers vector xhtml zlib
+cabal install base-unicode-symbols containers-unicode-symbols                   xml-conduit hxt hexpat hxt-expat                   heredoc                   acid-state ixset-typed                   clay --dry-run
+cabal install base-unicode-symbols containers-unicode-symbols                   xml-conduit hxt hexpat hxt-expat                   heredoc                   acid-state ixset-typed                   clay 
+cabal install yesod-bin --dry-run
+cabal install yesod-bin
+cabal install yesod-bin --dry-run
+mkdir yesod && cd yesod
+pwd
+yesod init
 ls -al
-ls playground
-ls projects
-ls dropbox
-sudo systemctl poweroff
+cd tmp
+cabal install --enable-tests --dry-run
+cabal install --enable-tests
+cd ~
+rm -rf yesod
+ghc-pkg list | grep yesod-auth
+ghc-pkg list | grep safe
+ghc-pkg list | grep tmp
+cabal install shake
+cabal install pandoc
+cabal install diagrams --dry-run
+cabal install diagrams
+exit
+pwd
 ls -al
-mkdir aur
+cabal install diagrams
+exit
+ghc-pkg list | grep gmp
+ghc --info |grep llvm
+ghc --info | grep llvm
+ghc --info
+pacman -Ss llvm
+sudo pacman -S llvm
+which llvm
+exit
+cd playground/
+ls
+cd haskell-env/
 ls -al
-sudo nano /etc/systemd/journald.conf 
-ps -ejH
-pkill xmonad
-pacman -Q gtk
-pacman -Q gtk3
-pacman -Q gtk-3
-pacman -Qs gtk
-ps -ejH
-sudo journalctl -b
-sudo ls -al /var/log
-sudo  grep EE /var/log/Xorg.0.log
-sudo pacman -Syy
-sudo pacman -Su
-ls dropbox
-cd dropbox/tmp/etc/systemd/
-sudo diff journald.conf /etc/systemd/journald.conf 
-sudo systemctl reboot
+pwd
+cd ..
+rm -rf haskell-env/
 ls -al
 exit
-grep Colo /etc/pacman.conf 
-less .bashrc 
-cp dropbox/tmp/andrea/.bashrc ./
-less .bashrc 
-ls -al .bash
-ls -al .bash*
+cd projects/archlinux/vm/
+ls
+cd src/
+ls
+cd installation-guide/
+ls
+cd ..
+ls
+cd build/
+ls
+pwd
 ls -al
-cp -r ~/dropbox/tmp/andrea/.emacs* ./
+cat build.sh 
+runhaskell Shakefile clean
+runhaskell Shakefile
+ghc-pkg list | grep hak
+cabal install hakyll -f-previewServer -f-watchServer -f-checkExternal
+runhaskell Shakefile
+pwd
+exit
+ls
+cd playground/
+ls
+mkdir rachel
+cd rachel/
+ls
+exit
+pwd
+cd projects/CV/
+ls
+rm current-cv.pdf 
+cp src/main.pdf  andrea-falconi.cv.pdf 
+ls -al
+tree
+ls -al
+ls -al src/
+rm src/andrea-falconi.cv.pdf 
+ls -al src/auto/
+rm -rf src/auto/
+ls -al src/
+exit
+cd playground/rachel/
+ls
+cp field-work-report.tex field-work-report.tex.old
+rm field-work-report.tex
+mv field-work-report.tex.old field-work-report.tex
+ls -al
+exit
+ls -al tmp/
+mv dropbox/interstellar.torrent tmp/
+cd tmp/
+aria2c -u40K interstellar.torrent 
+less interstellar.torrent 
+rm interstellar.torrent 
+exit
+cd tmp/
+aria2c -u40K 'magnet:?xt=urn:btih:d84c9f40b8cd79db556711430949192d1f36fc5d&dn=Interstellar.DVDRip.XviD-MAXSPEED&xl=720320811&dl=720320811'
+exit
+cd tmp/
+aria2c -u40K 'magnet:?xt=urn:btih:ACD1595A7606A8DE0D67DB0BEF8DA55E24FC95B2&dn=Interstellar.DVDRip.XviD-MAXSPEED'
+exit
+pwd
+ls
+mkdir tmp
+cd tmp/
+aria2c -u40K 'magnet:?xt=urn:btih:D6BA35881A053800950B40B666C9A9C98C64D8B1&dn=interstellar+2014+hdts+2audios+x264+cpg&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fopen.demonii.com%3A1337'
+tree
+mv \[\ www.Torrentday.com\ \]\ -\ Interstellar\ \(2014\)\ HDTS\ 2Audios\ x264-CPG/Interstellar\ \(2014\)\ HDTS\ 2Audios\ x264-CPG.mp4 ~/dropbox/interstellar.mp4
+pwd
+rm -rf *
+ls -al
+pwd
+mv ~/dropbox/idraw-2.5.torrent ./
+aria2c -u40K idraw-2.5.torrent 
+ls -al
+tree -a
+cd iDraw\ 2.5/
+ls
+ls -al
+gunzip iDraw\ 2.5.zip 
+ls -al
+man gunzip
+unzip iDraw\ 2.5.zip 
+ls -al
+tree -L2 
+tree -L 2 
+tree -L 3
+tree __MACOSX/
+tree -l __MACOSX/
+tree -la __MACOSX/
+ls -al
+tree -L 3
+tree -L 4
+ls
+tar czf idraw.tgz iDraw.app/ __MACOSX/
 ls -la
-chmod 0644 .emacs
-chmod 0755 .emacs.d
-ls -al
-cd .emacs.d
-ls -al
-rm -rf auto-save-list/
-chmod 0644 *.el
-ls -al
-chmod 0755 emacs-color-theme-solarized/
-ls -al
-cd emacs-color-theme-solarized/
-ls -al
-chmod 0644 *
-ls -al
-cd ~/.xmonad/
-cp ~/dropbox/tmp/andrea/.xmonad/xmonad.hs ./
-ls -al
+mv idraw.tgz ~/dropbox
+cd ..
+ls
+cd ..
+ls
+tree -L 2 tmp
+rm -rf tmp/
 exit
-xmonad --recompile
+ls -al 
+pwd
+clear
+exit
+less .xmonad/xmonad.con
 less .xmonad/xmonad.hs
-cd /etc/
-sudo ls -al visudo
-sudo ls -al visu*
-sudo find ./ -name viso
-sudo find ./ -name vis
-ls 
-pwd
-sudo ls -al sudoers
-sudo diff sudoers /home/andrea/dropbox/tmp/etc/sudoers
-sudo cp /home/andrea/dropbox/tmp/etc/sudoers ./
-sudo ls -al sudoers
-sudo diff sudoers /home/andrea/dropbox/tmp/etc/sudoers
-pwd
-cd ~
-ls -al
-cp -r dropbox/tmp/andrea/wallpapers ./
-ls -al
-chmod 0755 wallpapers/
-ls -al
-cd wallpapers/
-ls -al
-chmod 0644 *
-la -sl
-la -al
-ls -al
-ln -s current vitruvian.wallpaper.png 
-ln -s vitruvian.wallpaper.png current 
-ls -al
-cd ~
-diff .xinitrc dropbox/tmp/andrea/.xinitrc 
-cp dropbox/tmp/andrea/.xinitrc ./
-less .xinitrc 
-ls -al
-sudo  grep EE /var/log/Xorg.0.log
-sudo journalctl -b
-cd dropbox/tmp/etc/
-sudo diff pacman.conf /etc/pacman.conf 
-ls -al /etc/pacman.conf 
-sudo cp pacman.conf /etc/
-ls -al /etc/pacman.conf 
-sudo diff pacman.conf /etc/pacman.conf 
-cd ..
-ls -la
-chmod +x run.sh 
-sudo ./run.sh 
-ls -al
-sudo chmod +x run.sh 
-ls -al
-cp run.sh ~/
-chmod +x ~/run.sh 
-sudo ~/run.sh 
-sudo ~/run.sh 
-cd ~/aur/
-ls
-mkdir ttf-monaco
-cp ~/dropbox/tmp/andrea/aur/ttf-monaco/aur.url ./
-ls -la
-ls -alR
-mv aur.url ttf-monaco/
-cd ttf-monaco/
-curl -O $(cat aur.url)
-ls
-tar xzf ttf-monaco.tar.gz 
-cd ttf-monaco
-ls
-makepkg -s
-ls 
-sudo pacman -U ttf-monaco-5.1-2-any.pkg.tar.xz 
-ls -al
-cd ..
-ls -al
-rm -rf tt*
-ls -al
-cd ..
-ls
-chmod 0644 ttf-monaco/aur.url 
-ls -al ttf-monaco/
-mkdir bahamas-font
-ls -al
-cd bahamas-font/
-cp ~/dropbox/tmp/andrea/aur/bahamas-font/aur.url ./
-chmod 0644 aur.url 
-curl -O $(cat aur.url)
-tar xzf bahamas-font.tar.gz 
-cd bahamas-font
-makepkg -s
-sudo fc-cache -fs
-cd ~
-cp ~/dropbox/tmp/run.sh ./
-ls -al
-sudo ./run.sh 
-sudo pacman gnome-themes-standard
-sudo pacman -S gnome-themes-standard
-sudo pacman -S gnome-icon-theme
-ls -al
-mkdir -p .config/gtk-3.0 
-cp dropbox/tmp/andrea/.config/gtk-3.0/settings.ini .config/gtk-3.0/
-ls -al .config/gtk-3.0/settings.ini 
-chmod 0644 .config/gtk-3.0/settings.ini 
-ls -al .config/gtk-3.0/settings.ini 
-less .config/gtk-3.0/settings.ini 
-cd .config/gtk-3.0/
-cp ~/dropbox/tmp/run.sh settings.ini 
-less settings.ini 
-cd ~/aur/
-ls 
-ls bahamas-font/
-cd bahamas-font/
-rm -rf bahamas-font*
-ls -al
-cd ..
-ls -alR ./
-mkdir buuficontheme
-ls -la
-cd buuficontheme/
-cp ~/dropbox/tmp/andrea/aur/buuficontheme/aur.url ./
-less aur.url 
-ls -al
-chmod 0644 aur.url 
-curl -O $(cat aur.url)
-tar xfz buuficontheme.tar.gz 
-cd buuficontheme
-ls
-makepkg -s
-ls -al
-sudo pacman -S buuficontheme-3.10-1-any.pkg.tar.xz 
-sudo pacman -U buuficontheme-3.10-1-any.pkg.tar.xz 
-ls -al
-cd ..
-ls -al
-rm -rf buuficontheme*
-ls -al
-cd ..
-ls -alR
-ls -al ~/dropbox/tmp/andrea/aur/
-cp ~/dropbox/tmp/andrea/aur/madematix-slim-theme-1.0-1-any.pkg.tar.xz ./
-ls -la
-chmod 0644 madematix-slim-theme-1.0-1-any.pkg.tar.xz 
-sudo pacman -U madematix-slim-theme-1.0-1-any.pkg.tar.xz 
-cd /etc/
-sudo diff slim.conf /home/andrea/dropbox/tmp/etc/slim.conf 
-ls -al /etc/slim.conf 
-sudo cp /home/andrea/dropbox/tmp/etc/slim.conf ./ 
-ls -al /etc/slim.conf 
-sudo systemctl reboot
-xrandr 
-ls /usr/share/fonts/TTF/
-pwd
-cd ~/aur/bahamas-font/
-ls -al
-curl -O $(cat aur.url)
-ls
-tar xzf bahamas-font.tar.gz 
-ls -al
-cd bahamas-font/
-ls -al
-makepkg -s PKGBUILD 
-ls -al
-sudo pacman -U bahamas-font-1.0-1-any.pkg.tar.xz 
 exit
 ls -al
-sudo journalctl -b
-exit
-ls -al
-xrandr 
-exit
-xrandr 
-exit
-pwd
-cd ~/.themes/
-ls
-rm -rf Adwaita/
-cp -r /usr/share/themes/Adwaita ./
-ls -al
-ls Adwaita/
-pwd
-cd ~
-rm -rf .themes/
-exit
-grep flet -R .emacs.d/
-pacman -Qi gnome-icon-theme
-exit
-ls -al
-ls -R aur/
-ls aur/
-cd aur/bahamas-font/
-ls -al
-rm -rf bahamas-font*
-ls -al
-cd ..
-ls -R aur/
-pwd
-ls -alR
-cd ..
-ls -al
-rm run.sh 
-ls wallpapers/
-ls -al wallpapers/
-cat .Xauthority 
-exit
-ls -al
-drwxr-xr-x  2 andrea users 4096 Oct 17 23:45 .xmonad
-cd .xmonad/
-ls -al
-cd ~
 ls projects/
-cd projects/archlinux/
+cd projects/
+exit
+cd projects
+ls -la
+ls DVT/
+cd DVT/
+ls -la
+ls -O
+ls -al _other_/
+ls -la
 ls
-cp -r projects/archlinux/mactop/_root_/home/andrea/mk-backup ./
-ls -al
-chmod 0755 mk-backup/
-chmod 0644 mk-backup/*
-ls -al mk-backup/
-chmod +x mk-backup/rbackup.sh 
-pwd
-cd projects/archlinux/vm/backup/
-pwd
-cd ~/mk-backup/
-ls -al
-./rbackup.sh 
-rm log 
-./rbackup.sh 
-ls -al ~
-ls -al ~/.config/
-ls -al ~/.local/
-ls -al ~/.local/share/
-ls -al ~/.local/share/systemd/
-./rbackup.sh 
-rm log 
-./rbackup.sh 
-sudo ./rbackup.sh 
-rm backup.lst 
-ls -al
-exit
-sudo ls -al /
-ls /boot/
-sudo ls -al /boot/syslinux/
-sudo journalctl -b
-sudo pacman -S rsync
-man rm
-pwd
-ls -al
-exit
-cd mk-backup/
-tail -f log 
-exit
-ls projects/archlinux/vm/
-mkdir projects/archlinux/vm/backup
+ls Truworths/
+ls S1-ACI/
+ls S1-ACI/Aug2010-Jun2012/
+ls ~/projects/CV/
+ls ~/projects/CV/src/
+ls 
+mkdir Woolworths
 ls
-ls mk-backup/
+exit
+cd playground
 ls -al
-cd mk-backup/
+mkdir appeal
+mv appeal.txt appeal/
+ls ~/projects/CV/
+ls ~/projects/CV/src/
 ls -al
-sudo ./rbackup.sh 
-exit
-sudo journalctl -b
-exi
-mount
-ls projects
-ls dropbox
-ls playground
-ping -c 1 8.8.8.8
-curl www.google.com
-exit
-xrandr 
-sudo journalctl -b
-exit
-ls .emacs.d
-exit
+cd appeal/
 ls -al
 exit
-pwd
-mkdir tmp
-pwd
-rm -rf tmp/
-exit
-sudo pacman -S aspell aspell-en
-exit
-mkdir tmp
-which gv
-which gsview
-pacman -Qs ghost
-pwd
-mv tmp/xxx.pdf dropbox/
-rm -rf tmp/
-exit
-rm dropbox/xxx.pdf 
-exit
-sudo pacman -S texlive-most
-sudo pacman -S auctex
-sudo pacman -Syy
-sudo pacman -Su
-pwd
-cabal update
-sudo pacman -S emacs-haskell-mode
-cd  /usr/share/emacs/site-lisp/haskell-mode
 ls -al
-ls
-ls | grep site
-pwd
-cabal --help
-cabal --version
-cabal install haskell-platform --dry-run
-ghc --version
-cabal install alex happy --dry-run -v
-cabal install alex happy
-which happy
-which haddoc
-whichalex
-which alex
-which haddock
-cabal list --installed
-exit
-cabal list --installed | grep alex
-which alex
-cabal install             async attoparsec case-insensitive cgi fgl GLUT GLURaw haskell-src             hashable html HTTP HUnit mtl network OpenGL OpenGLRaw parallel parsec             QuickCheck random regex-base regex-compat regex-posix split stm syb             text transformers unordered-containers vector xhtml zlib primitive
-sudo pacman -S git
-cabal install darcs
-which darcs
-which eject
-pacman -S aria2 hwinfo hwdetect hdparm sdparm smartmontools ntfs-3g        ethtool tcpdump dnsutils nmap tree bc fastjar unzip unrar cdrkit
-sudo pacman -S aria2 hwinfo hwdetect hdparm sdparm smartmontools ntfs-3g 
-sudo pacman -S aria2 hwinfo hwdetect hdparm sdparm smartmontools ntfs-3g        ethtool tcpdump dnsutils nmap tree bc fastjar unzip unrar cdrkit
+ls -al playground
+ls -al playground/
+ls -al playground/appeal/
+less mk-backup/exclude.lst 
+less mk-backup/rbackup.sh 
 exit
 tree -L 2
-tree -Lp 2
-rm -rf tmo/
-ls -al
-sudo du -h /*
-sudo du -h /
-sudo du -hs /*
-sudo du -hs /home/andrea/*
-sudo du -hs /home/andrea
-sudo du -hs /home/andrea/.cabal/
-sudo du -hs /home/andrea/.ghc/
-sudo du -hs /usr/local/
-sudo du -hs /var/
-sudo du -hs /var/*
-sudo du -hs /var/cache/
-sudo du -hs /var/cache/*
-sudo ls -al /var/cache/pacman/ 
-sudo ls -al /var/cache/pacman/pkg/
-pacman -Qdt
-sudo find / -name '.pac*'
-sudo find / -name 'pacm*'
-exitsudo find / -name '.pac*'
+ls -al mk-backup/log 
+date
+tree -L 2 projects
+tree -L 2 playground
 exit
-man pacman
+xrandr 
 exit

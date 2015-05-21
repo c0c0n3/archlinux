@@ -36,3 +36,11 @@ systemd-journal:x::
 vboxsf:!::andrea
 avahi:!::
 polkitd:!::
+git:!::
+colord:!::
+input:!::
+systemd-journal-gateway:!::
+systemd-timesync:!::
+systemd-network:!::
+systemd-bus-proxy:!::
+systemd-resolve:!::

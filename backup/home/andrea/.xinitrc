@@ -25,4 +25,4 @@ fi
 /usr/bin/xcompmgr -c &
 feh --bg-scale /home/andrea/wallpapers/current
 
-exec /home/andrea/.cabal/bin/xmonad
+exec /usr/bin/xmonad

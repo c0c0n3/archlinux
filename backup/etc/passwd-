@@ -10,3 +10,9 @@ nobody:x:99:99:nobody:/:/bin/false
 andrea:x:1000:100::/home/andrea:/bin/bash
 avahi:x:84:84:avahi:/:/bin/false
 polkitd:x:102:102:Policy Kit Daemon:/:/bin/false
+git:x:999:999:git daemon user:/:/bin/bash
+colord:x:124:124::/var/lib/colord:/bin/false
+systemd-journal-gateway:x:191:191::/:/usr/bin/nologin
+systemd-timesync:x:192:192::/:/usr/bin/nologin
+systemd-network:x:193:193::/:/usr/bin/nologin
+systemd-bus-proxy:x:194:194::/:/usr/bin/nologin

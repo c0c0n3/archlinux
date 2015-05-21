@@ -37,3 +37,10 @@ vboxsf:x:109:andrea
 avahi:x:84:
 polkitd:x:102:
 git:x:999:
+colord:x:124:
+input:x:97:
+systemd-journal-gateway:x:191:
+systemd-timesync:x:192:
+systemd-network:x:193:
+systemd-bus-proxy:x:194:
+systemd-resolve:x:195:

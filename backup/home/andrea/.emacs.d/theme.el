@@ -2,8 +2,16 @@
 ;; https://github.com/sellout/emacs-color-theme-solarized
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/emacs-color-theme-solarized")
-(load-theme 'solarized-light t)
-;;(load-theme 'solarized-[light|dark] t)
+(load-theme 'solarized t)
+
+;; this seems to enable the theme in every frame except the speedbar...
+(set-frame-parameter nil 'background-mode 'dark) ;; 'light or 'dark
+;; the following line fixes it
+(setq frame-background-mode 'dark) ;; 'light or 'dark
+;; also if using the dark theme, speedbar icons look ugly, so disable them:
+(setq speedbar-use-images nil)
+
+(enable-theme 'solarized)
 
 (set-face-attribute 'default nil :font "Monaco-12") 
 

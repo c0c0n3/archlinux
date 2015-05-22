@@ -23,6 +23,6 @@ fi
 
 /usr/bin/xsetroot -cursor_name left_ptr
 /usr/bin/xcompmgr -c &
-feh --bg-scale /home/andrea/wallpapers/current
+feh --bg-scale /home/andrea/wallpapers/current &
 
 exec /usr/bin/xmonad

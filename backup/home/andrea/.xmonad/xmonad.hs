@@ -41,8 +41,8 @@ main = do
               { terminal    = "emacs -q -l /home/andrea/.emacs.d/terminal.el -e ansi-term"
               , modMask     = mod4Mask
               , borderWidth = 3
-              , normalBorderColor = "#ffffff"
-              , focusedBorderColor = "#33cc33"
+              , normalBorderColor = "#586e75" --"#ffffff"
+              , focusedBorderColor = "#cb4b16" --"#33cc33"
               }
               `additionalKeys`
               [-- ((0, 0x1008FF03), spawn "sudo lcd-bl down") -- XF86XK_MonBrightnessDown

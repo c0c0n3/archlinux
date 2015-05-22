@@ -2,12 +2,14 @@
 # /etc/fstab: static file system information
 #
 # <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda2
+UUID=68a8b6ea-5f63-44f1-8fc4-255e6321ceee	/         	ext4      	rw,relatime,data=ordered	0 1
+
 # /dev/sda1
-UUID=81cc2fa7-1a6d-4152-867f-7378e5e160a7	/         	ext4      	rw,relatime,data=ordered	0 1
-/swapfile	none	swap	defaults	0 0
+UUID=A989-8004      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
 
-
-dropbox	/media/dropbox	vboxsf	uid=1000,gid=100,rw,dmode=700,fmode=600,comment=systemd.automount	0 0
-playground	/media/playground	vboxsf	uid=1000,gid=100,rw,dmode=700,fmode=600,comment=systemd.automount	0 0
-projects	/media/projects	vboxsf	uid=1000,gid=100,rw,dmode=700,fmode=600,comment=systemd.automount	0 0
+# VBox shared folders
+dropbox   /media/dropbox    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
+playground   /media/playground    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
+projects   /media/projects    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
 

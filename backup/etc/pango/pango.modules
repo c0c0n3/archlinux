@@ -13,6 +13,6 @@
 /usr/lib/pango/1.8.0/modules/pango-indic-lang.so kndaIndicScriptEngineLang PangoEngineLang PangoRenderNone kannada:*
 /usr/lib/pango/1.8.0/modules/pango-indic-lang.so mlymIndicScriptEngineLang PangoEngineLang PangoRenderNone malayalam:*
 /usr/lib/pango/1.8.0/modules/pango-indic-lang.so sinhIndicScriptEngineLang PangoEngineLang PangoRenderNone sinhala:*
-/usr/lib/pango/1.8.0/modules/pango-thai-lang.so ThaiScriptEngineLang PangoEngineLang PangoRenderNone thai:*
 /usr/lib/pango/1.8.0/modules/pango-arabic-lang.so ArabicScriptEngineLang PangoEngineLang PangoRenderNone arabic:*
+/usr/lib/pango/1.8.0/modules/pango-thai-lang.so ThaiScriptEngineLang PangoEngineLang PangoRenderNone thai:*
 

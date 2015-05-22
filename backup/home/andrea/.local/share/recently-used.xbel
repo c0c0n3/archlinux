@@ -3,12 +3,32 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/andrea/playground/audit-service/src/Util/SequentialId.hs" added="2014-06-28T17:39:08Z" modified="2014-06-28T17:39:08Z" visited="2014-06-28T17:39:09.023710Z">
+  <bookmark href="file:///home/andrea/projects/arch-install/create-vm.md" added="2015-05-21T12:37:35Z" modified="2015-05-21T12:37:35Z" visited="2015-05-21T12:37:35Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/x-haskell"/>
+        <mime:mime-type type="text/markdown"/>
         <bookmark:applications>
-          <bookmark:application name="emacs" exec="&apos;emacs %u&apos;" modified="2014-06-28T17:39:08Z" count="1"/>
+          <bookmark:application name="emacs" exec="&apos;emacs %u&apos;" modified="2015-05-21T12:37:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/andrea/projects/arch-install/desktop-foundation.md" added="2015-05-21T12:38:34Z" modified="2015-05-21T12:38:34Z" visited="2015-05-21T12:38:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="emacs" exec="&apos;emacs %u&apos;" modified="2015-05-21T12:38:34Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/andrea/projects/arch-install/installation.md" added="2015-05-21T12:40:01Z" modified="2015-05-21T12:40:01Z" visited="2015-05-21T12:40:01.587938Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/markdown"/>
+        <bookmark:applications>
+          <bookmark:application name="emacs" exec="&apos;emacs %u&apos;" modified="2015-05-21T12:40:01Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

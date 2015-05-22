@@ -27,6 +27,7 @@
 ## Groups of commands.  Often used to group related commands together.
 # Cmnd_Alias	PROCESSES = /usr/bin/nice, /bin/kill, /usr/bin/renice, \
 # 			    /usr/bin/pkill, /usr/bin/top
+# Cmnd_Alias	REBOOT = /sbin/halt, /sbin/reboot, /sbin/poweroff
 
 ##
 ## Defaults specification
@@ -60,7 +61,7 @@
 # Defaults log_output
 # Defaults!/usr/bin/sudoreplay !log_output
 # Defaults!/usr/local/bin/sudoreplay !log_output
-# Defaults!/sbin/reboot !log_output
+# Defaults!REBOOT !log_output
 
 ##
 ## Runas alias specification
@@ -89,8 +90,10 @@ root ALL=(ALL) ALL
 ## (the '#' here does not indicate a comment)
 #includedir /etc/sudoers.d
 
-
-andrea	ALL=(ALL) ALL
-andrea  ALL= NOPASSWD: /usr/bin/systemctl poweroff, /usr/bin/systemctl reboot
+##
+## Account: andrea
+##
+andrea ALL=(ALL) ALL
+andrea ALL=NOPASSWD: /usr/bin/systemctl poweroff, /usr/bin/systemctl reboot
 
 

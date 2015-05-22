@@ -21,11 +21,11 @@ main = shakeArgs opts $ do
      "installation-guide" ~> (need [binDir, hakyllTmpDir, shakeTmpDir, siteBuilder]
                              >> buildSite)
 
-     binDir       *> mkdir
-     hakyllTmpDir *> mkdir
-     shakeTmpDir  *> mkdir
+     binDir       %> mkdir
+     hakyllTmpDir %> mkdir
+     shakeTmpDir  %> mkdir
 
-     siteBuilder *> compileSiteBuilder
+     siteBuilder %> compileSiteBuilder
 
      "clean" ~> deleteOutput
 

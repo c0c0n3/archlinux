@@ -5,22 +5,18 @@ The below instructions assume you have logged in as `andrea`, not `root`.
 Before starting, update the system, check logs are clean, and make sure there
 are no orphaned packages.
 
-Backups
--------
-Install [rsync][rsync] and copy backup scripts:
-
-        sudo pacman -S rsync
-        ~/mk-backup
-
 
 AUR
 ---
+Some packages we want to install are in the AUR; so we need to set up an environment
+to build packages locally.
 Create the directory in which to download and build packages not in the official repos.
-To build Arch packages locally, you also need `fakeroot`; also, because some packages
-come bundled in zip files, `unzip` is needed.
+To build Arch packages locally, you need the tools in `base-devel` (which contains the
+basic C tool chain and a few Arch tools); also, because some packages come bundled in
+zip files, `unzip` is needed.
 
         mkdir ~/aur
-        sudo pacman -S fakeroot unzip
+        sudo pacman -S base-devel unzip
 
 Procedure to build & install (see [Arch wiki][aur]):
 
@@ -109,7 +105,7 @@ Install basic support for [composite][xcompmgr] windows:
 Configure:
 
         ~/.xmonad/xmonad.hs
-        ~/.cabal/bin/xmonad --recompile
+        xmonad --recompile
         ~/.xinitrc	
     
 Allow `andrea` to shutdown/reboot without prompting for password (needed because those
@@ -127,20 +123,17 @@ add line at bottom of file:
 GUI Look & Feel
 ---------------
 
-#### SLiM Theme
-Install custom theme by following instructions in `projects/archlinux/aur/madematix-slim-theme/README`.
-
 #### GTK 3 Theme
-  * Install Buuf icon theme from the AUR.
-  * `sudo pacman gnome-themes-standard gnome-icon-theme`
+  * `sudo pacman -S gnome-themes-standard gnome-icon-theme`
+  * (AUR) numix-icon-theme-git (NB: will install `git` to fetch from repo)
   * `~/.config/gtk-3.0/settings.ini`:
 
             [Settings] 
             gtk-theme-name = Adwaita
-            gtk-application-prefer-dark-theme = false
-            gtk-cursor-theme-name=Adwaita
-            gtk-fallback-icon-theme = gnome
-            gtk-icon-theme-name = buuficontheme
+            gtk-application-prefer-dark-theme = true
+            gtk-cursor-theme-name = Adwaita
+            gtk-icon-theme-name = Numix
+            gtk-fallback-icon-theme = Adwaita
             gtk-font-name = Bahamas 12
 
 #### Wallpaper
@@ -154,40 +147,35 @@ Install custom theme by following instructions in `projects/archlinux/aur/madema
 
 Known Issues
 ------------
-1.**Emacs core dump**.  Emacs (compiled with GTK) crashes if it looses the connection to
-X.  To avoid core dump files polluting your machine make sure
-  
-  * **all Emacs** windows are **closed before shutting down or rebooting**;
-  * in particular: **Never shutdown/reboot from the Emacs shell**.
+1.**VBox video driver**.  You can sometimes see this error in in `/var/log/Xorg.0.log`:
 
-2.**Emacs Solarized Theme**.  It uses an obsolete macro (in `solarized-definitions.el`)
-which results in the following warning being output to the Emacs Messages buffer:
+        (EE) VBoxVideo(0): We do not own the active VT, exiting.
 
-        `flet' is an obsolete macro (as of 24.3); use either `cl-flet' or `cl-letf'.
+  Usually when this happens the wallpaper is not displayed (at this point the log is
+  still clear); if you log into another `tty` and then switch back to the desktop then
+  the wallpaper appears as does the error in the log.  (Note: the error message may
+  come from the file `vboxvideo.c` in the `vboxvideo` source; ask Google.)
+  However, it seems that the system still works decently, so I didn't find out more... 
 
-3.**malys-inversio theme**.  Currently broken; see `README` in 
-`projects/archlinux/aur/malys-inversio.gtk3-theme/`.  However, above GTK theme gets close. 
+2.**Infinality key**. Did not manage to import it as described in the procedure above.
+It seems there's a bug in `pacman-key` and `dirmngr`.  (See [here][pacKeyIssue1] and
+[here][pacKeyIssue2]; tried what suggested in the posts but didn't work.)
+In the end, I resorted to [disabling signature checking][pacKey] for the Infinality repo
+in `pacman.config`:
+
+        [infinality-bundle]
+        SigLevel = Never
+        Server = http://bohoomil.com/repo/$arch
+
+
 
 
 Notes
 -----
-1.**Backups**.  The idea is to keep all work in `data/{projects, playground}` (on the 
-Mac and symlinked in the VM) which are backed up to Dropbox.  Also note:
-
-  * `data/VMs/dropbox` is only meant to be used as a quick way to exchange/download files; 
-     never store anything you care about in there as it's not backed up to Dropbox;
-  * the VM itself is not backed up to Dropbox either.
-
-So the VM will only contain configuration files and scripts; these will change overtime
-and should be backed up regularly using the backup script, which backs up `/boot`, `/etc`,
-and `/home` (symlinks excluded) to `data/projects/archlinux/vm/backup`.  This directory
-is in the git repository so we can also track changes (remember to commit after backing
-up).
-
-2.**Fonts**.  I used to install these too: `ttf-ms-fonts`, `ttf-isabella`; 
+1.**Fonts**.  I used to install these too: `ttf-ms-fonts`, `ttf-isabella`; 
 but now I don't think I need them anymore.
 
-3.**XMonad Keys**.  To avoid interference with Emacs, the XMonad `Mod` key is mapped to
+2.**XMonad Keys**.  To avoid interference with Emacs, the XMonad `Mod` key is mapped to
 the left `Cmd` key instead of `Alt`.  Because VirtualBox uses that as default host key,
 you need to remap it to the right `Cmd` key:
 
@@ -207,23 +195,31 @@ up Mac OSX logout dialog.  Here's a quick reference to the key bindings that wer
 For more info on key mapping see the Arch [wiki][extraKeys] and the documentation of the
 `XMonad.Util.EZConfig` module.
 
-4.**X Resources**.  Not currently using X resources and modmap, so there's no need to
+3.**X Resources**.  Not currently using X resources and modmap, so there's no need to
 have code in `~/.xinitrc` to merge them in.  (Have no `.Xresources` and `.Xmodmap` in 
 `~` and `/etc`.)  If ever needed, you can use [this code][xres] taken from 
 `/etc/X11/xinit/xinitrc` and add it at the beginning of `~/.xinitrc`.
 For more info, see the Arch wiki pages on [xinitrc][xinitrc] and [X resources][xres].
 
-5.**Screen-saver**.  Kinda pointless as Mac OSX screen-saver will kick-in.  To see how to
+4.**Screen-saver**.  Kinda pointless as Mac OSX screen-saver will kick-in.  To see how to
 set it up, refer to the `sys-install-n-conf/instructions/` of the old `mactop`.
 (BTW, OSX screen-saver is using the same images as the old `mactop`: 
 `look-n-feel/cosmos-screensaver`.)
 
-6.**Emacs Config**.  Made it modular; some of the modules (`spell.el`, `latex.el`, and
+5.**Emacs Config**.  Made it modular; some of the modules (`spell.el`, `latex.el`, and
 `haskell.el`) are not loaded as they require functionality which will only be available
 later when we set up the development environment.  
 Also, the [Solarized][sloar] [theme][emacs-solar] might need to be re-downloaded into
 `~/.emacs.d/emacs-color-theme-solarized` if it becomes incompatible with new versions
 of Emacs.
+
+6.**Emacs core dump**.  Emacs (compiled with GTK) used to crash if it lost the connection
+to X.  **This doesn't happen anymore**.  (Perhaps due to the fact we don't have a login
+manager?)  Should the issue resurface, to avoid core dump files polluting your machine
+make sure
+  
+  * **all Emacs** windows are **closed before shutting down or rebooting**;
+  * in particular: **Never shutdown/reboot from the Emacs shell**.
 
 7.**Pacman Performance**.  Pacman usually performs decently out of the box; however
 performance can be improved (e.g. parallel downloads) as explained on the Arch
@@ -234,8 +230,12 @@ then customise for `root`.  Similarly, some of the settings in `~/.bashrc` could
 to `/root/.bashrc`.  (**NB** do **not blindly override** `/root/.bashrc` with `~/.bashrc`
 as you need to keep some of the settings in the former!)  
 
-9.**malys-inversio**.  My modified version of the theme; if it becomes available in the AUR, 
-then ditch my own package?  It brings in `gtk-engine-unico` as a dependency.
+9.**GTK theme**.  Adwaita comes in dark and light versions; to switch to the light version
+use: `gtk-application-prefer-dark-theme = true`.  The icons come from the [Numix][Numix]
+project; if updates with new icons become available, you may want to re-install from the
+AUR. Also in AUR, [Numix Circle][aur-numix-circle] is a very nice companion to Numix as it
+complements it with (hundreds!) rounded icons for apps; install it if you're going to use
+programs that make use of app icons, e.g. GNOME shell.
 
 10.**[Feh][feh]**.  Lightweight and powerful image viewer; can be used from the command line
 and also to manage the desktop wallpaper.
@@ -301,5 +301,17 @@ then add it to `~/.xinitrc` (command: `conky`) just before launching XMondad.  H
 [xres]: xresources.sh
 	"Merge X Resources Code Snippet"
 
-[rsync]: https://wiki.archlinux.org/index.php/Rsync
-	 "Rsync"
+[pacKey]: https://wiki.archlinux.org/index.php/Pacman-key
+    "Pacman-key"
+
+[pacKeyIssue1]: https://bbs.archlinux.org/viewtopic.php?id=138498
+    "Pacman won't look up gpg keys"
+
+[pacKeyIssue2]: https://bbs.archlinux.org/viewtopic.php?id=190380
+    "{pacman-key} keyserver refresh failed: No dirmngr"
+
+[Numix]: https://numixproject.org/
+    "Numix Project"
+
+[aur-numix-circle]: https://aur.archlinux.org/packages/numix-circle-icon-theme-git/
+    "AUR: Numix Circle icon theme from git repo"

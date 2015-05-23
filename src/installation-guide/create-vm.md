@@ -16,7 +16,7 @@ General.)
 
 *Memory size*
 
-  + Memory size: 2048 (1/2 of physical RAM)
+  + Memory size: 4096 (1/2 of physical RAM)
 
 *Hard drive*
 
@@ -38,9 +38,11 @@ Edit the virtual machine configuration in VBox.
 *System*
 
   + Motherboard:
-    + Boot Order: CD, HD; deselect all others
+    + Boot Order: HD; deselect all others
+    + Enable EFI
   + Processor:
     + Processors: 4 (1/2 of host cores)
+    + Enable PAE/NX
 
 *Display*
   

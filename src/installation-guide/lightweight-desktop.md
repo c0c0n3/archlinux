@@ -1,53 +1,49 @@
 Lightweight Desktop
 ===================
 
-Follow the steps below to install a lightweight desktop with [SLiM][SLiM] as display
-manager and [Xmonad][Xmonad] as window manager.
+Follow the steps below to install a lightweight desktop with [automatic login][autoLogin]
+(without using a display manager) and [Xmonad][Xmonad] as window manager.
 The idea is to have a functional core desktop which avoids any dependencies on Qt, KDE,
 and GNOME.
 
 The below instructions assume you have logged in as `andrea`, not `root`.
 
-SLiM
-----
-Install:
 
-        sudo pacman -S slim
+Automatic Login
+---------------
+Create an ovveride file to set up automatic login on virtual console 1:
 
-Enable:
-	
-        sudo systemctl enable slim.service
+        sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+        sudo nano /etc/systemd/system/getty@tty1.service.d/override.conf
 
+Enter the following and save:
 
-Haskell
--------
-We're going to install GHC and Cabal so that all other Haskell packages (including Xmonad)
-can be installed in the home directory.  This way, if dependency issues arise, we can easily
-just delete the `.ghc` and `.cabal` directories and re-install from a clean environment.
+        [Service]
+        Type=simple
+        ExecStart=
+        ExecStart=-/sbin/agetty --autologin username --noclear %I 38400 linux
+        
+Now start X when loggin into `tty1`; edit `~/.bash_profile` to append:
 
-        sudo pacman -S ghc cabal-install
-        cabal update
+        [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
 
 Xmonad
 ------
 Install:
 
-        sudo pacman -S pkg-config
-        cabal install xmonad xmonad-contrib
+        sudo pacman -S xmonad xmonad-contrib
 
-NB: The above puts executable and Haskell libraries in `~/.cabal`.  Haskell packages are
-registered locally too in `~/.ghc`.
+Configure to work with `startx`:
 
-Configure to work with SLiM:
-
-        cp /etc/skel/.xinitrc ~
-        chmod +x ~/.xinitrc	   
+        cp /etc/X11/xinit/xinitrc ~/.xinitrc
+        chmod +x ~/.xinitrc
         nano ~/.xinitrc
 
 and add these two lines at the end of the file:
 
         xsetroot -cursor_name left_ptr
-        exec /home/andrea/.cabal/bin/xmonad
+        exec /usr/bin/xmonad
 
 To be able to start Xmonad, you'll need at least a bare-bones configuration.
 
@@ -57,13 +53,13 @@ To be able to start Xmonad, you'll need at least a bare-bones configuration.
         main = do
                xmonad $ defaultConfig
 	
-        ~/.cabal/bin/xmonad --recompile
+        xmonad --recompile
 
 
 
 
-[SLiM]: https://wiki.archlinux.org/index.php/SLiM
-	"SLiM"
+[autoLogin]: https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console
+    "Automatic login to virtual console"
 
 [Xmonad]: https://wiki.archlinux.org/index.php/Xmonad
-	  "Xmonad"
+    "Xmonad"

@@ -51,7 +51,7 @@ X Window System
 ---------------
 Install the base [Xorg][xorg] packages:
 
-        pacman -S xorg-server xorg-apps xorg-xinit
+        pacman -S xorg-server xorg-server-utils xorg-apps xorg-xinit
 
 Note that `mesa` (3D acceleration) is bundled with `xorg-server`.
 

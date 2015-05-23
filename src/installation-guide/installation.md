@@ -2,7 +2,7 @@ Arch Core Installation
 ======================
 
 Steps are detailed below to install a fully functional Arch base system (as a VirtualBox
-host) from which more functionality can easily be added.  
+host) from which more functionality can easily be added.
 Following the [Arch Beginners' Guide][BegGuide].
 
 
@@ -10,9 +10,8 @@ Boot Installation Medium
 ------------------------
 
 1. Download Arch ISO image.
-2. Start VM (boot will fail).
-3. Devices -> CD/DV -> Select ISO image
-4. Reboot VM.
+2. Start VM.
+3. Select ISO image.
 
 
 Check Internet Connection
@@ -22,16 +21,42 @@ Check `dhcpd` successfully set up the interface:
       ping -c 3 www.google.com
 
 
-Prepare Storage Drive
+Prepare Storage Drive 
 ---------------------
 
-1. Create single GPT partition with ext4 filesystem.
+1. Create EFI bootable partition + single GPT partition with ext4 filesystem.
 
     * List disks attached to the system: `lsblk`
-    * Create single GPT partition: `cgdisk /dev/sda`
-    * Create filesystem: `mkfs.ext4 /dev/sda1`
+    * Start parted on device: `parted /dev/sda`
+    * In parted create:
+          * GPT partition table
+                
+                mklabel gpt
 
-2. Mount partition: `mount /dev/sda1 /mnt`
+          * EFI bootable partition
+ 
+                mkpart ESP fat32 1MiB 513MiB
+                set 1 boot on
+                name 1 EFI
+
+          * GPT partition to host whole OS + data
+ 
+                mkpart primary ext4 513MiB 100%
+                name 2 arch
+    
+    * Quit parted (`q`).
+
+    * Create filesystems
+
+                mkfs.vfat -F32 /dev/sda1
+                mkfs.ext4 /dev/sda2
+
+2. Mount partitions:
+ 
+                mount /dev/sda2 /mnt
+                mkdir -p /mnt/boot
+                mount /dev/sda1 /mnt/boot
+                
 
 Install Base System
 -------------------
@@ -51,32 +76,38 @@ Generate Initial fstab
 Configure Base System
 ---------------------
 
-1. Chroot into newly installed system: `arch-chroot /mnt`
+1. Chroot into newly installed system: `arch-chroot /mnt /bin/bash`
 
-2. Locale.   
+2. Locale.
 
     * Uncomment "`en_US.UTF-8 UTF-8`" in `/etc/locale.gen`
     * `locale-gen`
     * `echo LANG=en_US.UTF-8 > /etc/locale.conf`
     * `export LANG=en_US.UTF-8`
 
-3. Timezone: `ln -s /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime`
+3. Timezone: `ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime`
 
 4. Hardware clock: `hwclock --systohc --utc`
 
-5. Hostname: `echo madematix > /etc/hostname`
+5. Hostname: 
 
-6. Network: `systemctl enable dhcpcd.service`
+        echo madematix > /etc/hostname
+
+   Then append it to both lines in `/etc/hosts`:
+
+        #<ip-address> <hostname.domain.org> <hostname>
+        127.0.0.1 localhost.localdomain localhost madematix
+        ::1   localhost.localdomain localhost madematix
+
+6. Network: `systemctl enable dhcpcd@enp0s3.service`
+   (NB interface name `enp0s3` retrieved through `ip link`.)
 
 7. `passwd` to set root password to "`abc123`" 
 
-8. Install Syslinux boot loader.
-
-    * `pacman -S gptfdisk`  (needed because of GPT partition)
-    * `pacman -S syslinux` 
-    * `syslinux-install_update -i -a -m`
-    * `nano /boot/syslinux/syslinux.cfg` to change `/dev/sda3` to reflect root partition on
-      both `arch` and `archfallback`; use UUID, see [Syslinux][syslinux] for details.
+8. Set up direct EFI boot (i.e. without boot loader; see [EFISTUB][EFISTUB]).
+    
+        cd /boot
+        echo vmlinuz-linux root=/dev/sda2 initrd=/initramfs-linux.img > startup.nsh
 
 9. Unmount partition and reboot.
 
@@ -89,7 +120,7 @@ Configure Base System
 Additional Tweaks
 -----------------
 
-1. Create [swap file][swapF] of 1GB and tweak "swappiness".
+1. If needed you can create a [swap file][swapF] of (e.g.) 1GB and tweak "swappiness".
 
     * `fallocate -l 1024M /swapfile`
     * `chmod 600 /swapfile`
@@ -100,34 +131,26 @@ Additional Tweaks
         + `vm.swappiness=1`
         + `vm.vfs_cache_pressure=50`
 
-2. `syslinux.cfg` (see [Syslinux][syslinux])
+2. Pacman Mirror List: if wanted, install [Reflector][reflector] to [sort mirrors][mirrors]
+   and generate it.
 
-    * Hide menu, auto-boot: set `PROMT`, `TIMEOUT` to `0`; comment out Menu Configuration
-      lines
-    * Bigger console: add kernel param: `vga=795` 
-
-3. Pacman Mirror List: install [Reflector][reflector] to [sort mirrors][mirrors] and 
-   generate it.
-
-    ~~~~
         pacman -S reflector
         cd /etc/pacman.d
         cp -vf mirrorlist mirrorlist.backup
         reflector --verbose -l 5 -p http --sort rate --save mirrorlist
-    ~~~~
 
     (The last command verbosely rates the 5 most recently synchronized HTTP servers, sorts
     them by download rate, and overwrites the file `mirrorlist`.)
 
-4. Fix any issues.
+3. Fix any issues.
 
     * `journalctl -b` (logs since boot, see [systemd][systemd] for more on journal)
     * `journalctl | grep fail`
-    * systemctl --failed
+    * `systemctl --failed`
 
-5. Clean up packages:
+4. Clean up packages:
 
-        pacman -Rn $(pacman -Qdtq) 
+        pacman -Rns $(pacman -Qdtq) 
 
     until there are no more orphans left. (This is just a sanity check as it shouldn't 
     happen at this stage.)
@@ -142,6 +165,8 @@ Notes
    for more details.
 2. [Hibernation][hiber]. If wanted, then the `resume_offset` kernel parameter has to be
    set as we're using a swap file.
+3. EFI boot. Can’t use `efibootmgr` as VirtualBox won’t persist the settings after shutdown
+   (see [here][VBoxArchGuest]) so we resort to using `startup.nsh’.
 
 
 Known Issues
@@ -152,12 +177,15 @@ Known Issues
    which expects it on the motherboard.  Could blacklist the driver, but it seems no harm
    can be done if the driver loads, so NO ACTION required.  
    (To fix, see e.g. [here][piix4].)
-2. [Fast TSC calibration failed][tscFail].  Shows up in the logs, but it's harmless, NO
+2. `intel_rapl` error in boot log ("no valid rapl domains found in package 0”) is harmless,
+    see e.g. [here][intel_rapl]. NO ACTION required.
+3. [Fast TSC calibration failed][tscFail].  Shows up in the logs, but it's harmless, NO
    ACTION required.
-3. Sound card.  The driver for the sound card exposed by VirtualBox could cause an error
+4. `acpi … _OSC failed (AE_NOT_FOUND)`.  Just a warning, ignore; see e.g. [here][acpi_osc].
+5. Sound card.  The driver for the sound card exposed by VirtualBox could cause an error
    of "unreliable dma position" at boot; disabling the sound card in the VM settings 
    avoids the driver being loaded and so the error.
-4. Network driver.  We enabled `dhcpcd` at boot, so the network driver for the card
+6. Network driver.  We enabled `dhcpcd` at boot, so the network driver for the card
    simulated by VirtualBox needs to bring up the network interface before `dhcpcd`
    attempts to get a lease.  This seems to be the case currently; in the past, there were
    issues (probably due to asynchronous processing by `systemd`) where sometimes `dhcpcd`
@@ -177,8 +205,8 @@ Known Issues
 [fsHiera]: https://wiki.archlinux.org/index.php/Arch_filesystem_hierarchy
 	   "Arch Filesystem Hierarchy"
 
-[syslinux]: https://wiki.archlinux.org/index.php/syslinux
-	    "Syslinux"
+[EFISTUB]: https://wiki.archlinux.org/index.php/EFISTUB
+           "EFISTUB"
 
 [piix4]: http://fintastical.blogspot.com/2010/11/virtualbox-piix4smbus-error.html
 	 "VirtualBox piix4_smbus Error"
@@ -200,3 +228,12 @@ Known Issues
 
 [mirrors]: https://wiki.archlinux.org/index.php/Mirrors
 	   "Mirrors"
+
+[intel_rapl]: http://askubuntu.com/questions/449574/intel-rapl-no-valid-rapl-domains-message-upon-boot
+              "intel_rapl"
+
+[VBoxArchGuest]: https://wiki.archlinux.org/index.php/VirtualBox#Installation_steps_for_Arch_Linux_guests
+                 "Installation steps for Arch Linux guests"
+
+[acpi_osc]: http://askubuntu.com/questions/86499/error-about-acpi-osc-request-failed-ae-not-found
+            "error about ACPI _OSC request failed (AE_NOT_FOUND)"

@@ -9,8 +9,9 @@ Follow the instructions in the below sequence:
   3. [Desktop Foundation](desktop-foundation.html "Desktop Foundation")
   4. [Lightweight Desktop](lightweight-desktop.html "Lightweight Desktop")
   5. [VirtualBox Host Setup](vbox-host.html "VirtualBox Host Setup")
-  6. [Customizations](customizations.html "Customizations")
-  7. [Base Development Environment](base-dev-env.html "Base Development Environment") 
+  6. [Backups](backups.html "Backups")
+  7. [Customizations](customizations.html "Customizations")
+  8. [Base Development Environment](base-dev-env.html "Base Development Environment") 
 
 Take a VM snapshot at each step, after having checked the system is healthy.
 After completing the steps in Base Development Environment, do a final system check
@@ -30,45 +31,31 @@ If all is OK, delete all cached packages before taking a final snapshot:
 
 Note that normally you wouldn't do this, but it makes sense here because we don't want
 to keep 1GB of packages in the snapshot; the cache will be repopulated as you upgrade
-the system.
+the system. At this point it's probably a good idea to shrink the VBox HD too; this can
+be done from time to time if you realize that the used HD space inside the VM as shown
+by
+
+        df -h /dev/sda1 /dev/sda2
+
+happens to be much less than the size of the VBox virtual HD file on the host. (This
+can happen because we created the virtual drive as dynamic.)  To shrink it, we first
+need to zero out all the available free space in the Arch guest as VBox will only
+remove zeroed blocks:
+
+        dd if=/dev/zero of=junk
+        sync
+        rm junk
+
+Then shut down the VM, `cd` into the VM directory on the host, and run:
+
+        VBoxManage modifyhd --compact madematix.hd.vdi
+
+More info [here][shrink-vbox], [here][compact-vdi], and [here][mk-ext4-sparse].
 
 To keep the system in good shape, refer to the [Arch General Recommendations][arch-gen-rec],
 especially to the System Maintenance pages listed in the [System Administration][arch-sys-adm]
 section.
 
-
-Additional Applications
------------------------
-The following applications were installed after the last snapshot (Base Development 
-Environment) was taken, so if rolling back to this snapshot, you may want to reinstall
-them.
-
-#### Haskell
-* Got latest cabal from Hackage and uninstalled the system's one managed by pacman.
-
-            cabal install cabal-install
-            sudo pacman -Rn cabal-install
-
-* [Unicode symbols][hask-unicode]: `cabal install base-unicode-symbols containers-unicode-symbols`
-
-* Shake build system: `cabal install shake`
-
-* Pandoc document converter: `cabal install pandoc`
-
-* Hakyll static website compiler:
-
-            cabal install hakyll -f-previewServer -f-watchServer -f-checkExternal
-
-    Note the flags set to false so to avoid installing Snap and all other deps; 
-    this is because I don't need a preview/watch server.
-
-* XML libraries: `cabal install xml-conduit hxt hexpat hxt-expat`
-
-* Here docs: `cabal install heredoc`
-
-* Persistence: `cabal install acid-state`
-
-* Web Apps: make Yesod sandbox... 
 
 
 
@@ -78,5 +65,11 @@ them.
 [arch-sys-adm]: https://wiki.archlinux.org/index.php/General_Recommendations#System_administration
                 "Arch System Administration"
 
-[hask-unicode]: http://www.haskell.org/haskellwiki/Unicode-symbols
-                "Unicode Symbols in Haskell"
+[shrink-vbox]: http://dantwining.co.uk/2011/07/18/how-to-shrink-a-dynamically-expanding-guest-virtualbox-image/
+               "How to shrink a dynamically-expanding guest virtualbox image"
+
+[compact-vdi]: http://superuser.com/questions/529149/how-to-compact-virtualboxs-vdi-file-size
+               "How to compact VirtualBox's VDI file size?"
+
+[mk-ext4-sparse]: http://unix.stackexchange.com/questions/11100/how-to-make-ext4-filesystem-sparse/11248#11248
+                  "How to make ext4 filesystem sparse?"

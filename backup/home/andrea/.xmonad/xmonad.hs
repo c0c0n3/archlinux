@@ -23,8 +23,9 @@ myGsconfig = (buildDefaultGSConfig colorizer)
     lightgrey = (0xEE,0xEE,0xEE) 
     orange    = (0xFC,0xA4,0x34)       
 
+    -- can use e.g. Monaco instead of Bahamas; just replace font name below
     fontXft = "xft\
-                \:Monaco\
+                \:Bahamas\
                 \:pixelsize=16\
                 \:weight=bold\
                 \:width=semicondensed\
@@ -58,7 +59,7 @@ main = do
               [ --("M-x w", spawn "chromium")       -- Super+x then w to launch the browser
                 ("M-x e", spawn "emacs")                                       -- Super+x then e to launch the editor
               --, ("M-x f", spawn "pcmanfm")        -- Super+x then f to launch the file manager
-              , ("M-a", goToSelected myGsconfig)                               -- Super+a for Grid Select
+              , ("M-<Tab>", goToSelected myGsconfig)                               -- Super+a for Grid Select
               , ("M-<Backspace> q", io (exitWith ExitSuccess))                 -- Super+Backspace then q to quit Xmonad
               , ("M-<Backspace> s", spawn "sudo /usr/bin/systemctl poweroff")  -- Super+Backspace then s to shutdown
               , ("M-<Backspace> r", spawn "sudo /usr/bin/systemctl reboot")    -- Super+Backspace then r to reboot

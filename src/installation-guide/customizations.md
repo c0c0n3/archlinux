@@ -187,7 +187,7 @@ up Mac OSX logout dialog.  Here's a quick reference to the key bindings that wer
    
         <left Cmd>+<Shift> <Return>  : terminal (Emacs ansi-term shell).
         <left Cmd>+x e               : editor (Emacs).
-        <left Cmd>+a                 : Grid Select.
+        <left Cmd>+<Tab>             : Grid Select with running apps.
         <left Cmd>+<Backspace> q     : quit Xmonad.
         <left Cmd>+<Backspace> s     : shutdown.
         <left Cmd>+<Backspace> r     : reboot.

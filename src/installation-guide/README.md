@@ -23,7 +23,7 @@ After completing the steps in Base Development Environment, do a final system ch
         grep WW /var/log/Xorg.0.log
         grep -i err /var/log/pacman.log
         pacman -Qdt
-        find / -name '.pac*'
+        find / -name '*.pac*'
 
 If all is OK, delete all cached packages before taking a final snapshot: 
 

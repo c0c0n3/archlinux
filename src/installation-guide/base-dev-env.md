@@ -51,7 +51,13 @@ Haskell
 
   * Web Apps: not installing globally; rather make Yesod sandbox...
 
-  * Testing: `cabal install SmallCheck HUnit hspec tasty`
+  * Testing:
+
+            cabal install SmallCheck HUnit hspec tasty \
+                          tasty-hunit tasty-golden tasty-smallcheck \
+                          tasty-quickcheck tasty-hspec tasty-program
+
+    Note: QuickCheck we installed with the Haskell platform packages.
 
 Version Control
 ---------------

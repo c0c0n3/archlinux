@@ -167,7 +167,9 @@ in `pacman.config`:
         SigLevel = Never
         Server = http://bohoomil.com/repo/$arch
 
-
+3.**Wallpaper**. Executing `feh` just before `xmonad` results (most of the times but not
+always) in the wallpaper not showing until an application is launched from within Xmonad.
+Executing `feh` as the very first statement in `.xinitrc` seems to work though. 
 
 
 Notes

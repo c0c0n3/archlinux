@@ -10,6 +10,7 @@ UUID=A989-8004      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,cod
 
 # VBox shared folders
 dropbox   /media/dropbox    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
+github   /media/github    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
 playground   /media/playground    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
 projects   /media/projects    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
 

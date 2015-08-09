@@ -55,7 +55,8 @@ Edit the virtual machine configuration in VBox.
 
 *Shared Folders* (No auto-mount)
 
-  + /Volumes/data/VMs/dropbox 
+  + /Volumes/data/VMs/dropbox
+  + /Volumes/data/github
   + /Volume/data/playground
   + /Volumes/data/projects
   

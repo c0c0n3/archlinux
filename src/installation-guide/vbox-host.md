@@ -42,6 +42,7 @@ mount points (directories) have to be created:
         sudo mkdir -p /media
         sudo chmod 755 /media        # only needed if /media already existed
         sudo mkdir /media/dropbox
+        sudo mkdir /media/github
         sudo mkdir /media/playground
         sudo mkdir /media/projects
 
@@ -50,12 +51,14 @@ Figure out your `uid`, `guid`, and `umask` by running `id` and `umask`; then rep
 added to `/etc/fstab`:
 
         dropbox   /media/dropbox    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
+        github   /media/github    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
         playground   /media/playground    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
         projects   /media/projects    vboxsf  uid=1000,gid=100,umask=0022,rw,comment=systemd.automount 0 0
 		
 Symlink them in your home:
 
         ln -s /media/dropbox ~/dropbox
+        ln -s /media/github ~/github
         ln -s /media/playground ~/playground
         ln -s /media/projects ~/projects	
 
@@ -67,7 +70,7 @@ have a group of `vboxsf`.  On creating a new file in Arch, permissions will be s
 `rwx` (i.e. exec!) for both user and group; however, they will be `rw` in the OS X host.
 Manual mounting, as done above, makes ownership `andrea / users` and ensures permissions
 are set correctly in the guest and reflected too in the host.
-More detail [here][vobxShare].
+More details [here][vobxShare].
 
 
 Known Issues

@@ -1,0 +1,171 @@
+===========================================================================================
+                                     ARCHLINUX
+	                SYSTEM INSTALLATION & CONFIGURATION
+===========================================================================================
+
+
+3. DESKTOP SUPPORT
+==================
+
+3.1. ALSA (http://wiki.archlinux.org/index.php/ALSA)
+---------
+
+ * pacman -S alsa-utils alsa-oss
+
+ * rc.conf -> DAEMONS=(.. @alsa   ..)
+
+ * /etc/modprobe.d/blacklist.conf -> install pcspkr /bin/false
+
+ * Unmute the channels and test: alsamixer
+   NB you have to set Front Sp and Surround close to 100 to hear anything.
+
+ * Restore ALSA Mixer settings at startup:
+   	   
+     alsactl -f /var/lib/alsa/asound.state store
+
+ NOTES
+ -----
+ 1. Blacklisting of snd-pcm-oss.  This driver interfers with Pulse Audio:
+
+    + https://wiki.archlinux.org/index.php/PulseAudio#ALSA
+
+ so you need to blacklist it if you install GNOME which pulls down Pulse Audio as a
+ dependency.  Just add the following line to /etc/modprobe.d/blacklist.conf:
+
+   install snd_pcm_oss /bin/false
+
+ For more info on blacklisting, see:
+   * https://wiki.archlinux.org/index.php/Blacklisting
+   * http://www.archlinux.org/news/changes-to-module-blacklisting/
+
+
+3.2. Xorg (https://wiki.archlinux.org/index.php/Xorg)
+---------
+ 
+ * pacman -S xorg xf86-input-evdev xf86-input-synaptics
+ 
+ * For config see /etc/X11/xorg.conf.d/*
+ 
+   NOTE
+   ----
+   1. xorg includes xorg-server which depends on xf86-input-evdev, so technically it could
+   be omitted from the above cmd line.
+
+   2. TODO: DPMS (LCD power saving).
+   I initially configured it as specified in https://wiki.archlinux.org/index.php/DPMS,
+   specifying the following options: StandbyTime, SuspendTime, OffTime.
+   However, the NVIDIA driver complained (/var/log/Xorg.log.0) that the options are 
+   "Unused"; so I moved them under ServerFlags --- which is where they belong according
+   to the Xorg manual.  Now, although NVIDIA doesn't complain anymore, it seems those
+   setting have no effect as 'xset -q' shows
+
+      DPMS (Energy Star):
+       Standby: 0    Suspend: 0    Off: 0   <-- i.e. specified values are ignored
+       DPMS is Enabled
+       Monitor is On
+
+   For the record, I also tried out the options detailed at
+      http://www.gentoo.org/doc/en/power-management-guide.xml
+   which had no effect either, except for the "blank time" option which causes NVIDIA to
+   output an error ("WAIT...") in /var/log/Xorg.log.0.  
+
+
+3.3. NVIDIA (https://wiki.archlinux.org/index.php/NVIDIA, 
+-----------  http://tutanhamon.com.ua/technovodstvo/NVIDIA-UNIX-driver/)
+
+ * pacman -S nvidia nvidia-utils
+ 
+ * For config see /etc/X11/xorg.conf.d/20-nvidia.conf and 00-layout.conf
+
+  NOTES
+  -----
+  1. Power-saving configured as follows:
+
+    PowerMizerEnable=0x1; PerfLevelSrc=0x2233; PowerMizerDefault=0x3
+
+  i.e. max power saving on battery, adaptive strategy on AC.
+
+  2. NVIDIA switches b/w battery and AC by communication w/ acpid --- installed earlier.
+
+  3. TODO: hotkey events.
+  The driver complains about not being able to find brightness and DOS files under 
+  /proc/acpi/video --- see /var/log/Xorg.log.0; this means the driver will not respond
+  to hotkeys events to adjust backlight brightness and display changes.
+  (NB I've checked which ACPI modules are available as described on the wiki:
+   http://wiki.archlinux.org/index.php/ACPI_modules; lsmod tells video is loaded!
+  However, note that mbp-nvidia-bl uses a different directory.)
+
+
+3.4. Touchpad (https://wiki.archlinux.org/index.php/Touchpad_Synaptics,
+-------------  https://wiki.archlinux.org/index.php/Xorg)
+ 
+  * pacman -S xf86-input-synaptics
+
+  * For config see /etc/X11/xorg.conf.d/10-synaptics.conf and 10-evdev.conf
+ 
+  * To disable tap & scroll while typing add the following to .xinitrc before launching
+    the VM (requires SHMConfig enabled in 10-synaptics.conf)
+
+      syndaemon -t -k -i 2 -d &
+     
+    If using GNOME, the above should be added instead to the Startup Applications
+    (System -> Preferences)
+
+    NOTE
+    ----
+    Enabling the following options causes the touchpad to become irresponsive: 
+    "VertEdgeScroll" and "HorizEdgeScroll"
+
+
+3.5. Keyboard Hotkeys
+---------------------
+GNOME recognises all the keys I care about (LCD/keyboard backlight, volume, eject) except
+for the keyboard backlight.  All those keys can easily be set up in Xmonad too, so there's
+no need to use any of the following:
+
+  * ACPI hotkeys (https://wiki.archlinux.org/index.php/ACPI_hotkeys)
+    This would have been easy, but acpi_listen doesn't detect any of the above keys.
+
+  * Xbindkeys (https://wiki.archlinux.org/index.php/Xbindkeys)  
+    This seems fairly easy too, but depends on Xorg so I won't work from a console (I'd
+    guess).  Also when I tried to catch key bindings under GNOME (xbindkeys -k), nothing
+    would be detected because GNOME was already consuming that event --- again I suppose;
+    in fact, after killing gnome-power-manager, the key binding would show up.
+
+  * Keytouch (https://wiki.archlinux.org/index.php/Keytouch)
+    I haven't actually tried this, but it seems rather complex.
+ 
+  * pommed
+    Although recommended in the MacBook install guide, it seems to cause the laptop to
+    overheat: https://bbs.archlinux.org/viewtopic.php?id=97233
+
+For more info about hotkeys, see:
+
+  * http://en.gentoo-wiki.com/wiki/Multimedia_Keys
+  * https://wiki.archlinux.org/index.php/Extra_Keyboard_Keys
+
+
+3.6. Fonts (https://wiki.archlinux.org/index.php/Font_Configuration,
+----------  http://www.infinality.net/blog/?p=67)
+ 
+ * pacman -S ttf-bitstream-vera ttf-dejavu ttf-ms-fonts
+   pacman -S monaco-linux-font ttf-gentium ttf-isabella
+
+ * Copy Infinity /etc/fonts/local.conf
+
+ * Disable ~/.fonts.conf:
+   + remove everything inside <fontconfig>[REMOVE ME]</fontconfig> tags
+   + sudo chattr +i /home/YOUR-USERNAME/.fonts.conf
+     (this way GNOME won't be able to write to the file, which would override our settings
+      in /etc/fonts/local.conf)
+ 
+ * Make sure cairo and libxft are installed: pacman -Q | egrep '^(cairo |libxft )'
+
+ * Put the following in ~/.Xresources:
+       Xft.autohint: 0
+       Xft.lcdfilter:  lcddefault
+       Xft.hintstyle:  hintfull
+       Xft.hinting: 1
+       Xft.antialias: 1
+       Xft.dpi: 96
+       Xft.rgba: rgb

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Numatytoji perduodamo tinklo srauto grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Numatytoji gaunamo tinklo srauto grafiko spalva ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Numatytoji mainų srities grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Numatytoji atminties grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Numatytoji cpu grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Numatytoji cpu grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Numatytoji cpu grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Numatytoji cpu grafiko spalva">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Išsaugo dabar žiūrimą kortelę">
+						<longdesc>0 - Sistemos informacija, 1 - procesų sąrašas, 2 - resursai, 3 - diskų sąrašas</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Nurodo rodomus procesus. 0 – visus, 1 – naudotojo, 2 – aktyvius">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Laikas milisekundėmis tarp įrenginių sąrašo atnaujinimų">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Ar informacija apie visas failų sistemas turėtų būti rodoma">
+						<longdesc>Ar informacija apie visas failų sistemas turėtų būti rodoma (įskaitant tokių tipų kaip „autofs“ ir „procfs“). Tai naudinga norint gauti šiuo metu prijungtų failų sistemų sąrašą.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Laikas milisekundėmis tarp grafikų atnaujinimų">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Laikas milisekundėmis tarp procesų vaizdo atnaujinimų">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="„Žudant“ procesus rodyti perspėjimo dialogą">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Įjungti/išjungti tolygų atnaujinimą">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU procentų Solaris veiksena">
+						<longdesc>Jeigu TEIGIAMA, system-monitor veikia „Solaris veiksenoje“, kur užduoties cpu naudojimas yra padalintas iš viso CPU skaičiaus. Priešingu atveju ji veikia „Irix veiksenoje“.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Rodyti proceso priklausomybes medžio forma">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Pagrindinio lango aukštis">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Pagrindinio lango plotis">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Procesų rodinio rikiavimo tvarka">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Procesų rodinio rikiavimo stulpelis">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Diskų rodinio stulpelių tvarka">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Procesų rodinio rikiavimo tvarka">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Procesų rodinio rikiavimo stulpelis">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Rodyti proceso „Laukimo kanalo“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Proceso „Laukimo kanalas“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Rodyti proceso „apskaičiuotos atminties naudojimo“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Proceso „apskaičiuotos atminties naudojimo“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Rodyti proceso „parametrų“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Proceso „parametrų“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Rodyti proceso „SELinux saugumo konteksto“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Proceso „SELinux saugumo konteksto“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Rodyti proceso „PID“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Proceso „PID“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Rodyti proceso „prioriteto“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Proceso „prioriteto“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Rodyti proceso „paleidimo laiko“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Proceso „paleidimo laiko“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Rodyti proceso „CPU laiko“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Proceso „CPU laiko“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Rodyti proceso „CPU %“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Proceso „CPU %“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Rodyti proceso „X serverio atminties“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Proceso „X serverio atminties“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Rodyti proceso „bendros atminties“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Proceso „bendros atminties“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Rodyti proceso „rašomos atminties“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Proceso „rašomos atminties“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Rodyti proceso „rezidentinės atminties“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Proceso „rezidentinės atminties“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Rodyti proceso „virtualios atminties“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Proceso „virtualios atminties“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Rodyti proceso „būsenos“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Proceso „būsenos“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Rodyti proceso „savininko“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Proceso „savininko“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Rodyti proceso „pavadinimo“ stulpelį paleidus programą">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Proceso „pavadinimo“ stulpelio plotis">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Procesų rodinio rikiavimo tvarka">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Procesų rodinio stulpelių tvarka">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Procesų rodinio rikiavimo stulpelis">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

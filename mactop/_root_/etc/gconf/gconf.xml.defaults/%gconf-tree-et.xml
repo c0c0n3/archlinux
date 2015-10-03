@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Võrgu väljuva liikluse vaikimisi värvus graafikus">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Võrgu siseneva liikluse vaikimisi värvus graafikus">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Graafiku saalejoone vaikimisi värv">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Graafiku mälujoone vaikimisi värv">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Graafiku protsessorijoone vaikimisi värv">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Graafiku protsessorijoone vaikimisi värv">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Graafiku protsessorijoone vaikimisi värv">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Graafiku protsessorijoone vaikimisi värv">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Hetkel kuvatava kaardi salvestamine">
+						<longdesc>0 süsteemse teabe jaoks, 1 protsesside loetelu jaoks, 2 ressurside jaoks ja 3 ketaste loetelu jaoks</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Määrab milliseid protsesse vaikimisi kuvatakse. 0 - kõik, 1 - kasutaja omad ja 2 - kõik aktiivsed">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Seadmete loetelu värskendamise sagedus millisekundites">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Kas näidata teavet kõikide failisüsteemide kohta ">
+						<longdesc>Kas näidata kõikide failisüsteemide (nende hulgas ka &apos;autofs&apos; ja &apos;procfs&apos;) andmeid. See on kasulik kõigi ühendatud failisüsteemide loetelu saamiseks.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Graafikute värskendamise sagedus millisekundites">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Protsessivaate värskendamise sagedus millisekundites">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Protsesside kõrvaldamisel kuvada hoiatusdialooge">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Luba/Keela sujuv värskendus">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solarise protsessorikasutuse režiim">
+						<longdesc>Kui märgitud, siis süsteemijälgija tegutseb &quot;Solarise režiimis&quot;, kus protsessi protsessorikasutus on jagatuid protsessorite koguarvuga. Vastasel juhul tegutsetakse &quot;Irixi režiimis&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Protsessi sõltuvuste näitamine puuvaates">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Peaakna kõrgus">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Peaakna laius">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Protsessivaate sortimisjärjestus">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Protsessivaate sortimistulp">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Kettavaate tulpade järjestus">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Protsessivaate sortimisjärjestus">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Protsessivaate sortimistulp">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli ootekanali veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Protsessi ootekanali nimeveeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli hinnangulise mälukasutuse veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Protsessi hinnangulise mälukasutuse veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli argumentide veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Protsessi argumentide veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli SELinux-i turvakonteksti veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Protsessi &apos;SELinux-i turvakontekst&apos; veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli PID-veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Protsessi PID-veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli prioriteedi veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Protsessi prioriteedi veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli alustamise aja veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Protsessi alustamisaja veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli CPU aja veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Protsessi &apos;CPU aeg&apos; veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli &apos;CPU %&apos; veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Protsessi &apos;CPU %&apos; veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli X-serveri mälu veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Protsessi &apos;X-serveri mälu&apos; veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli jagatud mälu veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Protsessi jagatud mälu veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli kirjutatava mälu veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Protsessi kirjutatava mälu veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli residentse mälu veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Protsessi residentse mälu veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli virtuaalmälu veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Protsessi virtuaalmälu veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli olekuveergu">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Protsessi olekuveeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli omaniku veergu">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Protsessi omaniku veeru laius">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Käivitamisel näidatakse protsessitabeli nimeveergu">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Protsessi nimeveeru laius">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Protsessivaate sortimisjärjestus">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Protsessivaate tulpade järjestus">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Protsessivaate sortimistulp">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

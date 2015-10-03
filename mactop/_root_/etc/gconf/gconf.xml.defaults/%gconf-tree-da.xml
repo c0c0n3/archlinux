@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Standard-farve for udgående trafik på netværksgraf">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Standard-farve for indkommende trafik på netværksgraf">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Standard-farve for swapgraf">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Standard-farve for hukommelsesgraf">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Standard-farve for CPU-graf">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Standard-farve for CPU-graf">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Standard-farve for CPU-graf">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Standard-farve for CPU-graf">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Gemmer det aktuelt viste faneblad">
+						<longdesc>0 for systeminformation, 1 for procesliste, 2 for ressourcer og 3 for diskliste</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Afgør hvilke processer der vises som standard, 0 er alle, 1 er bruger og 2 er aktive">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Tid i millisekunder mellem opdateringer af listen med enheder">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Om information om alle filsystemer skal vises">
+						<longdesc>Om information om alle filsystemer skal vises (dette inkluderer filsystemer som &quot;autofs&quot; og &quot;procfs&quot;). Dette er nyttigt hvis der ønskes en liste over alle monterede filsystemer.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Tid i millisekunder mellem opdateringer af graferne">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Tid i millisekunder mellem opdateringer af proceslisten">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Vis advarselsvindue ved terminering af processer">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Aktivér/deaktivér blød opdatering">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris-tilstand for processorforbrug">
+						<longdesc>Hvis &quot;TRUE&quot;, kører systemovervågning i &quot;Solaris-tilstand&quot; hvor et jobs processorforbrug divideres med det totale antal processorer. Ellers køres i &quot;Irix-tilstand&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Vis procesafhængigheder som et træ">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Hovedvinduets højde">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Hovedvinduets bredde">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Proceslistens sorteringsrækkefølge">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Proceslistens sorteringskolonne">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Disklistens kolonne-sorteringsrækkefølge">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Proceslistens sorteringsrækkefølge">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Proceslistens sorteringskolonne">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Vis proceskolonnen &quot;Ventekanal&quot; ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Bredde af proceskolonnen &quot;Ventekanal&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Vis kolonnen estimeret hukommelsesforbrug ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Bredde af kolonnen estimeret procesvis hukommelsesforbrug">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Vis kolonnen procesargumenter ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Bredde af kolonnen procesargumenter">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Vis kolonnen procesvis SELinux-sikkerhedskontekst ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Bredde af kolonnen procesvis SELinux-sikkerhedskontekst">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Vis PID-kolonnen ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Bredde af PID-kolonnen">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Vis kolonnen procesprioritet ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Bredde af kolonnen procesprioritet">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Vis kolonnen procesopstarts-tidspunkt ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Bredde af kolonnen procesopstarts-tidspunkt">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Vis kolonnen procesvis CPU-tid ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Bredde af kolonnen procesvis CPU-tid">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Vis kolonnen procesvis CPU-belastningsprocent ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Bredde af kolonnen procesvis CPU-belastningsprocent">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Vis kolonnen procesvis X-serverhukommelse ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Bredde af kolonnen procesvis X-serverhukommelse">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Vis kolonnen delt proceshukommelse ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Bredde af kolonnen delt proceshukommelse">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Vis kolonnen skrivbar proceshukommelse ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Bredde af kolonnen skrivbar proceshukommelse">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Vis kolonnen resident proceshukommelse ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Bredde af kolonnen resident proceshukommelse">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Vis kolonnen virtuel proceshukommelse ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Bredde af kolonnen virtuel proceshukommelse">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Vis kolonnen processtatus ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Bredde af kolonnen processtatus">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Vis kolonnen procesejer ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Bredde af kolonnen procesejer">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Vis kolonnen procesnavn ved start">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Bredde af kolonnen procesnavn">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Proceslistens sorteringsrækkefølge">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Proceslistens kolonne-sorteringsrækkefølge">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Proceslistens sorteringskolonne">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

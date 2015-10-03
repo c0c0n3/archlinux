@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="ნაგულისხმევი ფერი ქსელის გამავალი ტრაფიკის გრაფიკისთვის">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="ნაგულისხმევი ფერი ქსელის შემავალი ტრაფიკის გრაფიკისთვის">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="გრაფიკის ნაგულისხმევი swap მეხსიერების ფონის ფერი">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="გრაფიკის ნაგულისხმევი მეხსიერების ფონის ფერი">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="გრაფიკის ნაგულისხმევი cpu-ს ფონის ფერი">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="გრაფიკის ნაგულისხმევი cpu-ს ფონის ფერი">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="გრაფიკის ნაგულისხმევი cpu-ს ფონის ფერი">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="გრაფიკის ნაგულისხმევი cpu-ს ფონის ფერი">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ინახავს მიმდინარე აქტიურ ჩანართს">
+						<longdesc>0 სისტემის ინფორმაციისთვის, 1 პროცესების სიისთვის, 2 რესურსებისთვის და 3 ტომთა სიისთვის</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="განსაზღვრავს თუ რომელი პროცესი აჩვენოს ნაგულისხმევად 0 - ყველა, 1 - მომხმარებელი, 2 - აქტიური">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="მოწყობილობათა სიის ჩვენების განახლება მილიწამებში">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="არის თუ არა საჭირო ფაილთა სისტემის შესახებ ინფორმაციის გამოჩენა">
+						<longdesc>ინფორმაციის ჩვენება ფაილთა სისტემების შესახებ (როგორც &apos;autofs&apos; და &apos;procfs&apos;). კარგი იქნება ყველა მონტაჟირებული ფაილ სისტემების ჩვენებაც.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="გრაფიკების განახლების დროის მილიწამებში ჩვენება">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="პროცესების ხედის განახლების დრო მილიწამებში">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="პროცესების მოკვლისას გაფრთხილების დიალოგის ჩვენება">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="პირდაპირი განახლების ჩართვა/გამორთვა">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris რეჟიმი CPU-ს პროცენტული გამოსახვისთვის">
+						<longdesc>If TRUE, system-monitor operates in &apos;Solaris mode&apos; where a task&apos;s cpu usage is divided by the total number of CPUs. Else it operates in &apos;Irix mode&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="პროცესთა ერთმანეთთან დამოკიდებულება განშტოების სახით ჩვენება">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="მთავარი ფანჯრის სიმაღლე">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="მთავარი ფანჯრის სიგანე">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="პროცესთა სიის სორტირების მეთოდი">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="პროცესთა სიის სორტირების სვეტი">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="დისკების სვეტების მიმდევრობის ხედი">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="პროცესთა სიის სორტირების მეთოდი">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="პროცესთა სიის სორტირების სვეტი">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_15_visible">
+						<local_schema short_desc="გაშვებისას &apos;მეხსიერების მოსალოდნელი გამოყენების&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="პროცესის &apos;მეხსიერების მოსალოდნელი გამოყენების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;არგუმენტების&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="პროცესის &apos;არგუმენტების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;SELinux security context&apos;-ის სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="პროცესის &apos;SELinux security context&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="გაშვებისას პროცესის PID სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="პროცესის &apos;PID&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;პრიორიტეტის&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="პროცესის &apos;პრიორიტეტის&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;გაშვების დრო&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="პროცესის &apos;გაშვების დრო&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;CPU დრო&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="პროცესის &apos;CPU-ს დრო&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;CPU %&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="პროცესის &apos;CPU %&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;X სერვერის მეხსიერების&apos;-ის სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="პროცესის &apos;X სერვერის მეხსიერების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;გაზიარებული მეხსიერების&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="პროცესის &apos;გაზიარებული მეხსიერების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;ჩაწერადი მეხსიერების&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="პროცესის &apos;ჩაწერადი მეხსიერების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;ძირითადი მეხსიერების&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="პროცესის &apos;ძირითადი მეხსიერების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;ვირტუალური მეხსიერების&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="პროცესის &apos;ვირტუალური მეხსიერების&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;სტატუსის&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="პროცესის &apos;სტატუსის&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;მფლობელის&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="პროცესის &apos;მფლობელის&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="გაშვებისას პროცესის &apos;სახელის&apos; სვეტის ჩვენება">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="პროცესის &apos;სახელის&apos; სვეტის სიგანე">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="პროცესთა სიის სორტირების მეთოდი">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="პროცესთა სვეტების თანმიმდევრობა">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="პროცესთა სიის სორტირების სვეტი">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

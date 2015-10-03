@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="ཚད་ཁྲམ་ ཕྱིར་བསྐྱོད་ ཡོངས་འབྲེལ་ འགྲུལ་ལམ་ ཚོས་གཞི་ སྔོན་སྒྲིག་ ">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="ཚད་ཁྲམ་ ནང་སྦྱོར་ ཡོངས་འབྲེལ་ འགྲུལ་ལམ་ སྔོན་སྒྲིག་ ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཚད་ཁྲམ་གྱི་ བརྗེ་སོར་ཚོས་གཞི།">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཚད་ཁྲམ་གྱི་ ཨེམ་ཨི་ཨེམ་ཚོས་གཞི།">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཚད་ཁྲམ་གྱི་ ལས་སྦྱོར་ལྟེ་བའི་༼སི་པི་ཡི༽ཚོས་གཞི།">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཚད་ཁྲམ་གྱི་ ལས་སྦྱོར་ལྟེ་བའི་༼སི་པི་ཡི༽ཚོས་གཞི།">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཚད་ཁྲམ་གྱི་ ལས་སྦྱོར་ལྟེ་བའི་༼སི་པི་ཡི༽ཚོས་གཞི།">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཚད་ཁྲམ་གྱི་ ལས་སྦྱོར་ལྟེ་བའི་༼སི་པི་ཡི༽ཚོས་གཞི།">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ད་ལྟོ་མཐོང་མི་མཆོང་ལྡེ་དེ་སྲུངམ་ཨིན།">
+						<longdesc>རིམ་ལུགས་བརྡ་དོན་འདི་གི་དོན་ལུ་ ༠  ལས་སྦྱོར་ཐོ་ཡིག་འདི་གི་དོན་ལུ་ ༡   ཐོན་ཁུངས་འདི་གི་དོན་ལུ་ ༢   དང་ ཌིཀསི་ཐོ་ཡིག་འདི་གི་དོན་ལུ་ ༣</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="སྔོན་སྒྲིག་ཐོག་ལུ་སྟོན་ནིའི་ ལས་སྦྱོར་ཚུ་ ངེས་འཛིན་འབདཝ་ཨིན། ༠ འདི་ཆ་མཉམ་དང་ ༡ འདི་ལག་ལེན་པ། ༢ ཤུགས་ལྡན་ཨིན།">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ཐབས་འཕྲུལ་ཚུ་གི་ཐོ་ཡིག་ཚུ་ དུས་མཐུན་བཟོ་བའི་བར་ནའི་དུས་ཚོད་ མི་ལི་སྐར་ཆའི་ནང་།">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="ཡིག་སྣོད་རིམ་ལུགས་ ཆ་མཉམ་གྱི་སྐོར་ལས་ བརྡ་དོན་བཀྲམ་སྟོན་འབད་ནི་ཨིན་ན་མེན།">
+						<longdesc>&apos;autofs&apos; དང་ &apos;procfs&apos; ཚུ་བརྩིས་པའི་ ཡིག་སྣོད་རིམ་ལུགས་ ཆ་མཉམ་གྱི་སྐོར་ལས་ བརྡ་དོན་བཀྲམ་སྟོན་འབད་ནི་ཨིན་ན་མེན།ད་ལྟོ་སྦྱར་བརྩེགས་འབད་དེ་ཡོད་མི་ ཡིག་སྣོད་རིམ་ལུགས་ ཆ་མཉམ་གྱི་ ཐོ་ཡིག་ཅིག་ལེན་པ་ཅིག་ ཕན་ཐོགས་འོང་།</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ཚད་ཁྲམ་ཚུ་ དུས་མཐུན་བཟོ་བའི་བར་ནའི་དུས་ཚོད་ མི་ལི་སྐར་ཆའི་ནང་།">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="ལས་སྦྱོར་མཐོང་སྣང་ དུས་མཐུན་བཟོ་བའི་བར་ནའི་དུས་ཚོད་ མི་ལི་སྐར་ཆའི་ནང་།">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="ལས་སྦྱོར་ཚུ་གསད་པའི་སྐབས་ ཉེན་བརྡའི་ཌའི་ལོག་སྟོན།">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="ཧུམ་ཁྱུག་ཡང་སེལ་ ལྕོགས་ཅན་/ལྕོགས་མིན་བཟོ།">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="སི་པི་ཡུ་ བརྒྱ་ཆ་གི་དོན་ལུ་ སོ་ལ་རིསི་ ཐབས་ལམ་ ">
+						<longdesc>བདེན་པ་ཨིན་པ་ཅིན་ རིམ་ལུགས་ ལྟ་རྟོག་པ་དེ་ ལས་ཀ་ཅིག་གི་ སི་པི་ཡུ་ བདེ་སྤྱོད་དེ་ སི་པི་ཡུ་ བསྡོམས་གིས་ བགོ་ཡོད་པའི་ སོ་ལ་རིསི་ ཐབས་ལམ་ནང་ བཀོལ་སྤྱོད་འབདཝ་ཨིན། དེ་མིན་  &apos;Irix ཐམས་ལམ་&apos; ནང་བཀོལ་སྤྱོད་འབདཝ་ཨིན། </longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="ལས་སྦྱོར་རྟེན་འབྲེལ་ཚུ་ རྩ་འབྲེལ་གྱི་རྣམ་པ་ནང་སྟོན།">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="སྒོ་སྒྲིག་གཙོ་བོའི་མཐོ་ཚད།">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="སྒོ་སྒྲིག་གཙོ་བོའི་རྒྱ་ཚད།">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="མཐོང་སྣང་དབྱེ་སེལ་གོ་རིམ་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="མཐོང་སྣང་དབྱེ་སེལ་ཀེར་ཐིག་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ཌིཀསི་མཐོང་སྣང་གི་ཀེར་ཐིག་གི་གོ་རིམ།">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="མཐོང་སྣང་དབྱེ་སེལ་གོ་རིམ་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="མཐོང་སྣང་དབྱེ་སེལ་ཀེར་ཐིག་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_15_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ ཕོག་ཚོད་ཅན་གྱི་དྲན་ཚད་ལག་ལེན་གྱི་ ཀེར་ཐིག་ ལས་སྦྱོར་སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="ལས་སྦྱོར་ ཕོག་ཚོད་ དྲན་ཚད་ལག་ལེན་ ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ སྒྲུབ་རྟགས་ཀེར་ཐིག་ ལས་སྦྱོར་  སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="ལས་སྦྱོར་ སྒྲུབ་རྟགས་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ལུ་  ཨེསི་ཨི་ལི་ནགསི་སྲུང་སྐྱོབ་སྐབས་དོན་གྱི་ ཀེར་ཐིག་གི་ ལས་སྦྱོར་སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="ལས་སྦྱོར་ ཨེསི་ཨི་ལི་ནགསི་སྲུང་སྐྱོབ་སྐབས་དོན་ ཀེར་ཐིག་གི་རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ པིཨའི་ཌི་ཀེར་ཐིག་གི་ ལས་སྦྱོར་སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="ལས་སྦྱོར་ པིཨའི་ཌི་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་  ན་ཡིསི་གི་ཀེར་ཐིག་ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="ལས་སྦྱོར་ ན་ཡིསི་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ འགོ་བཙུགས་དུས་ཚོད་ཀྱི་ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="ལས་སྦྱོར་ འགོ་བཙུགས་དུས་ཚོད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ སི་པི་ཡུ་ དུས་ཚོད་ཀེར་ཐིག་གི་ ལས་སྦྱོར་སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="ལས་སྦྱོར་ སི་པི་ཡུ་ དུས་ཚོད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ སི་པི་ཡུ་་% གི་ཀེར་ཐིག་ ལས་སྦྱོར་སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="ལས་སྦྱོར་ སི་པི་ཡུ་ % ཀེར་ཐིག་གི་རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ ཨེགསི་སར་བར་དྲན་ཚད་ཀྱི་ ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན་">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="ལས་སྦྱོར་ ཨེགསི་སར་བར་ དྲན་ཚད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ རུབ་སྤྱོད་དྲན་ཚད་ཀྱི་ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="ལས་སྦྱོར་ རུབ་སྤྱོད་དྲན་ཚད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་འབྲི་བཏུབ་པའི་དྲན་ཚད་ཀྱི་ ཀེར་ཐིག་ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="ལས་སྦྱོར་ འབྲི་བཏུབ་པའི་དྲན་ཚད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ གནས་སྡོད་པའི་ དྲན་ཚད་ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="ལས་སྦྱོར་ གནས་སྡོད་ དྲན་ཚད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་ བར་ཅུ་ཡལ་དྲན་ཚད་ཀྱི་ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="ལས་སྦྱོར་ བར་ཅུ་ཡལ་དྲན་ཚད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་་གནས་ཚད་ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན།">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="ལས་སྦྱོར་ གནས་ཚད་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་  བདག་པོའི་ཀེར་ཐིག་ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="ལས་སྦྱོར་ བདག་པོའི་ཀེར་ཐིག་གི་ རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="འགོ་བཙུགས་སྐབས་  མིང་གི་ཀེར་ཐིག་ ལས་སྦྱོར་ སྟོན་ ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="ལས་སྦྱོར་ མིང་ཀེར་ཐིག་གི་རྒྱ་ཚད་">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="མཐོང་སྣང་དབྱེ་སེལ་གོ་རིམ་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="མཐོང་སྣང་ཀེར་ཐིག་གི་གོ་རིམ་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="མཐོང་སྣང་དབྱེ་སེལ་ཀེར་ཐིག་ ལས་སྦྱོར་འབད།">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

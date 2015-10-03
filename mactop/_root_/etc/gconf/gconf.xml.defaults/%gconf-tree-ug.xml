@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Default graph outgoing network traffic color">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Default graph incoming network traffic color">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="گرافىكتىكى ۋاقىتلىق ساقلىغۇچنىڭ ئەسلى رەڭگى">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="گرافىكتىكى ئىچكى ساقلىغۇچنىڭ ئەسلى رەڭگى">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="نىڭ ئەسلى رەڭگى CPU گرافىكتىكى">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="نىڭ ئەسلى رەڭگى CPU گرافىكتىكى">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="نىڭ ئەسلى رەڭگى CPU گرافىكتىكى">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="نىڭ ئەسلى رەڭگى CPU گرافىكتىكى">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="نۆۋەتتە كۆرۈۋاتقان جەدۋەلنى ساقلاش">
+						<longdesc>0 for the System Info, 1 for the processes list, 2 for the resources and 3 for the disks list</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Determines which processes to show by default. 0 is All, 1 is user, and 2 is active">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Time in milliseconds between updates of the devices list">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Whether information about all filesystems should be displayed">
+						<longdesc>Whether to display information about all filesystems (including types like &apos;autofs&apos; and &apos;procfs&apos;). Useful for getting a list of all currently mounted filesystems.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Time in milliseconds between updates of the graphs">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Time in milliseconds between updates of the process view">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Show warning dialog when killing processes">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Enable/Disable smooth refresh">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris mode for CPU percentage">
+						<longdesc>If TRUE, system-monitor operates in &apos;Solaris mode&apos; where a task&apos;s cpu usage is divided by the total number of CPUs. Else it operates in &apos;Irix mode&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Show process dependencies in tree form">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ئاساسى كۆزنەكنىڭ ئېگىزلىكى">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="ئاساسى كۆزنەكنىڭ كەڭلىكى">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Process view sort order">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Process view sort column">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Disk view columns order">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Process view sort order">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Process view sort column">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Show process &apos;Waiting Channel&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Width of process &apos;Waiting Channel&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Show process &apos;estimated memory usage&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Width of process &apos;estimated memory usage&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Show process &apos;arguments&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Width of process &apos;arguments&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Show process &apos;SELinux security context&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Width of process &apos;SELinux security context&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Show process &apos;PID&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Width of process &apos;PID&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Show process &apos;nice&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Width of process &apos;nice&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Show process &apos;start time&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Width of process &apos;start time&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Show process &apos;CPU time&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Width of process &apos;CPU time&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Show process &apos;CPU %&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Width of process &apos;CPU %&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Show process &apos;X server memory&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Width of process &apos;X server memory&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Show process &apos;shared memory&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Width of process &apos;shared memory&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Show process &apos;writable memory&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Width of process &apos;writable memory&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Show process &apos;resident memory&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Width of process &apos;resident memory&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Show process &apos;virtual memory&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Width of process &apos;virtual memory&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Show process &apos;status&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Width of process &apos;status&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Show process &apos;owner&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Width of process &apos;owner&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Show process &apos;name&apos; column on startup">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Width of process &apos;name&apos; column">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Process view sort order">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Process view columns order">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Process view sort column">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,8 @@
+# 
+# Dispatch 'power button' events.
+# On this machine, when the power button is pressed, acpi_listen shows:
+#
+#   button/power PWRF 00000080 00000001
+#
+event=button/power PWRF .*
+action=/etc/acpi/actions/power-btn.sh %e

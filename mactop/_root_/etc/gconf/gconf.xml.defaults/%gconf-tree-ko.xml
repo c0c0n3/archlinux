@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="기본 그래프 출력 네트워크 색">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="기본 그래프 입력 네트워크 색">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="기본 그래프 스왑 색">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="기본 그래프 메모리 색">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="기본 그래프 CPU 색">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="기본 그래프 CPU 색">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="기본 그래프 CPU 색">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="기본 그래프 CPU 색">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="현재 표시하는 탭을 저장합니다">
+						<longdesc>시스템정보는 0, 프로세스 목록은 1, 리소스는 2, 디스크 목록은 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="어떤 프로세스를 볼 지 결정합니다. 0은 전부, 1은 사용자, 2는 활성 프로세스">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="장치 목록 업데이트 간격 (천분의 일초 단위)">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="모든 파일 시스템에 대한 정보를 표시할 지 여부">
+						<longdesc>모든 파일 시스템에 대한 정보를 표시할 지 여부(&apos;autofs&apos;와 &apos;procfs&apos;같은 파일 시스템 형식을 포함). 현재 마운트된 파일 시스템의 모든 목록을 얻을 때 유용합니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="그래프 업데이트 간격 (천분의 일초 단위)">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="프로세스 보기 업데이트 간격 (천분의 일초 단위)">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="프로세스를 죽일 때 경고 대화상자 보기">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="부드럽게 재생하기 켜기/끄기">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU사용량을 솔라리스 모드로 보기">
+						<longdesc>참이면 시스템 감시는 &apos;솔라리스 모드&apos;로 동작하며, 작업의 CPU사용량은 CPU의 전체 개수로 나눠집니다. 거짓이면 &apos;아이릭스 모드&apos;로 동작합니다.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="프로세스 의존성 보기">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="기본 창 높이">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="기본 창 너비">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="프로세스 보기 정렬 순서">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="프로세스 보기 정렬 열">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="디스크 보기 컬럼 순서">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="프로세스 보기 정렬 순서">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="프로세스 보기 정렬 열">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="프로세스 &apos;대기 채널&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="프로세스 &apos;대기 채널&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="프로세스 &apos;예상 메모리 사용량&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="프로세스 &apos;예상 메모리&apos; 사용량 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="프로세스 &apos;인자&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="프로세스 &apos;인자&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="프로세스 &apos;SELinux 보안 컨텍스트&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="프로세스 &apos;SELinux 보안 컨텍스트&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="프로세스 &apos;PID&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="프로세스 &apos;PID 열&apos; 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="프로세스 &apos;우선 순위&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="프로세스 &apos;우선 순위&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="프로세스 &apos;시작 시각&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="프로세스 &apos;시작 시각&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="프로세스 &apos;CPU 시간&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="프로세스 &apos;CPU 시간&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="프로세스 &apos;CPU %&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="프로세스 &apos;CPU %&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="프로세스 &apos;X 서버 메모리&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="프로세스 &apos;X 서버 메모리&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="프로세스 &apos;공유 메모리&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="프로세스 &apos;공유 메모리&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="프로세스 &apos;쓰기 가능 메모리&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="프로세스 &apos;쓰기 가능 메모리&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="프로세스 &apos;상주 메모리&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="프로세스 &apos;상주 메모리&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="프로세스 &apos;가상 메모리&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="프로세스 &apos;가상 메모리&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="프로세스 &apos;상태&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="프로세스 &apos;상태&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="프로세스 &apos;소유자&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="프로세스 &apos;소유자&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="프로세스 &apos;이름&apos; 열을 시작할 때 표시합니다">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="프로세스 &apos;이름&apos; 열 너비">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="프로세스 보기 정렬 순서">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="프로세스 보기 열 순서">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="프로세스 보기 정렬 열">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,1 @@
+cmd_/home/andrea/aur/mbp-nvidia-bl/mbp-nvidia-bl/src/mbp_nvidia_bl.ko := ld -r -m elf_x86_64 -T /usr/src/linux-2.6.39-ARCH/scripts/module-common.lds --build-id  -o /home/andrea/aur/mbp-nvidia-bl/mbp-nvidia-bl/src/mbp_nvidia_bl.ko /home/andrea/aur/mbp-nvidia-bl/mbp-nvidia-bl/src/mbp_nvidia_bl.o /home/andrea/aur/mbp-nvidia-bl/mbp-nvidia-bl/src/mbp_nvidia_bl.mod.o

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="A hálózati kimenő forgalom alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="A hálózati bejövő forgalom alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="A swap alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="A memória alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="A cpu alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="A cpu alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="A cpu alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="A cpu alapértelmezett színe a grafikonon">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Elmenti a jelenleg megjelenített lapot">
+						<longdesc>0 - rendszerinformációk, 1 - folyamatlista, 2 - erőforrások és 3 - lemezek listája</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Megadja, hogy alapértelmezésben mely folyamatok látszódjanak. Lehetséges értékek: 0 (Mind), 1 (Felhasználói) és 2 (Aktív).">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Az eszközlista frissítései közötti idő ezredmásodpercben">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="A fájlrendszer-információk megjelenjenek-e?">
+						<longdesc>Megjelenjenek-e az összes fájlrendszer információi (beleértve az „autofs”-hez és a „procfs”-hez hasonló típusokat is). Hasznos lehet az összes csatlakoztatott fájlrendszer kilistázásához.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Az grafikonok frissítései közötti idő ezredmásodpercben">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="A folyamatnézet frissítései közötti idő ezredmásodpercben">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Folyamatok kilövésénél figyelmeztető párbeszédablak megjelenítése">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Egyenletes frissítés engedélyezése/tiltása">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris mód a CPU százalékos arányhoz">
+						<longdesc>Ha ez be van állítva, akkor a rendszerfigyelő Solaris módban működik, ahol a feladat processzorhasználata el van osztva a processzorok teljes számával. Ellenkező esetben Irix módban működik.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Folyamat függőségeinek megjelenítése fanézetben">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Főablak magassága">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Főablak szélessége">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Folyamatlista-nézet rendezési iránya ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Folyamatlista-nézet rendezése ezen oszlop szerint">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Lemeznézet rendezési iránya">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Folyamatlista-nézet rendezési iránya ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Folyamatlista-nézet rendezése ezen oszlop szerint">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="A folyamat „Várakozási csatorna” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="A folyamat „Várakozási csatorna” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="A folyamat „Becsült memóriahasználat” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="A folyamat „Becsült memóriahasználat” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="A folyamat „Paraméterek” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="A folyamat „Paraméterek” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="A folyamat „SELinux biztonsági környezete” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="A folyamat „SELinux biztonsági környezete” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="A folyamat „Azonosító” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="A folyamat „Azonosító” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="A folyamat „Nice” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="A folyamat „Nice” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="A folyamat „Indulási idő” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="A folyamat „Indulási idő” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="A folyamat „CPU idő” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="A folyamat „CPU idő” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="A folyamat „CPU %” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="A folyamat „CPU %” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="A folyamat „X kiszolgáló memória” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="A folyamat „X kiszolgáló memória” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="A folyamat „Osztott memória” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="A folyamat „Osztott memória” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="A folyamat „Írható memória” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="A folyamat „Írható memória” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="A folyamat „Rezidens memória” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="A folyamat „Rezidens memória” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="A folyamat „Virtuális memória” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="A folyamat „Virtuális memória” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="A folyamat „Állapot” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="A folyamat „Állapot” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="A folyamat „Tulajdonos” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="A folyamat „Tulajdonos” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="A folyamat „Név” oszlopának mutatása indításkor">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="A folyamat „Név” oszlopának szélessége">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Folyamatlista-nézet rendezési iránya ">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Folyamatnézet rendezési iránya">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Folyamatlista-nézet rendezése ezen oszlop szerint">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

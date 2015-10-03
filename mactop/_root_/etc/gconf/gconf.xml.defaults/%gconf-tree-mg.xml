@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="swap_color">
+					<local_schema short_desc="Loko tsotran&apos;ny soritry ny swap">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Loko tsotran&apos;ny soritry ny mem ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Loko tsotran&apos;ny soritry ny cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Loko tsotran&apos;ny soritry ny cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Loko tsotran&apos;ny soritry ny cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Loko tsotran&apos;ny soritry ny cpu">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Mandraikitra ny vakizoro jerena izao">
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Mamaritra ny hoe asa inona no aseho ara-pitsipika. 0 raha izy rehetra, 1 raha ny mpampiasa, ary 2 raha ireo mandeha">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Fotoana (milisegaondra) manelanelana ny fanavaozana ny lisitry ny periferika">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Mamaritra ny hoe tokony na tsy tokony aseho ny laza mikasika ny rafi-drakitra rehetra">
+						<longdesc>Mamaritra ny fanehoana ny laza mikasika ny rafi-drakitra rehetra (anatin&apos;izany ireo karazana toy ny &apos;autofs&apos; sy &apos;procfs&apos;). Ilaina amin&apos;ny fahazoana ny lisitr&apos;ireo rafi-drakitra vao nakarina rehetra.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Fotoana (milisegaondra) manelanelana ny fanavaozana ny soritra">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Fotoana (milisegaondra) manelanelana ny fanavaozana ny sehon&apos;ilay asa">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Asehoy ny takila fampilazana rehefa mamono asa">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Alefaso/Atsaharo refreshing malefaka">
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Asehoy amin&apos;ny endri-kazo ny mpampiakin&apos;ilay asa">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Haavon&apos;ny fikandrana voalohany indrindra">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Indran&apos;ny fikadrana voalohany indrindra">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Filaharana amin&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Farian&apos;ny fanavahana amin&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Filaharan&apos;ny farian&apos;ny sehon&apos;ny kapila">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Filaharana amin&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Farian&apos;ny fanavahana amin&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="sort_order">
+						<local_schema short_desc="Filaharana amin&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Filaharan&apos;ny farian&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Farian&apos;ny fanavahana amin&apos;ny sehon&apos;ilay asa">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

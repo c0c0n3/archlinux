@@ -1,0 +1,173 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------------------
+#
+# media-automount: mount USB drives, CD/DVD, and SD cards.
+# 
+# This script works in conjunction with a UDEV rule which invokes it when add,
+# change, or remove events are detected.  The only argument to pass is the device
+# path, i.e. the value of the %N variable.
+#
+# NOTE
+# GNOME interaction.  If a GNOME session is active, then this script will do
+# nothing so as to not interfere with how GNOME wants to mount the device.
+#
+# -------------------------------------------------------------------------------
+
+
+#
+# Bail out if a DE session is running.  Let it decide how to mount stuff.
+# NB For now we only care about GNOME, but in principle we could add other DE's to the
+# below variable to make the script more generic.
+#
+DE_SESSIONS="gnome-session"
+(pidof $DE_SESSIONS > /dev/null) && exit 0
+
+
+#
+# Remove any *empty* directory under /media which is not dvd, fl, or cd.
+# (These are predefined dirs in Arch, so we don't touch them.)
+# Ignore non-empty directories.
+#
+clean_dirs()
+{
+    ls /media | egrep -v '^dvd|^fl|^cd' | \
+        /usr/bin/xargs -ix rmdir --ignore-fail-on-non-empty '/media/x'
+}
+
+#
+# Determine the path where to mount the filesystem.
+# We mount under /media and the directory name will be the media LABEL if one
+# exists otherwise the name of the partition node.
+#
+get_mountdir()
+{
+    if [ -z "$LABEL" ] ; then
+        LABEL=$kname
+    fi
+    mountdir="/media/$LABEL"
+}
+
+#
+# Get info about the partition into the environment.
+# Variables we're interested in are: LABEL, TYPE, and USAGE.
+#
+get_media_info()
+{
+    local vars=$(/sbin/blkid -p -o export $devpath)
+    [ $? -eq 0 -a -n "$vars" ] && export $vars
+}
+
+#
+# Get the user name/id and group name/id of the logged in user.
+# We're assuming this is a laptop and there will be just one user logged in at
+# any given time. 
+#
+get_user_info()
+{
+    user=$(who | head -n 1 | cut -d' ' -f1)
+    uid=$(grep $user /etc/passwd | cut -d: -f3)
+    gid=$(grep $user /etc/passwd | cut -d: -f4)
+    group=$(grep $gid /etc/group | cut -d: -f1)
+}
+
+#
+# Put all mount options into mountopt.
+#
+get_mountopt()
+{
+    #
+    # Filesystem-independent options.
+    # NB 'users' implies 'noexec', 'nosuid', and 'nodev' --- unless overridden by
+    # subsequent options.
+    #
+    mountopt="users,group"
+    
+    #
+    # For filesystems that suport users/groups, we use the user/group of the
+    # logged in user.
+    #
+    get_user_info
+
+    # 
+    # Filesystem-specific options.
+    #
+    case "$TYPE" in
+    fat|msdos)
+        mountopt="$mountopt,uid=$uid,gid=$gid,dmask=077,fmask=177,check=s,tz=UTC"
+        ;;
+    vfat)
+        mountopt="$mountopt,uid=$uid,gid=$gid,dmask=077,fmask=177,check=s,tz=UTC,utf8"
+        ;;
+    ntfs)
+        mountopt="$mountopt,uid=$uid,gid=$gid,dmask=077,fmask=177,utf8"
+        ;;
+    hfs)
+        mountopt="$mountopt,uid=$uid,gid=$gid,dir_umask=077,file_umask=177"
+        ;;
+    iso9660)
+        mountopt="$mountopt,uid=$uid,gid=$gid,utf8"
+        ;;
+    udf)
+        mountopt="$mountopt,uid=$uid,gid=$gid,iocharset=utf8,umask=0077"
+        ;;   
+    esac
+}
+
+mount_device()
+{ 
+    #
+    # Do not mount twice.  Perhaps another script or the DE has already mounted
+    # the partition (not necessarily under /media).
+    #
+    (egrep -q "^$devpath " /proc/mounts) && return 0
+    
+    #
+    # Bail out if the media partition doesn't have a filesystem on it or its 
+    # filesystem type could not be determined.  (This way mount will not have
+    # to guess the filesystem type, which is potentially dangerous --- see 
+    # man mount.)
+    #
+    get_media_info
+    [ "$USAGE" != "filesystem" -o z "$TYPE" ] && return 102    
+
+    get_mountdir
+    get_mountopt
+
+    mkdir -p "$mountdir"
+    chown $user:$group "$mountdir" 
+    mount -t $TYPE -o $mountopt $devpath "$mountdir"
+}
+
+
+#
+# Grab device path info.
+#
+devpath=$1
+kname=$(basename $1)
+
+#
+# Dispatch to the event handler.
+#
+case "$ACTION-$kname" in
+add-sd*|add-mm*)
+    mount_device
+    ;;
+change-sr*)
+    # The CD/DVD drive is permanently attached to the laptop, so we're not going
+    # to get any add/remove event when the a disc is inserted/ejected; instead
+    # we'll get a change event.  Of course, we'll have no way to tell whether
+    # the disc was inserted or ejected, so we both try to mount and then remove
+    # any empty dir.
+    mount_device
+    clean_dirs
+    ;;
+remove-*)
+    # Note that at this stage the basename of the devpath is not necessarily the
+    # same as when we added the device --- e.g. the path we got from udev could
+    # be something like '/dev/.tmp-block-8:16'.  However, this is fine as all
+    # we need to do at this stage is clean up any empty dir under /media.
+    clean_dirs
+    ;;
+esac
+

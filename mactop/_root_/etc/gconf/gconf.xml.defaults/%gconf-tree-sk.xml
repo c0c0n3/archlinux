@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Predvolená farba grafu odchádzajúcej sieťovej prevádzky">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Predvolená farba grafu prichádzajúcej sieťovej prevádzky">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Predvolená farba grafu odkladacieho priestoru">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Predvolená farba grafu pamäte">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Predvolená farba grafu procesora">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Predvolená farba grafu procesora">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Predvolená farba grafu procesora">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Predvolená farba grafu procesora">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Uloží aktuálne zobrazenú kartu">
+						<longdesc>0 pre informácie o systéme, 1 pre zoznam procesov, 2 pre zdroje a 3 pre zoznam diskov</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Určuje, ktoré procesy štandardne zobraziť. 0 pre všetky, 1 pre procesy používateľa a 2 pre aktívne">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Čas v milisekundách medzi aktualizáciami zoznamu zariadení">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Či majú byť zobrazené informácie o všetkých súborových systémoch">
+						<longdesc>Zobraziť informácie o všetkých súborových systémoch (vrátane typov ako &apos;autofs&apos; a &apos;procfs&apos;). Užitočné na získanie zoznamu všetkých momentálne pripojených súborových systémov.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Čas v milisekundách medzi aktualizáciami grafov">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Čas v milisekundách medzi aktualizáciami prehľadu procesov">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Zobraziť dialógové okno s upozornením pri zabíjaní procesov">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Povoliť/zakázať vyhladené obnovovanie">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Režim &quot;Solaris&quot; pre percentuálne využitie procesora">
+						<longdesc>Ak je TRUE, monitor systému pracuje v režime &quot;Solaris&quot;, kde je využite procesora pre každý proces rozdelené podľa celkového počtu procesorov, Inak štandardne pracuje v režime &quot;Irix&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Zobraziť závislosti procesov v tvare stromu">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Výška hlavného okna">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Šírka hlavného okna">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Poradie triedenia prehľadu procesov">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stĺpec triedenia prehľadu procesov">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Poradie stĺpcov prehľadu diskov">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Poradie triedenia prehľadu procesov">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stĺpec triedenia prehľadu procesov">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;čakací kanál&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Šírka stĺpca &apos;kanál čakania&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;odhadované využitie pamäte&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Šírka stĺpca &apos;predpokladané využite pamäte&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;parametre&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Šírka stĺpca &apos;parametre&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;kontext SELinux&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Šírka stĺpca &apos;kontext SELinux&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;PID&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Šírka stĺpca &apos;PID&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;nice&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Šírka stĺpca &apos;nice&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;čas štartu&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Šírka stĺpca &apos;čas štartu&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;čas procesora&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Šírka stĺpca &apos;čas procesora&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;procesor %&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Šírka stĺpca &apos;procesor %&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;pamäť X servera&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Šírka stĺpca &apos;pamäť X servera&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;zdieľaná pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Šírka stĺpca &apos;zdieľaná pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;zapisovateľná pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Šírka stĺpca &apos;zapisovateľná pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;rezidentná pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Šírka stĺpca &apos;rezidentná pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;virtuálna pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Šírka stĺpca &apos;virtuálna pamäť&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;stav&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Šírka stĺpca &apos;stav&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;vlastník&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Šírka stĺpca &apos;vlastník&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Zobraziť pri štarte stĺpec &apos;názov&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Šírka stĺpca &apos;názov&apos;">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Poradie triedenia prehľadu procesov">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Poradie stĺpcov prehľadu procesov">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stĺpec triedenia prehľadu procesov">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

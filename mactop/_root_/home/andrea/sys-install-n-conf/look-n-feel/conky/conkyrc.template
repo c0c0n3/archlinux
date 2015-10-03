@@ -1,0 +1,231 @@
+# ******************************************************************************
+# 				EXECUTION OPTIONS
+# ******************************************************************************
+
+# Fork to bg?
+background	yes
+
+# Total number of times for Conky to update before quitting. 
+# Zero makes Conky run forever.
+total_run_times 0
+
+# Update interval in seconds.
+update_interval	3
+
+# The number of samples to average for CPU monitoring.
+cpu_avg_samples	4
+
+# The number of samples to average for net data.
+net_avg_samples	4	
+
+# If true, cpu in top will show usage of one processor's power. 
+# If false, cpu in top will show the usage of all processors' power combined.
+top_cpu_separate	no
+
+# Substract (file system) buffers from used memory?
+no_buffers	no
+
+# Print text to stdout?
+out_to_console	no
+
+
+
+# ******************************************************************************
+# 				BUFFERS
+# ******************************************************************************
+
+# Use the Xdbe extension? (eliminates flicker) It is highly recommended to use 
+# own window with this one so double buffer won't be so big.
+double_buffer	yes
+
+# Size of the standard text buffer (default is 128 bytes). This buffer is used
+# for intermediary text, such as individual lines, output from $exec vars, and
+# various other variables. Increasing the size of this buffer can drastically 
+# reduce Conky's performance, but will allow for more text display per variable.
+# The size of this buffer cannot be smaller than the default value of 128 bytes.
+# text_buffer_size	128
+
+# Maximum size of user text buffer, i.e. layout below TEXT line in config file
+# (default is 16384 bytes).                
+# max_user_text	16384	
+
+
+# ******************************************************************************
+# 				WINDOW TYPE
+# ******************************************************************************
+
+# Create own window to draw?
+own_window	yes
+
+# If own_window is yes, you may specify type normal, desktop or override 
+# (default: normal). Desktop windows are special windows that have no window 
+# decorations; are always visible on your desktop; do not appear in your pager
+# or taskbar; and are sticky across all workspaces. Override windows are not
+# under the control of the window manager. Hints are ignored. This type of 
+# window can be useful for certain situations.
+own_window_type	normal
+
+# Boolean, set pseudo-transparency?
+own_window_transparent	yes
+
+# If own_window is yes, you may use these window manager hints to affect the 
+# way Conky displays. Notes: Use own_window_type desktop as another way to 
+# implement many of these hints implicitly. If you use own_window_type override,
+# window manager hints have no meaning and are ignored.
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager 	
+	
+# Manually set the WM_CLASS name. Defaults to "Conky".
+# own_window_class 	
+
+# If own_window_transparent no, set a specified background colour (defaults to
+# black). Takes either a hex value (#ffffff) or a valid RGB name (see 
+# /usr/lib/X11/rgb.txt).
+# own_window_colour 	
+
+# Manually set the window name. Defaults to "<hostname> - conky".
+# own_window_title
+
+
+
+# ******************************************************************************
+# 			WINDOW SIZE & POSITION
+# ******************************************************************************
+
+# Aligned position on screen, may be top_left, top_right, top_middle, 
+# bottom_left, bottom_right, bottom_middle, middle_left, middle_right, 
+# or none (also can be abreviated as tl, tr, tm, bl, br, bm, ml, mr).
+alignment	top_right	
+
+# Border width in pixels.
+border_width	1 	
+
+# Gap, in pixels, between right or left border of screen.
+gap_x		7	
+
+# Gap, in pixels, between top or bottom border of screen.
+gap_y		5
+
+# Maximum width of window.
+maximum_width	300
+
+# Minimum size of window.
+minimum_size	300,420	
+
+
+
+# ******************************************************************************
+# 				STYLE
+# ******************************************************************************
+
+# Draw borders around text?
+draw_borders	no 	
+
+# Draw borders around graphs? 
+draw_graph_borders no	
+
+# Draw outlines?
+draw_outline	no
+
+# Draw shades? 	
+draw_shades	no
+
+# Border stippling (dashing) in pixels
+stippled_borders 0 	
+
+# Adds spaces around certain objects to stop them from moving other things
+# around. Arguments are left, right, and none (default). Note that this only
+# helps if you are using a mono font, such as Bitstream Vera Sans Mono.
+# use_spacer
+
+
+# Use Xft (anti-aliased font and stuff).
+use_xft		yes
+
+# Alpha of Xft font. Must be a value at or between 1 and 0.
+xftalpha 	0.8
+
+# Xft font to use.
+xftfont 	Gentium:size=10
+
+# Boolean value, if true, text is rendered in upper case.
+uppercase	no
+
+
+# Shortens units to a single character (kiB->k, GiB->G, etc.). Default is off.
+# short_units 	
+
+# Pad percentages to this many decimals (0 = no padding).
+# pad_percents
+
+# Force UTF8? requires XFT.
+# override_utf8_locale
+
+# Maximum number of special things, e.g. fonts, offsets, aligns, etc. 
+# (default is 512)
+# max_specials
+
+
+# Default color and border color.
+default_color	B0B0B0
+
+# Default outline color.
+# default_outline_color 	
+
+# Default shading color and border's shading color.
+default_shade_color	050505	
+
+
+# Color variables for use inside TEXT segments (0 to 9).
+color0		FFFFFF		# values	
+color1		ff8c3b		# headers
+color2		80d924		# descriptions
+color3		FFFFFF		# bars
+
+
+# ******************************************************************************
+# 				CONTENT
+# ******************************************************************************
+
+# After this begins text to be formatted on screen.
+TEXT
+
+${color1}Date: ${color0}${time %A,%d %B}
+${color1}Time: ${color0}${time %k:%M:%S}${alignr}${color1}Uptime: ${color0}${uptime}
+${color3}${hr}
+${alignc}${color1}Processors & Memory
+${color2}CORES ${alignr}${color2}Tot: ${color0}${cpu cpu0}%
+${color2}+ 0: ${color0} ${cpu cpu1}%   ${alignr}${color3}${cpubar cpu1 5,210}
+${color2}+ 1: ${color0} ${cpu cpu2}%   ${alignr}${color3}${cpubar cpu2 5,210}
+${color2}+ 2: ${color0} ${cpu cpu3}%   ${alignr}${color3}${cpubar cpu3 5,210}
+${color2}+ 3: ${color0} ${cpu cpu4}%   ${alignr}${color3}${cpubar cpu4 5,210} 
+${color2}RAM: ${color0} ${memperc}% ${alignr}${mem}/${memmax}
+${color3}${membar}
+${color2}Swap: ${color0}${swapperc}% ${alignr}${swap}/${swapmax}
+${color3}${swapbar}
+${color2}Buffers: ${color0}${buffers} ${alignr}${color2}Cached: ${color0}${cached}
+${color3}${hr}
+${alignc}${color1}Disk
+${color2}Reads: ${color0}${diskio_read /dev/sda1} ${alignr}${color2}Writes: ${color0}${diskio_write /dev/sda1}
+${color3}${diskiograph_read /dev/sda1 24,90} ${alignr}${color3}${diskiograph_write /dev/sda1 24,90}
+${color3}${hr}
+${alignc}${color1}Network
+${color2}Down: ${color0}${downspeed eth0} k/s ${alignr}${color2}Up: ${color0}${upspeed eth0} k/s
+${color3}${downspeedgraph eth0 24,90} ${alignr}${color3}${upspeedgraph eth0 24,90}
+${color3}${hr}
+${alignc}${color1}Processses
+${color2}Running: ${color0}${running_processes} ${alignr}${color2}Total: ${color0}${processes}
+${color2}Load Average: ${color0}${loadavg 1}
+
+${color2}By CPU Usage:
+${color2}name ${alignr}pid    cpu%  mem%
+${color0}${top name 1} ${alignr}${top pid 1}   ${top cpu 1}    ${top mem 1}
+${color0}${top name 2} ${alignr}${top pid 2}   ${top cpu 2}    ${top mem 2}
+${color0}${top name 3} ${alignr}${top pid 3}   ${top cpu 3}    ${top mem 3}
+${color0}${top name 4} ${alignr}${top pid 4}   ${top cpu 4}    ${top mem 4}
+
+${color2}By Memory Usage:
+${color2}name ${alignr}pid    cpu%  mem%
+${color0}${top_mem name 1} ${alignr}${top_mem pid 1}   ${top_mem cpu 1}    ${top_mem mem 1}
+${color0}${top_mem name 2} ${alignr}${top_mem pid 2}   ${top_mem cpu 2}    ${top_mem mem 2}
+${color0}${top_mem name 3} ${alignr}${top_mem pid 3}   ${top_mem cpu 3}    ${top_mem mem 3}
+${color0}${top_mem name 4} ${alignr}${top_mem pid 4}   ${top_mem cpu 4}    ${top_mem mem 4}

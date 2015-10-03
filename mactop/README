@@ -1,0 +1,12 @@
+This is a snapshot (07 AUG 2012) of Arch Linux as it was installed on my MacBook Pro --- 
+17-inch, Mid 2010; Model Identifier: MacBookPro6,1.  
+(See: http://support.apple.com/kb/HT4132)
+
+NB I only have included what is needed to recreate a working system without my data.
+(i.e. I only included config files, AUR-built packages, and instructions; btw,
+I copied the whole /etc over as it was.)
+
+The _root_ directory represents the root (/) of the Arch system and the all the files
+below it have been kept in the same hierarchical position as they were on the original
+Arch system.
+ 

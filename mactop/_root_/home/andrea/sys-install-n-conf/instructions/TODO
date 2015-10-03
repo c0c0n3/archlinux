@@ -1,0 +1,25 @@
+BURG
+----
+This could potentially replace both rfetit and grub 1.
+it's based on grub 2 and has nice graphical themes, however it's still in AUR...
+
+FSTAB
+-----
+The new kernel supports tmpfs, see https://wiki.archlinux.org/index.php/Fstab#tmpfs.
+We already have a physical partition mounted on /tmp, so for now we won't use tmpfs;
+however, this could be something to consider in the future...
+
+TEXTLIVE
+--------
+Build files are broken---e.g. dvt-fp-learning/build.
+One problem is documented here:
+
+  * https://bugs.archlinux.org/task/17978
+  * http://tug.org/pipermail/tlbuild/2010q1/001307.html
+
+and can be solved by setting 'openout_any = a' globally in /etc/texmf/web2c/texmf.cnf.
+Is there a better option?
+Anyway, there were also other issues when building presentation-1 in dvt-fp-learning
+which I didn't have time to investigate.
+
+HOLD OFF until we upgrade to the new version of TexLive and then fix.

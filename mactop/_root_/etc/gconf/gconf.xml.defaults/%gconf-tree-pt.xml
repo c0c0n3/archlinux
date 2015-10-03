@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Cor por omissão do gráfico de saída de rede">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Cor por omissão do gráfico de entrada de rede">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Cor por omissão do gráfico de swap">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Cor por omissão do gráfico de memória">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Cor por omissão do gráfico de cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Cor por omissão do gráfico de cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Cor por omissão do gráfico de cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Cor por omissão do gráfico de cpu">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Grava o separador actualmente em visualização">
+						<longdesc>0 para a Informação de Sistema, 1 para a lista de processos, 2 para os recursos e 3 para a lista de discos</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Determina que processos apresentar por omissão. 0 significa Todos, 1 os do utilizador e 2 os activos">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Duração em milisegundos entre actualizações da lista de dispositivos">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Se deverá ser ou não apresentada informação sobre todos os sistemas de ficheiros">
+						<longdesc>Se apresentar ou não informação sobre todos os sistemas de ficheiros (incluindo tipos tais como &apos;autofs&apos; e &apos;procfs&apos;). Útil para obter uma lista de todos os sistemas de ficheiros actualmente montados.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Duração em milisegundos entre actualizações dos gráficos">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Duração em milisegundos entre actualizações da vista de processos">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Apresentar diálogo de aviso ao matar processos">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Activar/Desactivar actualização suave">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Modo Solaris para a percentagem de CPU">
+						<longdesc>Se TRUE, o system-monitor opera em &apos;modo Solaris&apos; onde a utilização de cpu de uma tarefa é dividida pelo número total de CPUs. Caso contrário, opera em &apos;modo Irix&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Apresentar as dependências de processos em forma de árvore">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Altura da Janela Principal">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Largura da Janela Principal">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Ordenação da vista de processos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Coluna de ordenação da vista de processos">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Ordenação das colunas da vista de discos">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Ordenação da vista de processos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Coluna de ordenação da vista de processos">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;Canal de Espera&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Largura da coluna de &apos;Canal de Espera&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;utilização estimada de memória&apos; ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Largura da coluna de &apos;utilização estimada de memória&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;argumentos&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Largura da coluna de &apos;argumentos&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;contexto de segurança SELinux&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Largura da coluna de &apos;contexto de segurança SELinux&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;PID&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Largura da coluna de &apos;PID&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;nice&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Largura da coluna de &apos;nice&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;hora de arranque&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Largura da coluna de &apos;hora de arranque&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;tempo de CPU&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Largura da coluna de &apos;tempo de CPU&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;% de CPU&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Largura da coluna de &apos;% de CPU&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;memória do servidor X&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Largura da coluna de &apos;memória do servidor X&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;memória partilhada&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Largura da coluna de &apos;memória partilhada&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;memória de escrita&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Largura da coluna de &apos;memória de escrita&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;memória residente&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Largura da coluna de &apos;memória residente&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;memória virtual&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Largura da coluna de &apos;memória virtual&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;estado&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Largura da coluna de &apos;estado&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;dono&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Largura da coluna de &apos;dono&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Apresentar a coluna de &apos;nome&apos; do processo ao iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Largura da coluna de &apos;nome&apos; do processo">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Ordenação da vista de processos">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Ordenação das colunas da vista de processos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Coluna de ordenação da vista de processos">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

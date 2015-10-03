@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Podrazumevana boja na grafiku za dolazni mrežni saobraćaj">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Podrazumevana boja na grafiku za dolazni mrežni saobraćaj">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Podrazumevana boja razmene memorije na grafiku">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Podrazumevana boja memorije na grafiku">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Podrazumevana boja procesora na grafiku">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Podrazumevana boja procesora na grafiku">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Podrazumevana boja procesora na grafiku">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Podrazumevana boja procesora na grafiku">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Zabeleži tekuće stanje u listu">
+						<longdesc>0 za Sistemske Informacije, 1 za listu procesa, 2 za resurse i 3 za listu diskova</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Određuje koje procese podrazumevano prikazati. 0 je za sve, 1 za korisnikove i 2 za aktivne">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Vreme u milisekundama između osvežavanja spiska uređaja">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Da li bi trebalo da bude prikazana informacija o svim sistemima datoteka">
+						<longdesc>Da li bi treba da budu prikazane informacije o svim sistemima datoteka, uključujući i vrste sistema datoteka „autofs“ i „procfs“. Može biti korisno dobiti spisak svih trenutno priključenih sistema datoteka.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Vreme u milisekundama između osvežavanja grafika">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Vreme u milisekundama između osvežavanja spiska procesa">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Prikaži upozorenje pre ubijanja procesa">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Uključi/isključi precizno, meko osvežavanje">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris način rada za procenat procesora">
+						<longdesc>Ako je postavljeno na „TRUE“ (tačno), Praćenje Sistema će raditi u Solarisovom režimu rada gde je procesorsko vreme zadatka podeljeno sa ukupnim brojem procesora. U suprotnom će raditi u Iriks režimu.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Prikaži međuzavisnost procesa u obliku stabla">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Visina glavnog prozora">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Širina glavnog prozora">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Redosled ređanja u pregledu procesa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stubac za ređanje u pregledu procesa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Redosled ređanja u pregledu deonica">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Redosled ređanja u pregledu procesa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stubac za ređanje u pregledu procesa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Prikaži kolonu „Čeka na“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Širina kolone „Čeka na“">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Prikaži kolonu „procenjeno korišćenje memorije“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Širina kolone „procenjeno korišćenje memorije“">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Prikaži kolonu „argumenti“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Širina kolone „argumenti“">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Prikaži kolonu „SELinux bezbedonosni kontekst“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Širina kolone „SELinux bezbedonosni kontekst“">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Prikaži kolonu „PID“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Širina kolone „PID“">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Prikaži kolonu „pristojno“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Širina kolone „pristojno“">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Prikaži kolonu „započet“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Širina kolone „započet“">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Prikaži kolonu „Procesorsko vreme“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Širina kolone „Procesorsko vreme“">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Prikaži kolonu „Procesor %“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Širina kolone „Procesor %“">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Prikaži kolonu „Memorija Iks servera“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Širina kolone „Memorija Iks servera“">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Prikaži kolonu „deljena memorija“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Širina kolone „deljena memorija“">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Prikaži kolonu „upisiva memorija“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Širina kolone „upisiva memorija“">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Prikaži kolonu „rezidentna memorija“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Širina kolone „rezidentna memorija“">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Prikaži kolonu „virtualna memorija“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Širina kolone „virtualna memorija“">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Prikaži kolonu „stanje“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Širina kolone „stanje“">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Prikaži kolonu „korisnik“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Širina kolone „vlasnik“">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Prikaži kolonu „ime“ po pokretanju">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Širina kolone „ime“">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Redosled ređanja u pregledu procesa">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Redosled ređanja kolona u pregledu procesa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stubac za ređanje u pregledu procesa">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

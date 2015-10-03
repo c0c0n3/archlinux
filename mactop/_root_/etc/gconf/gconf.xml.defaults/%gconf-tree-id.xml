@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Warna utama grafik jaringan (keluar)">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Warna utama grafik jaringan (diterima)">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Warna utama grafik swap">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Warna utama grafik memori">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Warna utama grafik cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Warna utama grafik cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Warna utama grafik cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Warna utama grafik cpu">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Simpan tab yang sekarang ditampilkan">
+						<longdesc>0 untuk Informasi Sistem, 1 untuk daftar proses, 2 untuk sumber daya, dan 3 untuk daftar diska</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Menentukan proses yang diutamakan untuk tampil. 0 untuk Semua, 1 untuk pengguna, dan 2 untuk proses yang aktif">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Jeda pembaharuan untuk daftar perangkat dalam milidetik">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Apakah informasi tentang semua sistem berkas harus ditampilkan">
+						<longdesc>Apakah menampilkan informasi tentang semua sistem berkas (termasuk yang berjenis &apos;autofs&apos; dan &apos;procfs&apos;). Sangat berguna untuk melihat semua sistem berkas yang dikaitkan.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Jeda pembaharuan untuk grafik dalam milidetik">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Jeda pembaharuan untuk proses yang ditampilkan dalam milidetik">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Tampilkan dialog peringatan saat menghentikan proses">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Mengaktifkan/menonaktifkan penyegaran halus">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Modus Solaris untuk persentase CPU">
+						<longdesc>Apabila TRUE, monitor-sistem akan beroperasi dalam &apos;modus Solaris&apos;, yakni tugas-tugas yang menggunakan cpu dibagi dengan jumlah CPU yang dimiliki. Selain itu, akan bekerja dalam &apos;modus Irix&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Tampilkan ketergantungan proses dalam bentuk pohon">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Tinggi jendela utama">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Lebar jendela utama">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Susunan urut kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Urutan kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Urutan kolom diska yang ditampilkan">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Susunan urut kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Urutan kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Kanal Tunggu&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Kanal Tunggu&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Perkiraan Memori yang Dipakai&apos; pada saat mula">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Perkiraan Memori yang Dipakai&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Argumen&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Argumen&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Konteks Keamanan SELinux&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Konteks Keamanan SELinux&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;PID&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Lebar kolom proses &apos;PID&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Angkatan&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Angkatan&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Waktu Mulai&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Waktu Mulai&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Waktu CPU&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Waktu CPU&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;% CPU&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Lebar kolom proses &apos;% CPU&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Memori Server X&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Memori Server X&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Memori Berbagi&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Memori Berbagi&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Memori Dapat Ditulis&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Memori Dapat Ditulis&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Memori Bertetap&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Memori Bertetap&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Memori Virtual&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Memori Virtual&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Status&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Status&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Pemilik&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Pemilik&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Tampilkan kolom proses &apos;Nama&apos; pada saat mulai">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Lebar kolom proses &apos;Nama&apos;">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Susunan urut kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Susunan kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Urutan kolom proses yang ditampilkan">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

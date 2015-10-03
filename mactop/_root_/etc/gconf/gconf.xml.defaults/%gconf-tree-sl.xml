@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Privzeta barva grafa odhodnega omrežnega prometa">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Privzeta barva grafa vhodnega omrežnega prometa">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Privzeta barva grafa izmenjevalnega prostora">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Privzeta barva grafa pomnilnika">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Privzeta barva grafa cpe">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Privzeta barva grafa cpe">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Privzeta barva grafa cpe">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Privzeta barva grafa cpe">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Shrani trenutno pogledan zavihek">
+						<longdesc>O za podrobnosti o sistemu, 1 za seznam opravil, 2 za vire in 3 za seznam diskov</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Določa katera opravila so privzeto prikazana: 0 za vsa, 1 za uporabnikova in 2 za dejavna">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Čas v milisekundah med osvežitvami seznama naprav">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Ali naj bodo prikazani podatki o vseh datotečnih sistemih">
+						<longdesc>Ali naj bodo prikazani podatki o vseh datotečnih sistemih (vključno z vrstami kot so &apos;autofs&apos; in &apos;procfs&apos;). Uporabno za izdelavo seznama vseh trenutno priklopljenih datotečnih sistemov.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Čas v milisekundah med osvežitvami grafov">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Čas v milisekundah med osvežitvami pogleda opravil">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Pokaži opozorilo pri med uničevanjem opravila">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Omogoči/Onemogoči mehko osveževanje">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris način za odstotek CPE">
+						<longdesc>Možnost omogoča delovanje programa v &apos;Solaris načinu&apos;, kjer je poraba CPE razdeljena na skupno število CPE enot. V obratnem primeru deluje v &apos;Irix načinu&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Pokaži odvisnosti opravil v drevesnem diagramu">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Višina glavnega okna">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Širina glavnega okna">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Vrstni red vrste pogleda opravil">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stolpec vrste pogleda opravil">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Vrstni red stolpcev pogleda diskov">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Vrstni red vrste pogleda opravil">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stolpec vrste pogleda opravil">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;čakajočega kanala&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Širina stolpca čakajočega kanala">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;ocenjene poraba pomnilnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Širina stolpca z ocenjeno porabo pomnilnika">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;argumentov&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Širina stolpca argumentov">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;SELinux&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Širina stolpca SELinux">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;PID&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Širina stolpca PID">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;ocene prednostni delovanja&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Širina stolpca vrednosti ocene prednostni delovanja">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;začetega časa&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Širina stolpca časa začetka">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;procesorskega časa&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Širina stolpca s procesorskim časom">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;CPE %&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Širina stolpca z odstotkom CPE">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;pomnilnika X strežnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Širina stolpca pomnilnika strežnika X">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;skupnega pomnilnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Širina stolpca skupnega pomnilnika">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;zapisljivega pomnilnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Širina stolpca zapisljivega pomnilnika">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;stalnega pomnilnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Širina stolpca stalnega pomnilnika">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;navideznega pomnilnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Širina stolpca navideznega pomnilnika">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;stanja&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Širina stolpca stanja">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;lastnika&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Širina stolpca podatkov lastnika">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Ob zagonu pokaži stolpec &apos;imena&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Širina stolpca z imenom">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Vrstni red vrste pogleda opravil">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Vrstni red stolpcev pogleda opravil">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Stolpec vrste pogleda opravil">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

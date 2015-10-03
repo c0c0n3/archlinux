@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="swap_color">
+					<local_schema short_desc="Lliw rhagosodedig cyfnewid ar y graff">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Lliw rhagosodedig cof ar y graff">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Lliw rhagosodedig cpu ar y graff">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Lliw rhagosodedig cpu ar y graff">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Lliw rhagosodedig cpu ar y graff">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Lliw rhagosodedig cpu ar y graff">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Cadw&apos;r tab a welir ar hyn o bryd">
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Pennu pa brosesau i&apos;w dangos yn ragosodedig. 0 ar gyfer y cyfan, 1 ar gyfer rhai&apos;r defnyddiwr, a 2 ar gyfer y rhai gweithredol">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Amser, mewn milfedau eiliadau, rhwng diweddariadau&apos;r rhestr ddyfais">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="A ddylid dangos gwybodaeth am bob system ffeil">
+						<longdesc>A ddylid dangos gwybodaeth am bob system ffeil (yn cynnwys mathau &apos;autofs&apos; a &apos;procfs&apos;). Defnyddiol os am gael rhestr o bob system ffeil sydd wedi&apos;i osod ar hyn o bryd.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Amser, mewn milfedau eiliadau, rhwng diweddariadau&apos;r graffiau">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Amser, mewn milfedau eiliadau, rhwng diweddariadau&apos;r golwg broses">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Dangos deialog rhybudd wrth ladd prosesau">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Galluogi/analluogi adnewyddu llyfn">
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Dangos dibyniaethau prosesau ar ffurf coeden">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Uchder prif ffenestr">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Lled prif ffenestr">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Trefn ddidoli golwg proses">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Colofn trefn golwg proses">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Trefn colofnau golwg disg">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Trefn ddidoli golwg proses">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Colofn trefn golwg proses">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="sort_order">
+						<local_schema short_desc="Trefn ddidoli golwg proses">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Trefn colofnau golwg proses">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Colofn trefn golwg proses">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

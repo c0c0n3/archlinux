@@ -1,0 +1,22 @@
+# 
+# Dispatch 'on AC'/'on battery' events.
+# On this machine, when AC is unplugged, acpi_listen shows:
+#
+#   ac_adapter ADP1 00000080 00000000
+#   processor CPU0 00000081 00000000
+#   processor CPU1 00000081 00000000
+#   processor CPU2 00000081 00000000
+#   processor CPU3 00000081 00000000
+#   battery BAT0 00000080 00000001
+#
+# whereas this is what we get when AC is back on:
+#
+#   ac_adapter ADP1 00000080 00000001
+#   processor CPU0 00000081 00000000
+#   processor CPU1 00000081 00000000
+#   processor CPU2 00000081 00000000
+#   processor CPU3 00000081 00000000
+#   battery BAT0 00000080 00000001
+#
+event=ac_adapter .*
+action=/etc/acpi/actions/ac.sh %e

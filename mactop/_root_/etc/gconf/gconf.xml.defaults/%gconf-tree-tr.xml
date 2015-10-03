@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Öntanımlı giden ağ trafiği grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Öntanımlı gelen ağ trafiği grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Öntanımlı takas grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Öntanımlı bellek grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Öntanımlı mib grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Öntanımlı mib grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Öntanımlı mib grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Öntanımlı mib grafik rengi">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Şu an gösterilen sekmeleri kaydet">
+						<longdesc>Sistem Bilgisi için 0, süreçlerin listesi için 1, kaynaklar için 2 ve disklerin listesi için 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Hangi süreçlerin öntanımlı olarak gösterileceğini belirle. 0 Hepsi, 1 Kullanıcı, 2 Aktif süreçleri için">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Milisaniye olarak aygıt listesi güncellemeleri arasında geçen zaman">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Tüm dosya sistemleri hakkındaki bilgilerin gösterilmesi">
+						<longdesc>Tüm dosya sistemleri hakkındaki bilgilerin gösterilip gösterilmeyeceği (&apos;autofs&apos; ve &apos;procfs&apos; gibi dosya sistemi tiplerini de içeren). Şu an bağlı olan tüm dosya sistemlerinin listesini almak için faydalıdır.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Milisaniye olarak grafiklerin güncellenmesi arasında geçen zaman">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Milisaniye olarak süreç görüntüleme güncellemeleri arasında geçen zaman">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Süreçler öldürülürken uyarı mesajı göster">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Yumuşak tazelemeyi etkinleştir/kapat">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="MİB yüzdesi için Solaris kipi">
+						<longdesc>Eğer TRUE yapılırsa bir görevin mib kullanımı toplam MİB sayısına bölündüğü &apos;Solaris kipinde&apos; işlem yapar. Diğer şekilde &apos;Irix kipinde&apos; işlem yapar.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Süreç bağımlılıklarını ağaç yapısında göster">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Ana Pencere yüksekliği">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Ana Pencere genişliği">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Süreç gösterim sıra düzeni">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Süreç gösterim sıra sütunu">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Disk görüntüleme sütun sırası">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Süreç gösterim sıra düzeni">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Süreç gösterim sıra sütunu">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Başlangıçta &apos;Bekleyen Kanal&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Süreç &apos;Bekleyen Kanal&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Başlangıçta &apos;tahmini bellek kullanımı&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Süreç &apos;tahmini bellek kullanımı&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Başlangıçta &apos;argümanlar&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Süreç &apos;argümanlar&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Başlangıçta &apos;SELinux güvenlik içeriği&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Süreç &apos;SELinux güvenlik içeriği&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Başlangıçta &apos;PID&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Süreç &apos;PID&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Başlangıçta &apos;öncelik&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Süreç &apos;öncelik&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Başlangıçta &apos;başlangıç zamanı&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Süreç &apos;başlangıç zamanı&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Başlangıçta &apos;MIB&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Süreç &apos;MİB zamanı&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Başlangıçta &apos;MİB %&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Süreç &apos;MİB %&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Başlangıçta &apos;X sunucusu belleği&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Süreç &apos;X sunucu belleği&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Başlangıçta &apos;paylaşılan bellek&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Süreç &apos;paylaşılan bellek&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Başlangıçta &apos;yazılabilir bellek&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Süreç &apos;yazılabilir bellek&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Başlangıçta &apos;yerleşik bellek&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Süreç &apos;yerleşik bellek&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Başlangıçta &apos;sanal bellek&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Süreç &apos;sanal bellek&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Başlangıçta &apos;durum&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Süreç &apos;durum&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Başlangıçta &apos;sahip&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Süreç &apos;sahip&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Başlangıçta &apos;isim&apos; süreç sütununu göster">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Süreç &apos;isim&apos; sütununun genişliği">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Süreç gösterim sıra düzeni">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Süreç görüntüleme sütun sırası">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Süreç gösterim sıra sütunu">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

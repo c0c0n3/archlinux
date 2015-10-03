@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ನಕ್ಷೆ ಹೊರಹೋಗುವ ಜಾಲಬಂಧ ಸಂಚಾರದ ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತ ನಕ್ಷೆ ಒಳಬರುವ ಜಾಲಬಂಧ ಸಂಚಾರದ ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾದ ನಕ್ಷೆಯ ಸ್ವಾಪ್ ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾದ ನಕ್ಷೆ mem ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾದ ನಕ್ಷೆ cpu ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾದ ನಕ್ಷೆ cpu ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾದ ನಕ್ಷೆ cpu ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾದ ನಕ್ಷೆ cpu ಬಣ್ಣ">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ಈಗ ನೋಡುತ್ತಿರುವ ಹಾಳೆಯನ್ನು ಉಳಿಸುತ್ತದೆ">
+						<longdesc>0 ಯು ಗಣಕದ ಮಾಹಿತಿಗಾಗಿ, 1 ಪ್ರಕ್ರಿಯೆಗಳ ಪಟ್ಟಿಗಾಗಿ, 2 ಸಂಪನ್ಮೂಲಗಳು ಹಾಗು 3 ಡಿಸ್ಕ್‍ಗಳ ಪಟ್ಟಿಗಾಗಿ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ ಯಾವ ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ತೋರಿಸಬೇಕು ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ. 0 ಆದಲ್ಲಿ ಎಲ್ಲವನ್ನೂ, 1 ಆದಲ್ಲಿ ಬಳಕೆದಾರ, ಹಾಗು 2 ಆದಲ್ಲಿ ಸಕ್ರಿಯವಾದ">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ಸಾಧನಗಳ ಪಟ್ಟಿಯ ಅಪ್ಡೇಟ್‍ಗಳ ನಡುವಿನ ಸಮಯ, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="ಎಲ್ಲಾ ಕಡತ ವ್ಯವಸ್ಥೆಗಳ ಬಗೆಗಿನ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಬೇಕೆ">
+						<longdesc>ಎಲ್ಲಾ ಕಡತ ವ್ಯವಸ್ಥೆಗಳ ಬಗೆಗಿನ ಮಾಹಿತಿಯನ್ನು ತೋರಿಸಬೇಕೆ?(&apos;autofs&apos; ಹಾಗು &apos;procfs&apos; ನಂತಹ ಬಗೆಯವನ್ನೂ ಸೇರಿಸಿ). ಈಗ ಆರೋಹಿತಗೊಂಡ ಕಡತವ್ಯವಸ್ಥೆಗಳ ಪಟ್ಟಿಯನ್ನು ಪಡೆಯಲು ಸಹಕಾರಿಯಾಗುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ನಕ್ಷೆಗಳ ಅಪ್ಡೇಟ್‍ಗಳ ನಡುವಿನ ಸಮಯ, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಯ ನೋಟದ ಅಪ್ಡೇಟ್‍ಗಳ ನಡುವಿನ ಸಮಯ, ಮಿಲಿಸೆಕೆಂಡುಗಳಲ್ಲಿ">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳನ್ನು ನಿಲ್ಲಿಸುವಾಗ ಎಚ್ಚರಿಕೆಯ ಸಂದೇಶವನ್ನು ತೋರಿಸು">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="ಮೃದುವಾದ ಪುನಶ್ಚೇತನಗೊಳಿಕೆಯನ್ನು ಶಕ್ತಗೊಳಿಸು/ಅಶಕ್ತಗೊಳಿಸು">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU ಪ್ರತಿಶತಕ್ಕಾಗಿ Solaris ವಿಧಾನ">
+						<longdesc>TRUE ಆದಲ್ಲಿ, ಗಣಕ-ಮೇಲ್ವಿಚಾರಕವು &apos;ಸೋಲಾರಿಸ್ ವಿಧಾನ&apos;ದಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ,ಇದರಲ್ಲಿ ಒಂದು ಕಾರ್ಯದ cpu ಬಳಕೆಯುCPUಗಳ ಒಟ್ಟು ಸಂಖ್ಯೆಗಳಿಂದ ಹಂಚಲ್ಪಡುತ್ತದೆ. ಇಲ್ಲದೆ ಹೋದಲ್ಲಿ ಅದು &apos;Irix ವಿಧಾನ&apos;ದಲ್ಲಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತದೆ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ಅವಲಂಬನೆಗಳನ್ನು ವೃಕ್ಷದ ಮಾದರಿಯಲ್ಲಿ ತೋರಿಸು">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ಮುಖ್ಯ ವಿಂಡೊದ ಎತ್ತರ">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="ಮುಖ್ಯ ವಿಂಡೊದ ಅಗಲ">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ವಿಂಗಡಣಾ ಅನುಕ್ರಮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ವಿಂಗಡಣಾ ಲಂಬಸಾಲು">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ಡಿಸ್ಕ್‌ ನೋಟ ಲಂಬಸಾಲುಗಳ ಅನುಕ್ರಮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ವಿಂಗಡಣಾ ಅನುಕ್ರಮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ವಿಂಗಡಣಾ ಲಂಬಸಾಲು">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಕಾಯುವ ಚಾನಲ್&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="&apos;ಕಾಯುವ ಚಾನಲ್‌&apos; ಲಂಬಸಾಲು ಪ್ರಕ್ರಿಯೆ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಯೋಜಿತ ಮೆಮೊರಿ ಬಳಕೆ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಯೋಜಿತ ಮೆಮೊರಿ ಬಳಕೆ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಆರ್ಗ್ಯುಮೆಂಟ್‍ಗಳು&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಆರ್ಗ್ಯುಮೆಂಟ್‍ಗಳು&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;SELinux ಸುರಕ್ಷತಾ ಸನ್ನಿವೇಶ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;SELinux ಸುರಕ್ಷತಾ ಸನ್ನಿವೇಶ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;PID&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;PID&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ನೈಸ್&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ನೈಸ್&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಆರಂಭದ ಸಮಯ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಆರಂಭದ ಸಮಯ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;CPU ಸಮಯ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;CPU ಸಮಯ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;CPU %&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;CPU %&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;X ಪರಿಚಾರಕದ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;X ಪರಿಚಾರಕದ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಹಂಚಲಾದ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಹಂಚಲಾದ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಬರೆಯಬಹುದಾದ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಬರೆಯಬಹುದಾದ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ರೆಸಿಡೆಂಟ್ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ರೆಸಿಡೆಂಟ್ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ವಾಸ್ತವ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ವಾಸ್ತವ ಮೆಮೊರಿ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಸ್ಥಿತಿ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಸ್ಥಿತಿ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಮಾಲಿಕ&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಮಾಲಿಕ&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="ಆರಂಭಿಸಿದಾಗ ಪ್ರಕ್ರಿಯೆ &apos;ಹೆಸರು&apos; ಲಂಬಸಾಲನ್ನು ತೋರಿಸು">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆ &apos;ಹೆಸರು&apos; ಲಂಬಸಾಲಿನ ಅಗಲ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ವಿಂಗಡಣಾ ಅನುಕ್ರಮ">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ಲಂಬಸಾಲುಗಳ ಅನುಕ್ರಮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ಪ್ರಕ್ರಿಯೆಗಳ ನೋಟ ವಿಂಗಡಣಾ ಲಂಬಸಾಲು">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="swap_color">
+					<local_schema short_desc="Uobičajena boja za graf swap memorije">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Boja grafa memorije">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Boja CUP grafa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Boja CUP grafa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Boja CUP grafa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Boja CUP grafa">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Sprema trenutno gledanu karticu">
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Određuje koji procesi su uobičajeno prikazani. 0 za sve, 1 za korisničke, 2 za aktivne">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Vrijeme osvježavanja popisa uređaja u milisekundama">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Hoće li biti prikazane informacije o svim datotečnim sustavima">
+						<longdesc>Hoće li biti prikazane informacije o svim datotečnim sustavima (uključujući tipove &apos;autofs&apos; i &apos;procfs&apos;). Korisno za pregled trenutačno montiranih datotečnih sustava.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Vrijeme osvježavanja grafova u milisekundama">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Vrijeme osvježavanja liste procesa u milisekundama">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Prikaži dijalog upozorenja pri ubijanju procesa">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Omogući/Onemogući glatko osvježavanje">
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Pokaži međuzavisnosti procesa u obliku stabla">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Visina glavnog prozora">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Širina glavnog prozora">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Redoslijed sortiranja prikaza procesa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sortiranje prikaza procesa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Redoslijed stupaca prikaza diska">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Redoslijed sortiranja prikaza procesa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sortiranje prikaza procesa">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="sort_order">
+						<local_schema short_desc="Redoslijed sortiranja prikaza procesa">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Redoslijed stupaca procesa">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sortiranje prikaza procesa">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

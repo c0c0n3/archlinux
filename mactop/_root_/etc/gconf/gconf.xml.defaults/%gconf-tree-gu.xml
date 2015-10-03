@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="જતા નેટવર્ક ટ્રાફિક રંગનો મૂળભૂત ગ્રાફ">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="આવતા નેટવર્ક ટ્રાફિક રંગનો મૂળભૂત ગ્રાફ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="મૂળભુત ગ્રાફ સ્વેપ રંગ">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="મૂળભુત ગ્રાફ મેમરી રંગ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="મૂળભુત ગ્રાફ cpu રંગ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="મૂળભુત ગ્રાફ cpu રંગ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="મૂળભુત ગ્રાફ cpu રંગ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="મૂળભુત ગ્રાફ cpu રંગ">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="વર્તમાનમાં જોયેલ ટેબ સંગ્રહે છે">
+						<longdesc>સિસ્ટમ જાણકારી માટે ૦, પ્રોસેસર યાદી માટે ૧, સ્રોતો માટે ૨ અને ડિસ્કોની યાદી માટે ૩</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="મૂળભુત રીતે કઈ પ્રક્રિયાઓ બતાવવી તે નક્કી કરે છે. ૦ એ બધા માટે, ૧ એ વપરાશકર્તા માટે, અને ૨ એ સક્રિય માટે">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ઉપકરણ યાદીના સુધારાઓ વચ્ચેનો સમય મિલિસેકન્ડોમાં">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="શું બધી ફાઈલ સિસ્ટમો વિશે જાણકારી દર્શાવવી જોઈએ">
+						<longdesc>શું બધી ફાઈલસિસ્ટમો વિશે જાણકારી દર્શાવવી જોઈએ (આ &apos;autofs&apos; અને &apos;procfs&apos; પ્રકારની ફાઈલસિસ્ટમોને સમાવીને). તે વર્તમાનમાં માઉન્ટ થયેલ બધી ફાઈલસિસ્ટમોની યાદી મેળવવા માટે ઉપયોગી છે.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ગ્રાફના સુધારાઓ વચ્ચેનો સમય મિલિસેકન્ડોમાં">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="પ્રક્રિયા દેખાવના સુધારાઓ વચ્ચેનો સમય મિલિસેકન્ડોમાં">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="જ્યારે પ્રક્રિયાઓને મારી રહ્યા હોય ત્યારે ચેતવણી સંવાદ બતાવો">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="લીસું પુનઃતાજાપણું સક્રિય/નિષ્ક્રિય કરો">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU ટકા માટે Solaris સ્થિતિ">
+						<longdesc>જો સાચું હોય, તો system-monitor એ &apos;Solaris mode&apos; માં કામ કરશે કે જ્યાં ક્રિયાનો cpu વપરાશ એ કુલ સંખ્યાના CPU દ્વારા વિભાજીત થાય છે. નહિંતર તે &apos;Irix mode&apos; માં કામ કરે છે.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="પ્રક્રિયાના આધારભૂતોને વૃક્ષ સ્વરૂપમાં બતાવો">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="મુખ્ય વિન્ડો ઊંચાઈ">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="મુખ્ય વિન્ડો પહોળાઈ">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="ક્રમમાં પ્રક્રિયા દેખાવ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="પ્રક્રિયા દેખાવ સ્તંભને ક્રમમાં ગોઠવો">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ડિસ્ક દેખાવ સ્તંભોનો ક્રમ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ક્રમમાં પ્રક્રિયા દેખાવ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="પ્રક્રિયા દેખાવ સ્તંભને ક્રમમાં ગોઠવો">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;ચેનલને રાહ જોવા&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="પ્રક્રિયાની &apos;ચેનલ રાહ જોવી&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;અંદાજીત મેમરી વપરાશ&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;અંદાજીત મેમરી વપરાશ&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;દલીલો&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;દલીલો&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;SELinux સુરક્ષા સંદર્ભ&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;SELinux સુરક્ષા સંદર્ભ&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;PID&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;PID&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;nice&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;nice&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;શરૂઆત સમય&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;શરૂઆત સમય&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="શરૂઆત પર પ્રક્રિયા &apos;CPU સમય&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;CPU સમય&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="શરૂઆત પર પ્રક્રિયા &apos;CPU %&apos; બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;CPU %&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;X સર્વર મેમરી&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;X સર્વર મેમરી&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;વહેંચાયેલ મેમરી&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;વહેંચાયેલ મેમરી&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;લખી શકાય તેવી મેમરી&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;લખી શકાય તેવી મેમરી&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;હાજર મેમરી&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;હાજર મેમરી&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;વર્ચ્યુઅલ મેમરી&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;વર્ચ્યુઅલ મેમરી&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;પરિસ્થિતિ&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;પરિસ્થિતિ&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;માલિક&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;માલિક&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="શરૂઆત કરવા પર પ્રક્રિયા &apos;નામ&apos; સ્તંભ બતાવો">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="પ્રક્રિયા &apos;નામ&apos; સ્તંભની પહોળાઈ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ક્રમમાં પ્રક્રિયા દેખાવ">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="પ્રક્રિયા દેખાવ સ્તંભો ક્રમ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="પ્રક્રિયા દેખાવ સ્તંભને ક્રમમાં ગોઠવો">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

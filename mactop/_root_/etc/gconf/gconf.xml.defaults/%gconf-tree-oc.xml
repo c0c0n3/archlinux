@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="height">
+					<local_schema short_desc="Nautor de la fenèstra principala">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Largor de la fenèstra principala">
+					</local_schema>
+				</entry>
+			</dir>
+			<dir name="gpilot_applet">
+				<dir name="prefs">
+					<entry name="exec_when_clicked">
+						<local_schema short_desc="Comanda d&apos;executar quand clicatz sus l&apos;aplet">
+							<longdesc>Comanda d&apos;executar quand clicatz sus l&apos;aplet</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

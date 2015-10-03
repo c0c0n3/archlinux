@@ -1,0 +1,9 @@
+#
+# Run the automount script if there's activity (add,change,remove) on any of
+# the media partitions we're interested in.
+# Note that we never grab the device itself (e.g. sdb), but rather any
+# available partitions on it (e.g. sdb1, sdb2). 
+# Also note that we exclude sda which is this laptop hard-drive.
+#
+KERNEL=="sd[b-z][0-9]|sr0|mmcblk[0-9]p[0-9]", RUN+="/etc/udev/rules.d/media-automount %N"
+

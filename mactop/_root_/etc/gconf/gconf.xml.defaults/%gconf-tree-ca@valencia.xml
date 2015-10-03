@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Color predeterminat del trànsit d&apos;eixida de la xarxa">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Color predeterminat de la xarxa d&apos;entrada a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Color predeterminat de l&apos;espai d&apos;intercanvi a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Color predeterminat de la memòria a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Color predeterminat de la CPU a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Color predeterminat de la CPU a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Color predeterminat de la CPU a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Color predeterminat de la CPU a la gràfica">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Alça la pestanya visualitzada actualment">
+						<longdesc>0 per a la informació del sistema, 1 per a la llista de processos, 2 per als recursos, i 3 per a la llista de discs</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Determina quins processos es mostren per defecte. 0 són tots, 1 són de l&apos;usuari, i 2 són els actius">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Temps en mil·lisegons entre actualitzacions de la llista de dispositius">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Si s&apos;ha de mostrar informació sobre tots els sistemes de fitxers">
+						<longdesc>Si s&apos;ha de mostrar informació sobre tots els sistemes de fitxers, incloent-hi els tipus com ara «autofs» i «procfs». Pot ser útil per a obtindre una llista de tots els sistemes de fitxers muntats actualment.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Temps en mil·lisegons entre actualitzacions de les gràfiques">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Temps en mil·lisegons entre actualitzacions de la vista de processos">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Mostra un diàleg d&apos;advertència en matar els processos">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Habilita/inhabilita l&apos;actualització suau">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Mode Solaris per al percentatge de CPU">
+						<longdesc>Si és CERT, el monitor del sistema operarà en el «mode Solaris» en que la utilització de la CPU de les tasques es divideix pel nombre total de CPUs. Sinó operarà en el «mode Irix».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Mostra les dependències dels processos en forma d&apos;arbre">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Alçada de la finestra principal">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Amplada de la finestra principal">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Orde de la visualització de processos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Columna ordenada a la llista de processos">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Orde de les columnes de la visualització de discs">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Orde de la visualització de processos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Columna ordenada a la llista de processos">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Mostra la columna de «Canal d&apos;espera» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Amplada de la columna de «Canal d&apos;espera»">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Mostra la columna de «estimació de la memòria utilitzada» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Amplada de la columna d «estimació de la memòria utilitzada»">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Mostra la columna de «arguments» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Amplada de la columna de «arguments»">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Mostra la columna del «context de seguretat SELinux» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Amplada de la columna de «context de seguretat SELinux»">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Mostra la columna de «PID» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Amplada de la columna del «PID»">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Mostra la columna de «prioritat» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Amplada de la columna de «prioritat»">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Mostra la columna de «temps d&apos;inici» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Amplada de la columna del «temps d&apos;inici»">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Mostra la columna del «temps de CPU» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Amplada de la columna del «temps de CPU»">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Mostra la columna de «% d&apos;ús de la CPU» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Amplada de la columna de «% de CPU»">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Mostra la columna de «memòria del servidor X» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Amplada de la columna de «memòria del servidor X»">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Mostra la columna de «memòria compartida» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Amplada de la columna de «memòria compartida»">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Mostra la columna de «memòria d&apos;escriptura» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Amplada de la columna de la «memòria d&apos;escriptura»">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Mostra la columna de «memòria resident» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Amplada de la columna de «memòria resident»">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Mostra la columna de «memòria virtual» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Amplada de la columna de «memòria virtual»">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Mostra la columna de «estat» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Amplada de la columna de «estat»">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Mostra la columna de «propietari» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Amplada de la columna de «propietari»">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Mostra la columna de «nom» en iniciar">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Amplada de la columna de «nom»">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Orde de la visualització de processos">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Orde de les columnes de la visualització de processos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Columna ordenada a la llista de processos">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

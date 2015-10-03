@@ -1,0 +1,2 @@
+<device DEVNO="0x0812" TIME="1285345482.728190" LABEL="backup" UUID="e1e192e9-0d63-4237-8531-a77b608bdce8" SEC_TYPE="ext2" TYPE="ext3">/dev/sdb2</device>
+<device DEVNO="0x0811" TIME="1286993005.274486" LABEL="windata" UUID="20BE1BE2BE1BAF72" TYPE="ntfs">/dev/sdb1</device>

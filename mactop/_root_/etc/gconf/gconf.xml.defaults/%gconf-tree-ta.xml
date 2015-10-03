@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="முன்னிருப்பு வெளிபோகும் வலையமைப்பு போக்குவரத்து வரைபட நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="முன்னிருப்பு உள்வரும் வலையமைப்பு போக்குவரத்து வரைபட நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="முன்னிருப்பு வரைபட மாற்று நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="முன்னிருப்பு வரைபட நினைவக நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="முன்னிருப்பு வரைபட cpu நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="முன்னிருப்பு வரைபட cpu நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="முன்னிருப்பு வரைபட cpu நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="முன்னிருப்பு வரைபட cpu நிறம்">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="தற்போது பார்க்கப்பட்ட தத்தலை சேமிக்கிறது">
+						<longdesc>அமைப்பு தகவலுக்கு 0, செயலாக்க பட்டியலுக்கு 1, மற்றும் வட்டுகள் பட்டியலுக்கு 3.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="செயல்பாடுகளில் எது முன்னிருப்பாக காட்ட வேண்டும் என நிர்ணயிக்கிறது.  அனைத்தும் க்கு 0, பயனர் க்கு 1 மற்றும் செயல்பாட்டில் உள்ளதுக்கு 2.">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="சாதனங்கள் பட்டியலில் மேம்பாடுகளுக்கிடையே நேரம் மில்லி விநாடிகளில்">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="அனைத்து கோப்பு முறைமைகள் பற்றிய தகவலை காட்ட வேண்டுமா">
+						<longdesc>அனைத்து கோப்பு அமைப்புகள் பற்றிய தகவலும் (&apos;autofs&apos; மற்றும் &apos;procfs&apos; போன்ற வகைகள் உட்பட) காட்ட வேண்டுமா. இது ஏற்றப்பட்ட அனைத்து கோப்பு அமைப்புகள் பட்டியலை பெற உதவும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="வரைபடங்களின் மேம்பாடுகளுக்கிடையே நேரம் மில்லி விநாடிகளில்">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="செயல் பார்வையில் மேம்பாடுகளுக்கிடையே நேரம் மில்லி விநாடிகளில்">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="செயலை நிறுத்தும் போது எச்சரிக்கை உரையாடலை காட்டவும்">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="மென்மையான புதுப்பித்தலை செயல்படுத்து/செயல்நீக்கு">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="சிபியூ சதவிகிதத்திற்கு சோலாரிஸ் முறைமை">
+						<longdesc>உண்மை எனில் கணினி அமைப்பு கண்காணிப்பாளர் சோலாரிஸ் பாணியில் செயலாற்றும். அதில் &apos; where a task&apos;s சிபியூ பயன்பாடு மொத்த சிபியூ எண்ணிக்கையால் வகுக்கப்படும், மற்றபடி அது &apos;Irix mode&apos; இல் வேலை செய்யும்.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="செயல் சார்ந்திருப்பவைகளை கிளை வடிவில் காட்டு">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="முதன்மை சாளர உயரம்">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="முதன்மை சாளர அகலம்">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="செயல் பார்வை வரிசை">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="செயல் பார்வை வரிசை நிரல்">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="வட்டு பார்வை நிரல்கள் வரிசை">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="செயல் பார்வை வரிசை">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="செயல் பார்வை வரிசை நிரல்">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு &apos;காத்திருக்கும் சேனல்&apos; பத்தியைக் காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="&apos;காத்திருக்கும் சேனல்&apos; செயலுக்கு பத்தியின் அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு கணிக்கப்பட்ட நினைவக பயன்பாடு- &apos;estimated memory usage&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="கணிக்கப்பட்ட நினைவக பயன்பாடு- &apos;estimated memory usage&apos; செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு தருமதிப்பு &apos;arguments&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="தருமதிப்பு-&apos;arguments&apos; செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு எஸ்ஈலினக்ஸ் பாதுகாப்பு சூழல் &apos;SELinux security context&apos;  பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="எஸ்ஈலினக்ஸ் பாதுகாப்பு சூழல் &apos;SELinux security context&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு &apos;PID&apos;  பத்தியை காட்டுக ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="செயல்பாடு &apos;PID&apos;   செயலுக்கு பத்தி அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு நைஸ் &apos;nice&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="நைஸ் &apos;nice&apos; செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு துவக்க நேரம்- &apos;start time&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="துவக்க நேரம் &apos;start time&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு சிபியூ நேரம் ( &apos;CPU time&apos; ) பத்தியை காட்டுக இயக்கு">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="&apos;சிபியூ நேரம்&apos; செயலுக்கு பத்தி அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு சிபியூ %( &apos;CPU %&apos; ) பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="சிபியூ %( &apos;CPU %&apos; ) செயலுக்கு பத்தி அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு எக்ஸ் வழங்கன் நினைவகம்  &apos;X server memory&apos;  பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="எக்ஸ் வழங்கன் நினைவகம்  &apos;X server memory&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு பகிர்ந்த நினைவகம் &apos;shared memory&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="பகிர்ந்த நினைவகம் &apos;shared memory&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு எழுதக்கூடிய நினைவகம் &apos;writable memory&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc=" &apos;writable memory&apos; செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு இருப்பில் உள்ள நினைவகம்- &apos;resident memory&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="இருப்பில் உள்ள நினைவகம்- &apos;resident memory&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு மெய்நிகர் நினைவகம் &apos;virtual memory&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="மெய்நிகர் நினைவகம்  &apos;virtual memory&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு நிலைமை &apos;status&apos;  பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="நிலைமை &apos;status&apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு உரிமையாளர் &apos;owner&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="உரிமையாளர் &apos;owner&apos; &apos;  செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="துவக்கத்தில் செயல்பாடு பெயர் &apos;name&apos; பத்தியை காட்டுக">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="பெயர்  &apos;name&apos; செயலுக்கு பத்திக்கு அகலம்">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="செயல் பார்வை வரிசை">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="செயல் பார்வை நிரல்கள் வரிசையில்">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="செயல் பார்வை வரிசை நிரல்">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

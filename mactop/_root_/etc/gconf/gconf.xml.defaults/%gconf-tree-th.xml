@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="สีกราฟเน็ตขาออกโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="สีกราฟเน็ตขาเข้าโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="สีกราฟพื้นที่สลับโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="สีกราฟหน่วยความจำโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="สีกราฟซีพียูโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="สีกราฟซีพียูโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="สีกราฟซีพียูโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="สีกราฟซีพียูโดยปริยาย">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="เก็บแท็บที่ดู">
+						<longdesc>0 สำหรับข้อมูลระบบ, 1 สำหรับรายการโพรเซส, 2 สำหรับทรัพยากร และ 3 สำหรับรายการดิสก์</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="กำหนดชุดโพรเซสที่จะแสดงโดยปริยาย ค่า 0 หมายถึงทุกโพรเซส, 1 หมายถึงโพรเซสของผู้ใช้ และ 2 หมายถึงโพรเซสที่กำลังทำงาน">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ช่วงเวลาระหว่างการปรับข้อมูลรายการอุปกรณ์ เป็นมิลลิวินาที">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="จะแสดงข้อมูลของทุกระบบแฟ้มหรือไม่">
+						<longdesc>จะแสดงข้อมูลเกี่ยวกับระบบแฟ้มทั้งหมด (รวมถึงชนิดอย่าง &apos;autofs&apos; และ &apos;procfs&apos;) หรือไม่ ซึ่งจะมีประโยชน์ในการดูรายการระบบแฟ้มที่เมานท์อยู่ทั้งหมด</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ช่วงเวลาระหว่างการปรับข้อมูลกราฟ เป็นมิลลิวินาที">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="ช่วงเวลาระหว่างการปรับข้อมูลรายการโพรเซส เป็นมิลลิวินาที">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="เตือนก่อนฆ่าโพรเซส">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="เปิดใช้/ปิดใช้การอ่านข้อมูลแบบยืดหยุ่น">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="เปอร์เซ็นต์ซีพียูแบบ Solaris">
+						<longdesc>ถ้าเป็นค่าจริง โปรแกรมเฝ้าสังเกตระบบจะทำงานในแบบ Solaris ซึ่งการใช้ซีพียูของงานหนึ่งๆ จะถูกหารด้วยจำนวนซีพียูทั้งหมด มิฉะนั้น ก็จะทำงานในแบบ Irix</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="แสดงความขึ้นต่อกันของโพรเซสแบบต้นไม้">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ความสูงของหน้าต่างหลัก">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="ความกว้างของหน้าต่างหลัก">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="ลำดับการเรียงโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="คอลัมน์ที่ใช้เรียงลำดับโพรเซสในรายการ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ลำดับการเรียงคอลัมน์ในหน้าแสดงการใช้ดิสก์">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ลำดับการเรียงโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="คอลัมน์ที่ใช้เรียงลำดับโพรเซสในรายการ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;ช่องที่คอย&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;ช่องที่คอย&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;หน่วยความจำประเมิน&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;หน่วยความจำประเมิน&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;อาร์กิวเมนต์&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;อาร์กิวเมนต์&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;security context สำหรับ SELinux&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;security context สำหรับ SELinux&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;PID&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;PID&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;ไนซ์&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;ไนซ์&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;เวลาที่เริ่ม&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;เวลาที่เริ่ม&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;เวลาซีพียู&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;เวลาซีพียู&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;% ซีพียู&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;% ซีพียู&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;หน่วยความจำ X server&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;หน่วยความจำ X server&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;หน่วยความจำใช้ร่วม&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;หน่วยความจำใช้ร่วม&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;หน่วยความจำที่เขียนได้&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;หน่วยความจำที่เขียนได้&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;หน่วยความจำ resident&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;หน่วยความจำ resident&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;หน่วยความจำเสมือน&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;หน่วยความจำเสมือน&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;สถานะ&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;สถานะ&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;เจ้าของ&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;เจ้าของ&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="แสดงคอลัมน์ &apos;ชื่อ&apos; ของโพรเซสเมื่อเริ่มโปรแกรม">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="ความกว้างของคอลัมน์ &apos;ชื่อ&apos; ของโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ลำดับการเรียงโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="ลำดับการเรียงคอลัมน์ในหน้าแสดงโพรเซส">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="คอลัมน์ที่ใช้เรียงลำดับโพรเซสในรายการ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

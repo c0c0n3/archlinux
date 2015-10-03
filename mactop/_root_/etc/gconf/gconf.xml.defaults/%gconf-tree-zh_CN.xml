@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="图形中网络流出流量的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="图形中网络流入流量的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="图形中交换区的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="图形中内存的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="图形中 CPU 的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="图形中 CPU 的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="图形中 CPU 的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="图形中 CPU 的默认颜色">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="保存目前查看的标签">
+						<longdesc>0 代表系统信息，1 代表进程列表，2 代表资源，3 代表磁盘列表</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="确定默认情况下要显示哪些进程。0 代表全部，1 代表用户，2 代表活动">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="更新设备列表的时间间隔，以毫秒计">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="是否应显示关于全部文件系统的信息">
+						<longdesc>是否应显示关于全部文件系统的信息(包含类似“autofs”和“procfs”的文件系统)。您可以通过此功能获得目前已挂载的全部文件系统。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="更新图形的时间间隔，以毫秒计">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="更新进程视图的时间间隔，以毫秒计">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="杀死进程时显示警告对话框">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="启用/禁用平滑刷新">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU 百分比使用 Solaris 模式">
+						<longdesc>如果为 TRUE，系统监视器将工作在“Solaris 模式”，其中任务的 CPU 使用量将被除以总的 CPU 数目。否则它将工作在“Irix 模式”。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="以树型显示进程依赖关系">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="主窗口高度">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="主窗口宽度">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="进程视图排序顺序">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="进程视图排序列的宽度">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="磁盘视图列顺序">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="进程视图排序顺序">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="进程视图排序列的宽度">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="启动时显示进程“等候频道”列">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="等候频道列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="启动时显示进程“预计内存使用”列">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="预计内存占用列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="启动时显示进程“参数”列">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="进程参数列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="启动时显示进程“SELinux 安全环境”列">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="进程 SELinux 安全环境列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="启动时显示进程“PID”列">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="进程 PID 列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="启动时显示进程“nice 值”列">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="进程 nice 值列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="启动时显示进程“开始时间”列">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="启动时进程启动时间列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="启动时显示进程“CPU 时间”列">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="进程 CPU 时间列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="启动时显示进程“CPU 百分比”列">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="进程 CPU 百分比列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="启动时显示进程“X 服务器内存”列">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="进程 X 服务器内存列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="启动时显示进程“共享内存”列">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="进程共享内存列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="启动时显示进程“可写内存”列">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="进程可写内存列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="启动时显示进程“常驻内存”列">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="进程常驻内存列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="启动时显示进程“虚拟内存”列">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="进程虚拟内存列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="启动时显示进程“状态”列">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="进程状态列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="启动时显示进程“所有者”列">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="进程所有者列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="启动时显示进程“名称”列">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="进程名列的宽度">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="进程视图排序顺序">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="进程视图列顺序">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="进程视图排序列的宽度">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

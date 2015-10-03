@@ -1,0 +1,21 @@
+==========================================================================================
+                                  R E A D M E
+==========================================================================================
+
+This directory contains instructions on how to install and configure the system as well
+as various files used for the look & feel or other configuration.
+
+Directory Contents:
+
+ * drivers: manually installed drivers --- empty at the moment.
+
+ * instructions: install & configuration (succint) guide.
+
+ * look-n-feel: contains various files used for Desktop appearance as well as instructions
+   for the tweaks.
+ 
+ * power-management: scripts to handle ACPI events that should trigger power management.  
+
+ * README: this file.
+ 
+ * udev: rules & scripts to automount removable media, etc. using udev.

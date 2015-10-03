@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="swap_color">
+					<local_schema short_desc="मूलभूत आलेख स्वैप रँग">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="मूलभूत आलेख मेम रँग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="मूलभूत आलेख cpu रँग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="मूलभूत आलेख cpu रँग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="मूलभूत आलेख cpu रँग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="मूलभूत आलेख cpu रँग">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="मोजुदा देखल टैबकेँ सहेजू">
+						<longdesc>सिस्टम सूचना क&apos; लेल 0, प्रक्रिया सूची क&apos; लेल 1, संसाधन क&apos; लेल 2 आओर डिस्क सूची क&apos; लेल 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="निश्चित करू जे कओन प्रक्रियाकेँ मूलभूत रूपसँ देखओनाइ अछि 0 सभक लेल , 1 प्रयोक्ता अछि 2 सक्रिय अछि">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="डिवाइस सूची क&apos; अद्यतन क&apos; बीच मिलीसेकेंडमे समय">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="की सबहि फाइलसिस्टम क&apos; संबंधमे सूचना प्रदर्शित कएल जएनाइ चाही">
+						<longdesc>की सबहि फाइल सिस्टम क&apos; संबंधमे सूचना प्रदर्शित कएल जएनाइ चाही (ई फाइल सिस्टम जहिना &apos;autofs&apos; आओर &apos;procfs&apos; केँ समाहित करताह). ई मोजुदा सबहि आरोहित फाइलसिस्टमकेँ पाबैमेसहायक भ&apos;सकताह.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="आलेख क&apos; अद्यतन क&apos; बीच मिलीसेकेंडमे समय">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="प्रक्रिया दृश्य क&apos; अद्यतन क&apos; बीच मिलीसेकेंडमे समय">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="किलिंग प्रक्रिया क&apos; समय चेतावनी समाद देखाबू">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="आसान ताजा सक्रिय/निष्क्रिय करू">
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="प्रक्रिया निर्भरतासभकेँ तरू रूपमे देखाबू">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="मुख्य विंडो उँचाइ">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="मुख्य विंडो चओड़ाइ">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="प्रक्रिया दृश्य छाँटब क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="प्रक्रिया दृश्य छाँटब क्रम">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="डिस्क दृश्य कालमसभक क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="प्रक्रिया दृश्य छाँटब क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="प्रक्रिया दृश्य छाँटब क्रम">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="sort_order">
+						<local_schema short_desc="प्रक्रिया दृश्य छाँटब क्रम">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="प्रक्रिया दृश्य कालमसभ क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="प्रक्रिया दृश्य छाँटब क्रम">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

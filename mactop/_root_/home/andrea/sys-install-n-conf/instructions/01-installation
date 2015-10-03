@@ -1,0 +1,74 @@
+===========================================================================================
+                                     ARCHLINUX
+	                SYSTEM INSTALLATION & CONFIGURATION
+===========================================================================================
+
+
+1. INSTALLATION
+===============
+
+1.1. Mac OS X (http://wiki.archlinux.org/index.php/MacBook)
+-------------
+
+ * Run Software Update
+ * Install rEFIt (http://refit.sourceforge.net/)
+ * Mute startup chime: /usr/sbin/nvram SystemAudioVolume=%00
+
+
+1.2. Partitions (http://wiki.archlinux.org/index.php/MacBook, 
+---------------  http://wiki.archlinux.org/index.php/Beginners'_Guide)
+
+ * Follow procedure on Wiki->MacBook->Mac OS X with Arch Linux
+ * Split HFS partition to create 200GB empty space
+ * Create PRIMARY partitions with parted as follows
+
+   GB mark  300   300.2             308    338        345        365      (501)
+            |_______|________________|______|__________|__________|_________|
+   name     | boot  | swap           | root | tmp      | var      | home
+   type     | ext2  | linux-swap(v1) | ext3 | reiserfs | reiserfs | ext3
+            ---------------------------------------------------------------- 
+   part #      3         4               5       6          7         8
+
+     NOTES
+     -----
+     * prepend each name with 'arch: ' --- e.g. 'arch: boot', 'arch: swap', etc.
+     * NB: we put boot on #3 so that we can use GRUB (# > 4 requires GPT support, e.g. 
+       GRUB 2); also rEFIt recognises it as linux boot and shows an entry in its menu.
+
+
+1.3. Base Install (http://wiki.archlinux.org/index.php/Beginners'_Guide,
+-----------------  http://wiki.archlinux.org/index.php/MacBook)
+
+ * Use CD as installation media (rEFIt doesn't recognise the bootable flash drive)
+ * At GRUB launch, press 'e' and append 'vga=773'
+ * Login as 'root' (no password) and start /arch/setup
+ * Installation script:
+   + Installation source -> CD
+   + Set clock -> UTC
+   + Hard drive -> do only 'set filesystem mountpoints' step; format according to above
+      table; use labels 'boot', 'root', etc. 
+   + Packages -> select all in Base and Base-devel
+   + Configure -> rc.conf, fstab, mkinitcpio.conf, hosts, locale.gen, pacman.d/mirrorlist
+   + Root password
+   + Install GRUB on /dev/sda3 (NOT on /dev/sda) and configure /boot/grub/menu.lst
+ * Reboot and remove CD (hold down eject key while rebooting)
+
+   NOTES
+   -----
+   * install script doesn't let you choose a label for swap; this can be assigned later
+     using: swapoff; mkswap -L swap /dev/sda4; swapon
+   * config files content can be taken from existing ones; you could even override them
+     by exiting the installer, mounting USB, then copy stuff in /mnt (which is where the
+     installer mounts sda); see http://wiki.archlinux.org/index.php/GRUB2#Installation
+   * rc.conf is best edited as specified in the guide instead as some stuff (e.g. deamons)
+     has not yet been installed at this stage
+   * set HOSTNAME='cape-lambda' in rc.conf; this should automatically update hosts.
+   * the only thing to add to mkinitcpio.conf is 'usbinput' to the HOOKS line after 
+     'autodetect' as explained on the wiki.
+   * later on you can add support for GRUB splash images with grub-gfx 
+          http://wiki.archlinux.org/index.php/Grub-gfx
+     (however at this stage it has been moved to AUR and it doesn't compile under x86_64;
+      see comments on AUR.)
+   * Also have 2 menu items in /boot/grub/menu.lst so as to be able to boot with or without
+     X11 (i.e. runlevel 3 and 5, respectively).  See:
+          https://wiki.archlinux.org/index.php/Display_Manager

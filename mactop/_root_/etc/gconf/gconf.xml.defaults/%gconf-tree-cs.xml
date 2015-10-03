@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Výchozí barva grafu odchozího síťového provozu">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Výchozí barva grafu příchozího síťového provozu">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Výchozí barva grafu odkládacího prostoru">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Výchozí barva grafu paměti">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Výchozí barva grafu CPU">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Výchozí barva grafu CPU">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Výchozí barva grafu CPU">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Výchozí barva grafu CPU">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Uloží aktuálně zobrazovanou kartu">
+						<longdesc>0 značí informace o systému, 1 značí seznam procesů, 2 značí zdroje a 3 značí seznam disků</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Určuje, které procesy zobrazovat jako výchozí. 0 znamená všechny, 1 znamená uživatele a 2 znamená aktivní">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Čas v milisekundách mezi aktualizacemi seznamu zařízení">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Jestli se má zobrazovat informace o všech systémech souborů">
+						<longdesc>Jestli se má zobrazovat informace o všech systémech souborů (včetně typů jako &quot;autofs&quot; a &quot;procfs&quot;). Užitečné pro získání seznamu všech připojených systémů souborů.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Čas v milisekundách mezi aktualizacemi grafů">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Čas v milisekundách mezi aktualizacemi pohledu na procesy">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Zobrazit varovný dialog při zabíjení procesů">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Povolit/zakázat hladké obnovování">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Režim Solaris CPU">
+						<longdesc>Je-li &quot;true&quot;, system-monitor pracuje v &quot;režimu Solaris&quot;, ve kterém je využití CPU u úlohy děleno celkovým počtem CPU. Jinak pracuje v &quot;režimu Irix&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Zobrazovat závislosti procesů ve formě stromu">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Výška hlavního okna">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Šířka hlavního okna">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Pořadí řazení pohledu na procesy">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sloupec řazení pohledu na procesy">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Pořadí sloupců pohledu na disky">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Pořadí řazení pohledu na procesy">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sloupec řazení pohledu na procesy">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Kanál čekání&quot; procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Šířka sloupce &quot;Kanál čekání&quot; procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec odhadovaného využití paměti">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Šířka sloupce odhadu využívané paměti">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec argumentů">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Šířka sloupce argumentů procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Kontext zabezpečení SELinux&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Šířka sloupce &quot;Kontext zabezpečení SELinux&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;PID&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Šířka sloupce &quot;PID&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Nice&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Šířka sloupce &quot;Nice&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec počátečního času">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Šířka sloupce počátečního času">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Čas CPU&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Šířka sloupce &quot;Čas CPU&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;CPU %&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Šířka sloupce &quot;CPU %&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Paměť severu X&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Šířka sloupce &quot;Paměť severu X&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Po spuštění zobrazovat sloupec &quot;Sdílená paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Šířka sloupce sdílené paměti">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Zapisovatelná paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Šířka sloupce &quot;Zapisovatelná paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec &quot;Rezidentní paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Šířka sloupce &quot;Rezidentní paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Po spuštění zobrazovat sloupec &quot;Virtuální paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Šířka sloupce &quot;Virtuální paměť&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Po spuštění zobrazovat sloupec &quot;Stav&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Šířka sloupce &quot;Stav&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Po spuštění zobrazovat sloupec vlastníka">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Šířka sloupce vlastníka">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Zobrazovat po spuštění sloupec názvu procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Šířka sloupce názvu procesu">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Pořadí řazení pohledu na procesy">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Pořadí sloupců pohledu na procesy">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sloupec řazení pohledu na procesy">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

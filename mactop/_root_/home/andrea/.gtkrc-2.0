@@ -1,0 +1,11 @@
+
+style "my_color"
+{
+    fg[NORMAL] = "#ffffff"
+}
+widget "*PanelWidget*" style "my_color"
+widget "*PanelApplet*" style "my_color"
+
+gtk-icon-theme-name = "Neu"
+gtk-font-name = "Gentium 13"
+gtk-theme-name = "MurrineBeige"

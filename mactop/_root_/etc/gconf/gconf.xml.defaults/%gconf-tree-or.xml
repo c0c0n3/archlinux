@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ ଯାଉଥିବା ନେଟୱର୍କ ଟ୍ରାଫିକ ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ ଆସୁଥିବା ନେଟୱର୍କ ଟ୍ରାଫିକ ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ swap ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ mem ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ cpu ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ cpu ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ cpu ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଆଲେଖୀ cpu ରଙ୍ଗ">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ବର୍ତ୍ତମାନ ଦେଖିଥିବା ଟ୍ୟାବକୁ ସଂରକ୍ଷଣ କରେ">
+						<longdesc>ତନ୍ତ୍ର ସୂଚନା ପାଇଁ 0, ପ୍ରକ୍ରିୟା ତାଲିକା ପାଇଁ 1, ଉତ୍ସଗୁଡ଼ିକ ପାଇଁ 2 ଏବଂ ଡିସ୍କ ତାଲିକା ପାଇଁ 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଭାବରେ କେଉଁ ପ୍ରକ୍ରିୟାକୁ ଦର୍ଶାଯିବ ତାହା ବର୍ଣ୍ଣନାକରନ୍ତୁ. 0 ହେଉଛି ସମସ୍ତ, 1 ହେଉଛି ଚାଳକ, ଏବଂ 2 ହେଉଛି ସକ୍ରିୟ">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ଯନ୍ତ୍ରଗୁଡ଼ିକର ତାଲିକା ଅଦ୍ୟତନ ମଧ୍ଯବର୍ତ୍ତୀ ସମୟ ମିଲିସେକଣ୍ଡରେ">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="ସମସ୍ତ ଫାଇଲତନ୍ତ୍ରଗୁଡ଼ିକ ବିଷୟରେ ସୂଚନାକୁ ଦର୍ଶାଯିବା ଉଚିତ କି ନୁହଁ">
+						<longdesc>ସମସ୍ତ ଫାଇଲତନ୍ତ୍ରଗୁଡ଼ିକ ବିଷୟରେ ସୂଚନାକୁ ଦର୍ଶାଯିବା ଉଚିତ କି ନୁହଁ (&apos;autofs&apos; ଏବଂ &apos;procfs&apos; ପ୍ରକାରଗୁଡ଼ିକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି). ସମସ୍ତ ସ୍ଥପିତ ଫାଇଲତନ୍ତ୍ରଗୁଡ଼ିକର ତାଲିକା ପାଇବା ପାଇଁ ଫଳପ୍ରଦ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ଆଲେଖୀଗୁଡ଼ିକର ଅଦ୍ୟତନର ମଧ୍ଯବର୍ତ୍ତୀ ସମୟ ମିଲିସେକଣ୍ଡରେ">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦର୍ଶନ ଅଦ୍ୟତନର ମଧ୍ଯବର୍ତ୍ତୀ ସମୟ ମିଲିସେକଣ୍ଡରେ">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="ପ୍ରକ୍ରିୟାଗୁଡ଼ିକୁ ବନ୍ଦକରିବା ସମୟରେ ଚେତାବନୀ ସଂଳାପ ଦର୍ଶାନ୍ତୁ">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="ମସୃଣ ସତେଜନକୁ ସକ୍ରିୟ/ନିଷ୍କ୍ରିୟ କରନ୍ତୁ">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU ପ୍ରତିଶତ ପାଇଁ Solaris ଧାରା">
+						<longdesc>ଯଦି TRUE, ତନ୍ତ୍ର-ପ୍ରଦର୍ଶିକା &apos;Solaris ଧାରା&apos;ରେ ପ୍ରୟୋଗ ହୋଇଥାଏ ଯେଉଁଥିରେ ଗୋଟିଏ କାର୍ଯ୍ୟର cpu ବ୍ୟବହାର ସମସ୍ତ CPUଗୁଡ଼ିକର ସମଷ୍ଟି ଦ୍ୱାରା ବିଭାଜିତ ହୋଇଥାଏ. ଅନ୍ୟଥା ଏହା &apos;Irix&apos;ଧାରାରେ ପ୍ରୟୋଗ ହୋଇଥାଏ.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="ପ୍ରକ୍ରିୟା ନିର୍ଭରଶୀଳ ମାନଙ୍କୁ ବୃକ୍ଷ ଆକାରରେ ଦର୍ଶାନ୍ତୁ">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ମୂଖ୍ୟ ୱିଣ୍ଡୋ ଉଚ୍ଚତା">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="ମୂଖ୍ୟ ୱିଣ୍ଡୋ ଓସାର">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସଜଡ଼ା କ୍ରମ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସ୍ତମ୍ଭ ସଜଡ଼ା">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ଡିସ୍କ ଦୃଶ୍ୟ ସ୍ଥମ୍ଭଗୁଡ଼ିକର କ୍ରମ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସଜଡ଼ା କ୍ରମ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସ୍ତମ୍ଭ ସଜଡ଼ା">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ଅପେକ୍ଷା ଚାନେଲ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ଅପେକ୍ଷା ଚାନେଲ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ଆକଳିତ ସ୍ମୃତି ସ୍ଥାନ ବ୍ୟବହାର&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ଆକଳିତ ସ୍ମୃତି ସ୍ଥାନ ବ୍ୟବହାର&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ସ୍ୱତନ୍ତ୍ରଚର&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ସ୍ୱତନ୍ତ୍ରଚରଗୁଡ଼ିକର&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;SELinux ସୁରକ୍ଷା ପ୍ରସଙ୍ଗ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;CPU ସୁରକ୍ଷା ପ୍ରସଙ୍ଗ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;PID&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;PID&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;nice&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;nice&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ଆରମ୍ଭ ସମୟ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ଆରମ୍ଭ ସମୟ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;CPU time&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;CPU time&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;CPU %&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;CPU %&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;X ସର୍ଭର ସ୍ମୃତି&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;X ସର୍ଭର ସ୍ମୃତି ସ୍ଥାନ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ସହଭାଗୀ ସ୍ମୃତି ସ୍ଥାନ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ସହଭାଗୀ ସ୍ମୃତି ସ୍ଥାନ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ଲେଖାଯୋଗ୍ୟ ସ୍ମୃତି ସ୍ଥାନ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ଲେଖାଯୋଗ୍ୟ ସ୍ମୃତି ସ୍ଥାନ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ନିବାସୀ ସ୍ମୃତି ସ୍ଥାନ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ନିବାସୀ ସ୍ମୃତି ସ୍ଥାନ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ଆବାସୀ ସ୍ମୃତି ସ୍ଥାନ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ଆଭାସୀ ସ୍ମୃତି ସ୍ଥାନ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ସ୍ଥିତି&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ସ୍ଥିତି&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ମାଲିକ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ମାଲିକ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="ଆରମ୍ଭ ସମୟରେ &apos;ନାମ&apos; ପ୍ରକ୍ରିୟା ସ୍ତମ୍ଭ ଦର୍ଶାନ୍ତୁ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା &apos;ନାମ&apos; ସ୍ତମ୍ଭର ଓସାର">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସଜଡ଼ା କ୍ରମ">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସ୍ତମ୍ଭ କ୍ରମ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ପ୍ରକ୍ରିୟା ଦୃଶ୍ୟ ସ୍ତମ୍ଭ ସଜଡ଼ା">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

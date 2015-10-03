@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=My XMonad
+Icon=/usr/share/pixmaps/xmonad.svg
+Comment=This session starts XMonad
+Exec=/usr/local/bin/start-xmonad
+Type=Application
+NoDisplay=true
+X-GNOME-WMName=Xmonad
+X-GNOME-Autostart-Phase=WindowManager
+X-GNOME-Provides=windowmanager
+X-GNOME-Autostart-Notify=false

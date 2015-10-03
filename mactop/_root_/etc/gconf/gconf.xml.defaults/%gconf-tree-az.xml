@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gpilot_applet">
+				<dir name="prefs">
+					<entry name="exec_when_clicked">
+						<local_schema short_desc="Aplet tıqlandığında icra ediləcək əmr">
+							<longdesc>Aplet tıqlandığında icra ediləcək əmr</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pop_ups">
+						<local_schema short_desc="Xəbərdarlıqları hoppanan pəncərələrdə göstər">
+							<longdesc>Xəbərdarlıqları hoppanan pəncərələrdə göstər</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

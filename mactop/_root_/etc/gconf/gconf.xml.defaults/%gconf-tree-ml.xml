@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ പുറത്തേക്ക് പോകുന്ന വിവരങ്ങളുടെ നിറം">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ ശൃംഖലയുടെ അകത്തേക്കുളള ട്രാഫിക്കിന്റെ നിറം">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ swap നിറം">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ mem നിറം">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ സി.പി.യുവിന്റെ നിറം">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ സി.പി.യുവിന്റെ നിറം">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ സി.പി.യുവിന്റെ നിറം">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="സഹജമായ ഗ്രാഫിലെ സി.പി.യുവിന്റെ നിറം">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ഇപ്പോള്‍ വീക്ഷിച്ച കിളിവാതില്‍ സംരക്ഷിക്കുന്നു">
+						<longdesc>0 എന്നാല്‍ സിസ്റ്റം വിവരം, 1 എന്നാല്‍ പ്രക്രിയ പട്ടിക, 2 എന്നാല്‍ വിഭവങ്ങള്‍, 3 എന്നാല്‍ ഡിസ്കുകളുടെ പട്ടിക</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="സഹജമായി ഏത് പ്രക്രിയ കാണിക്കണമെന്ന് തീരുമാനിക്കുന്നു. എല്ലാം കാണിക്കണമെങ്കില്‍ 0, ഉപയോക്താവ് 1 ആണ്, പ്രവര്‍ത്തിനുളളത് ആണെങ്കില്‍ 2">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ഉപകരണം ലിസ്റ്റുകളുടെ പുതുക്കലിന് ഇടയിലുളള സമയം (മില്ലിസെക്കന്‍ഡ്സില്‍)">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="ഫയല്‍ സിസ്റ്റങ്ങളെപ്പറ്റിയുളള വിവരങ്ങള്‍ കാണിക്കണമോ എന്ന്">
+						<longdesc>ഫയല്‍ സിസ്റ്റങ്ങളെപ്പറ്റിയുളള വിവരങ്ങള്‍ കാണിക്കണമോ എന്ന് (&apos;autofs&apos;, &apos;procfs എന്നീ തരങ്ങളും ഉള്‍പ്പെടുന്നു). നിലവില്‍ മൌണ്ട് ചെയ്തിട്ടുളള എല്ലാ ഫയല്‍ സിസ്റ്റങ്ങളുടേയും ലിസ്റ്റ് ലഭിക്കുന്നതിന് ഉപയോഗപ്പെടുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ഗ്രാഫുകളുടെ പുതുക്കലിന് ഇടയിലുളള സമയം (മില്ലിസെക്കന്‍ഡ്സില്‍)">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="പ്രക്രിയയുടെ കാഴ്ചയുടെ പുതുക്കലിന് ഇടയിലുളള സമയം (മില്ലിസെക്കന്‍ഡ്സില്‍)">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="പ്രക്രിയകള്‍ ഇല്ലാതാക്കുമ്പോള്‍ മുന്നറിയിപ്പ് ഡയലോഗുകള്‍ കാണിക്കുക">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="പുതുക്കല്‍ പ്രക്രിയ പ്രവര്‍ത്തന സജ്ജമാക്കുക/രഹിതമാക്കുക">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="സി.പി.യു ശതമാനത്തിന് സൊളാരിസ് ദശ">
+						<longdesc>TRUE ആണെങ്കില്‍, സിസ്റ്റം നിരീക്ഷകന്‍ പ്രവര്‍ത്തിക്കുന്നു &apos;സൊളാരിസ്&apos; ദശയില്‍, ഇതില്‍ ഒരു ജോലിയുടെ സി.പി.യു ഉപയോഗം ഉള്ളത്തറെയും സി.പി.യു-കളുടെ എണ്ണവുമായ് വീതിക്കുക. ഇല്ലെങ്കില്‍ ഇത് &apos;ഐറിക്സ്&apos; സശയില്‍ പ്രവര്‍ത്തിക്കുന്നു.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="പ്രക്രിയയുടെ ഡിപന്‍ഡന്‍സികള്‍ വൃക്ഷ രൂപത്തില്‍ കാണിക്കുക">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="പ്രധാന ജാലകത്തിന്റെ ഉയരം">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="പ്രധാന ജാലകത്തിന്റെ വീതി">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc=" പ്രക്രിയ കാണുന്നതിന്റെ തരം തിരിയ്ക്കുന്ന ക്രമം">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="പ്രക്രിയ കാണുന്ന കോളത്തിന്റെ തരം തിരിയ്ക്കുന്ന ക്രമം">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ഡിസ്ക് കാഴ്ചയുടെ കളങ്ങളുടെ ക്രമം">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc=" പ്രക്രിയ കാണുന്നതിന്റെ തരം തിരിയ്ക്കുന്ന ക്രമം">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="പ്രക്രിയ കാണുന്ന കോളത്തിന്റെ തരം തിരിയ്ക്കുന്ന ക്രമം">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ &apos;കാത്തിരിക്കുന്ന സമയം&apos; പ്രക്രിയയുടെ നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="&apos;കാത്തിരിക്കുന്ന ചാനല്‍&apos;  പ്രക്രിയയുടെ നിരയുടെ  വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="ആരംഭിക്കുമ്പോള്‍ &apos;മെമ്മറിയുടെ ഉപയോഗത്തിന്റെ കണക്ക്&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc=" &apos;ഉപയോഗം കാണുന്ന കോളം&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ &apos;ആര്‍ഗ്യുമെന്‍റ്സ്&apos; കോളം പ്രക്രിയ കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="&apos;ആര്‍ഗ്യുമെന്‍റ്സ്&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ &apos;SELinux സുരക്ഷ കോണ്‍ടക്സ്റ്റ്&apos; കോളം കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="&apos;SELinux സുരക്ഷ കോണ്‍ടക്സ്റ്റ്&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="ആരംഭിക്കുമ്പോള്‍ &apos;PID&apos; പ്രക്രിയ നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="&apos;PID&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;നൈസ്&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="&apos;നൈസ്&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;ആരംഭ സമയത്തിന്റെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc=" &apos;ആരംഭ സമയത്തിന്റെ&apos; പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="ആരംഭിക്കുമ്പോള്‍ &apos;സി.പി.യു സമയം&apos; പ്രക്രിയ നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="&apos;സി.പി.യു സമയം&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="ആരംഭിക്കുമ്പോള്‍ &apos;സി.പി.യു %&apos; പ്രക്രിയ നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="&apos;സി.പി.യു %&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ &apos;X സര്‍വര്‍ മെമ്മറി കോളം&apos;  പ്രക്രിയ കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="&apos;X സര്‍വര്‍ മെമ്മറി&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;പങ്കിട്ടുള്ള മെമ്മറിയുടെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="&apos;ഷെയര്‍ഡ് മെമ്മറിയുടെ&apos; പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;ഉപയോഗിക്കാന്‍ സാധ്യമുളള മെമ്മറിയുടെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="&apos;ഉപയോഗിക്കാന്‍ സാധ്യമുളള മെമ്മറിയുടെ&apos; പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;ഉപയോഗത്തിലുളള മെമ്മറിയുടെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc=" &apos;ഉപയോഗത്തിലുളള മെമ്മറിയുടെ&apos; പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;വിര്‍ച്ച്വല്‍ മെമ്മറിയുടെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="&apos;&apos;വിര്‍ച്ച്വല്‍ മെമ്മറിയുടെ&apos; പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;അവസ്ഥയുടെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="&apos;അവസ്ഥയുടെ&apos; പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;ഉടമസ്ഥ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="&apos; ഉടമസ്ഥ&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="ആരംഭത്തില്‍ പ്രക്രിയയുടെ &apos;നാമങ്ങളുടെ&apos; നിര കാണിക്കുക">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="&apos;നാമങ്ങളുടെ&apos;  പ്രക്രിയയുടെ നിരയുടെ വീതി">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc=" പ്രക്രിയ കാണുന്നതിന്റെ തരം തിരിയ്ക്കുന്ന ക്രമം">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="പ്രക്രിയ കാണുന്ന കോളത്തിന്റെ ക്രമം">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="പ്രക്രിയ കാണുന്ന കോളത്തിന്റെ തരം തിരിയ്ക്കുന്ന ക്രമം">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

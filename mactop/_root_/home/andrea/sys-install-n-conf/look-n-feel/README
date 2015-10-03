@@ -1,0 +1,352 @@
+
+================================================================================
+
+                        LOOK & FEEL TWEAKS
+
+================================================================================
+
+This directory contains some goodies you can use to tweak the look & feel of the
+system.  Here's a short description of the contents -- see the remainder of this
+README for how you can use them to customize your Ubuntu Hardy Heron.
+
+
+look-n-feel/
+|
+|-- README: this file
+|
+|-- awn-themes: themes for Avant Window Navigator
+|   `-- Andrea-Simple-Glass.tgz: my customization of the Simple Glass AWN theme
+|
+|-- conky: my Conky templates
+|
+|-- emerald-themes: themes for the Emerald window decorator
+|   |-- 77182-Polish Glass.emerald: from http://www.gnome-look.org/
+|   `-- polish-glass.tweaked.emerald: my tweaked version of the above
+|
+|-- firefox-themes: themes for Firefox 3
+|   `-- abstract_classic-3.0.1a.jar: from http://bodizzlethemes.blogspot.com/
+|
+|-- gdm-themes: themes for the Gnome Login Manager
+|   |-- avatar-pix: images to use as avatar in the GDM login window
+|   |-- cape-lambda-login.src: files I used to make the Cape Lambda theme; I took the Ubuntu Natural Login as baseline
+|   |   |-- ...
+|   |   |-- make-theme.sh: script to tgz the content of the output dir
+|   |   |-- output: the uncompressed theme
+|   |   |   |-- ...
+|   |-- cape-lambda.login.tgz: the Cape Lambda theme, ready for use
+|   `-- ubuntu_natural_login.tar.gz: you can find it bundled w/ the Fusion theme at http://www.gnome-look.org/
+|
+|-- grub: files to customize the GRUB loader
+|   |-- default-splash-images -> /boot/grub/splashimages/ : points to images installed w/ grub-splashimages
+|   `-- zion.xpm.gz: a splash image from http://ruslug.rutgers.edu/~mcgrof/grub-images/images/
+|
+|-- .gtkrc-2.0: config file to change the font color of the Menus/Widgets on the Gnome panel 
+|
+|-- icon-themes: icons to customize an existing Gnome theme
+|
+`-- wallpapers: desktop backgrounds
+    |-- lambda-radiance.jpg: my tweaked version of the HPRadiance wallpaper
+    |-- lambda-radiance.src: the files I used to make the above
+    |   |-- ...
+    |-- vista -> /mnt/vista/Windows/Web/Wallpaper/ : points to wallpapers under Vista
+    `-- vitruvian-man.jpg: found at http://www.wallpaperlink.com/bin/0702/03088.html
+
+
+So here follow the customization steps, you should be able to re-apply the same
+tweaks to another freshly installed Ubuntu by following the given instructions.
+
+The first step is to copy the contents of this directory under your home -- w/ 
+the exception of the symlinks: 
+    
+        ~/look-n-feel 
+
+Then carry on w/ the steps described in rest of this doc, in the given order.
+
+
+
+
+--------------------------------------------------------------------------------
+
+    1. Grub
+
+--------------------------------------------------------------------------------
+
+Download the default images packaged for Ubuntu, some of them are cute.
+
+    $ sudo apt-get install grub-splashimages
+
+Make a symlink so we can see the default images
+
+    $ cd ~/look-n-feel/grub
+    $ ln -s /boot/grub/splashimages/ default-splash-images
+
+Set up the image we're going to use.
+NB: we can't create a symlink (ln -s zion.xpm.gz /boot/grub/splash.xpm.gz) as
+/ and /home are on two different partitions.
+
+    $ sudo cp zion.xpm.gz /boot/grub/splash.xpm.gz
+
+Edit the Grub config file to specify that update-grub should generate entries
+only for the most recent kernel.
+
+    $ sudo nano /boot/grub/menu.lst
+        Then set howmany to 1: 
+        # howmany=1 
+
+Regenerate the config file.
+
+    $ sudo update-grub
+
+
+For more info read:
+ 
+ * https://help.ubuntu.com/community/GrubHowto
+
+and to find out more about splash images:
+
+ * http://ruslug.rutgers.edu/~mcgrof/grub-images/
+
+More images at:
+
+ * http://schragehome.de/splash/index.html
+
+
+
+--------------------------------------------------------------------------------
+    
+    2. Mount Vista
+
+--------------------------------------------------------------------------------
+
+$ sudo mkdir /mnt/vista
+$ sudo nano /etc/fstab
+  Then add:
+/dev/sda1       /mnt/vista      ntfs    ro,nls=utf8     0       0
+
+$ sudo mount -a
+
+
+
+--------------------------------------------------------------------------------
+
+    3. Wallpaper & Screensaver
+
+--------------------------------------------------------------------------------
+
+Make a symlink to the Vista wallpapers, some of them are really nice.
+
+    $ ln -s /mnt/vista/Windows/Web/Wallpaper/ wallpapers/vista
+
+Change desktop background to lambda-radiance.jpg -- it is a modified version of
+vista/HPRadiance.jpg.
+
+Finally, select the Cosmos screensaver.
+
+
+
+--------------------------------------------------------------------------------
+
+    4. Fonts
+
+--------------------------------------------------------------------------------
+
+Install the Gentium fonts.
+
+    $ sudo apt-get install ttf-gentium
+    
+Manually install the Monaco font --- monospaced, quite nice for programming.
+
+    $ sudo mkdir /usr/share/fonts/truetype/monaco
+    $ cd /usr/share/fonts/truetype/monaco
+    $ sudo wget http://jorrel.googlepages.com/Monaco_Linux.ttf
+    $ sudo fc-cache -f -v 
+
+Tweak rendering: select Subpixel Smoothing in in Preferences -> Appearance ->
+Fonts.
+
+
+
+--------------------------------------------------------------------------------
+
+    5. Login Window
+
+--------------------------------------------------------------------------------
+
+Install the Cape Lambda GDM theme -- this theme is a modification of the Ubuntu
+Natural login theme, which you can find in the Ubuntu Fusion theme.
+
+
+
+--------------------------------------------------------------------------------
+
+    6. Enable nVidia Driver
+
+--------------------------------------------------------------------------------
+
+Enable driver -- System -> Hardware Drivers or use apt.  Now reboot.
+
+    $ sudo shutdown -r now
+
+
+
+--------------------------------------------------------------------------------
+
+    7. Compiz/Emerald
+
+--------------------------------------------------------------------------------
+
+Hardy Heron ships w/ Compiz Fusion, but not w/ Emerald so we need to install it
+and as we're at it we get the Compiz Settings Manager too so we can easily mod
+the default visual effects -- these are enabled as soon as you enable the
+nVidia driver.  
+
+    $ sudo apt-get install compizconfig-settings-manager emerald
+    $ sudo nano /usr/bin/compiz-decorator
+        Then chnage
+            USE_EMERALD="no"
+        to
+            USE_EMERALD="yes"
+
+Use Ctrl+Alt+Backspace to logout and then restart your session.
+
+See also:
+
+ * http://openswitch.org/2008/04/28/how-to-enable-emerald-in-hardy-heron-804/
+
+
+Use the Emerald Theme Manager to install my version of the Polish Glass Emerald 
+theme -- polish-glass.tweaked.  (The tweaks amounted to setting the title font
+to Gentium Bold Italic 14, shadow color to #ABD0ED, opacity to 0.9, and radius
+to 10.) 
+
+Finally, tweak the Visual Effects.
+First off, disable all, then enable the following:
+
+ * Desktop Cube, Rotate Cube, 3D Windows, Cube Reflection 
+ * Trailfocus -> set opacity level of unfocussed windows to 5
+ * Wobbly Windows
+ * Window Decoration
+ * Animations
+ * Image Loading section -> enable all
+ * Utility -> enable Dbus, Regex Matching, Resize Info, Session Management, 
+   Video Playback, Workarounds
+ * Expo (super+e)
+ * Application Switcher (alt+tab), Ring Switcher (super+tab), Shift Switcher 
+   (super+shift+s)
+ * Move Window, Resize Window
+
+
+
+--------------------------------------------------------------------------------
+
+    8. Top Panel
+
+--------------------------------------------------------------------------------
+
+Remove help and mail launchers.  Add the following launchers:
+
+  * Control Center -- cmd: gnome-control-center; 
+  * Configuration Editor -- cmd: gconf-editor; comment: Directly edit your entire configuration database
+  * Terminal -- copy from Accessories
+
+and the following applets:
+
+  * Deskbar
+  * Show Desktop
+  * Sticky Notes
+  * Wheater Report
+  * Window Selector
+  * Workspace Switcher
+
+Finally, make it almost completely transparent -- select solid color white and 
+set transparency to 10%.
+
+Now you can copy the .gtkrc-2.0 into ~.  This will make the Gnome menus/widgets
+on the panel use a white font --- color can be changed, see file.  NB This is
+just for the text displayed on the panel, the menu items are unaffected.
+
+
+
+--------------------------------------------------------------------------------
+
+    9. Icons
+
+--------------------------------------------------------------------------------
+
+Open Configuration Editor go to /apps/nautilus/desktop/ and make the computer 
+icon visible.
+Then go to System->Preferences->Appearance and drag one of the compressed icon
+themes onto the Theme tab --- this will change the current theme to use those
+icons everywhere: desktop, folders, menus, etc.
+
+
+
+--------------------------------------------------------------------------------
+
+    10. Avant Window Navigator
+
+--------------------------------------------------------------------------------
+
+First some info about this dock bar applet.
+
+Home: https://launchpad.net/awn/
+Wiki: http://wiki.awn-project.org/
+Other:
+ * HOWTO & tips for installation on Hardy Heron:
+   http://news.softpedia.com/news/Install-AWN-on-Hardy-Heron-82611.shtml
+
+
+Now you can delete the bottom panel as we're going to replace it w/ AWN.
+Install the navigator & the manager:
+
+    $ sudo apt-get install avant-window-navigator
+
+Then add to auto-launch -- cmd: avant-window-navigator. 
+(System -> Preferences -> Sessions, "Startup Programs".)
+
+Open the manager and install Andrea-Simple-Glass.tgz.
+The theme is a modification of the Simple-Glass theme found on the AWN site.
+
+
+
+--------------------------------------------------------------------------------
+
+    11. Conky
+
+--------------------------------------------------------------------------------
+
+Home: http://conky.sourceforge.net/
+
+Install as usual:
+
+    $ sudo apt-get install conky
+
+Then copy the conkyrc.templates to your home and rename it to '.conkyrc'.
+Then add to auto-launch -- cmd: conky.
+
+
+Finally, modify .conkyrc as need be.
+
+
+
+--------------------------------------------------------------------------------
+
+    12. Firefox
+
+--------------------------------------------------------------------------------
+
+Drag the abstract-classic jar file into the Firefox themes dialog.
+
+
+
+--------------------------------------------------------------------------------
+
+    13. Terminal
+
+--------------------------------------------------------------------------------
+
+Go to Current Profile -> Effects, select Transparent background, and move the
+slider close to max (~90%).
+
+
+

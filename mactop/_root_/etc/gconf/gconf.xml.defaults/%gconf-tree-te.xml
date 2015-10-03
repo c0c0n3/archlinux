@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="వెల్తున్న నెట్వర్కు రద్దీ యొక్క అప్రమేయ రేఖాపటం వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="వస్తున్న నెట్వర్కు రద్దీ యొక్క అప్రమేయ రేఖాపటం వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="అప్రమేయ రేఖాపటం స్వాప్ వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="అప్రమేయ రేఖాపటం మెమ్ వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="అప్రమేయ రేఖాపటం సిపియు వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="అప్రమేయ రేఖాపటం సిపియు వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="అప్రమేయ రేఖాపటం సిపియు వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="అప్రమేయ రేఖాపటం సిపియు వర్ణము">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ప్రస్తుతము దర్శించిన టాబ్‌ను దాస్తుంది">
+						<longdesc>సిస్టమ్ సమాచారం కొరకు 0, కార్యక్రమముల జాబితా కొరకు 1, వనరుల కొరకు 2 మరియు డిస్కుల జాబితా కొరకు 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="అప్రమేయంగా ఏఏ కార్యక్రమములను చూపాలో నిర్ణయిస్తుంది. 0 అంటే అన్నీ, 1 అంటే వినియోగదారి, 2 అంటే క్రియాశీలమైనవి">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="పరికరాల జాబితా నవీకరణల మధ్య సమయం మిల్లీసెకనులలో">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="అన్ని దస్త్ర వ్యవస్థల యొక్క సమాచారము ప్రదర్శింపబడాలా">
+						<longdesc>అన్ని దస్త్రవ్యవస్థల గురించి సమాచారమును ప్రదర్శించాలా (&apos;autofs&apos; మరియు &apos;procfs&apos; వంటి రకములతో కలుపుకొని). ప్రస్తుతం మరల్పైవున్న అన్ని దస్త్రవ్యవస్థల జాబితాను పొందుటకు వుపయోగకరంగా వుంటుంది.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="రేఖాపటాల నవీకరణల మధ్య సమయం మిల్లీసెకనులలో">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="క్రమణం దర్శనము నవీకరణల మధ్య సమయం మిల్లీసెకనులలో">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="క్రమణములను అంతమొందించునప్పుడు హెచ్చరిక డైలాగును చూపుము">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="మృదువు పునర్వికాసంను చేతనం/అచేతనంచేయి">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU శాతము కొరకు సోలారీస్ రీతి">
+						<longdesc>నిజమైతే (TRUE), సిస్టమ్-పర్యవేక్షకి &apos;సాలారీస్ రీతి&apos; నందు నిర్వహించబడుతుంది అప్పుడు కర్తవ్యంయొక్క సిపియు వినియోగం మొత్తం సిపియులచే విభాగించబడుతుంది. లేదంటే అది &apos;ఐరిక్స్ రీతి&apos;నందు నిర్వహించ బడుతుంది.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="ట్రీ ఆకారములో క్రమణం అధారములు(డిపెన్డెన్సీలు) చూపుము">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ముఖ్య విండో యెత్తు">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="ముఖ్య విండో వెడల్పు">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="క్రమణము దర్శనం క్రమపరచు(సార్టుచేయు) క్రమము">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="క్రమణము దర్శించు నిలువువరుసను క్రమపరచు(సార్టుచేయి)">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="డిస్కు దర్శనం నిలువుపట్టీల క్రమం">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="క్రమణము దర్శనం క్రమపరచు(సార్టుచేయు) క్రమము">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="క్రమణము దర్శించు నిలువువరుసను క్రమపరచు(సార్టుచేయి)">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="ప్రారంభంనందు క్రమణముయొక్క &apos;వేచివుండు చానల్&apos; అను నిలువువరుసను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="క్రమణము &apos;వేచివుండు చానల్&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;అంచనావేసిన మెమొరీ వినియోగపు&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="క్రమణము &apos;అంచనావేసిన మెమొరీ వినియోగం&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;ఆర్గుమెంట్స్&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="క్రమణము &apos;ఆర్గుమెంట్స్&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;SELinux రక్షణ సందర్భం&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="క్రమణము &apos;SELinux రక్షణా సందర్భ&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;PID&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="క్రమణము &apos;PID&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;నైస్&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="క్రమణము &apos;నైస్&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;ప్రారంభ సమయపు&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="క్రమణము &apos;ప్రారంభ సమయం&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;CPU సమయం&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="క్రమణము &apos;CPU సమయం&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;CPU %&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="క్రమణము &apos;CPU %&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;X సేవిక మెమొరీ&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="క్రమణము &apos;X సేవిక మెమొరీ&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;భాగస్వామ్య మెమొరీ&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="క్రమణము &apos;భాగస్వామ్య మెమొరీ&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;వ్రాయదగు మెమొరీ&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="క్రమణము &apos;వ్రాయదగు మెమొరీ&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;నివాసపు మెమొరీ&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="క్రమణము &apos;నివాసపు మెమొరీ&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;వర్చ్యువల్ మెమొరీ&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="క్రమణము &apos;వర్చ్యువల్ మెమొరీ&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;స్థితి&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="క్రమణము &apos;స్థితి&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;యజమాని&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="క్రమణము &apos;యజమాని&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="ప్రారంభించునపుడు క్రమణము &apos;నామము&apos; నిలువుపట్టీను చూపుము">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="క్రమణము &apos;నామము&apos; నిలువుపట్టీ వెడల్పు">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="క్రమణము దర్శనం క్రమపరచు(సార్టుచేయు) క్రమము">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="క్రమణము దర్శించు నిలువువరుసల క్రమము">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="క్రమణము దర్శించు నిలువువరుసను క్రమపరచు(సార్టుచేయి)">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

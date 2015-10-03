@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Culoare implicită grafic rețea pachete trimise">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Culoare implicită grafic rețea pachete primite">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Culoare implicită grafic swap">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Culoare implicită grafic memorie">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Culoare implicită grafic procesor">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Culoare implicită grafic procesor">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Culoare implicită grafic procesor">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Culoare implicită grafic procesor">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Salvează tabul curent">
+						<longdesc>0 pentru informațiile despre sistem, 1 pentru lista de procese, 2 pentru resurse și 3 pentru lista discurilor</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Specifică procesele afișate implicit. „0” pentru toate, „1” pentru ale utilizatorului, „2” pentru cele active">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Timp în milisecunde între actualizările din lista dispozitivelor">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Specifică dacă se arată detalii despre toate sistemele de fișiere">
+						<longdesc>Specifică dacă trebuie afișate detalii despre toate sistemele de fișiere (inclusiv sisteme de fișiere precum „autofs” și „procfs”). Ar putea fi utilă o listă a tuturor sistemelor de fișiere montate curent.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Timp în milisecunde între actualizările graficelor">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Timp în milisecunde între actualizările listei de procese">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Avertizează înainte de a termina procesele">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="(Dez)Activează actualizarea de efect">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Mod „Solaris” pentru procentajul CPU">
+						<longdesc>La activare, system-monitor va opera în modul „Solaris” în care utilizarea procesorului pentru o aplicație se împarte la numărul de procesoare. Altfel va opera în modul „Irix”.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Arată dependențele procesului în arbore">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Înălțime fereastră principală">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Lățime fereastră principală">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Ordine de sortare a listei proceselor">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Coloană de ordonare a listei proceselor">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Ordine de sortare a coloanelor discurilor">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Ordine de sortare a listei proceselor">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Coloană de ordonare a listei proceselor">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Arată la pornire coloana funcțiilor kernel în așteptare">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Lățimea coloanei funcțiilor kernel în așteptare">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Arată la pornire coloana cu estimarea memoriei utilizate">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Lățimea coloanei de estimare a utilizării memoriei">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Arată la pornire coloana argumentelor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Lățimea coloanei argumentelor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Arată la pornire coloana contextelor de securitate SELinux">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Lățimea coloanei contextelor de securitate SELinux">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Arată la pornire coloana cu PID-urile proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Lățimea coloanei cu PID-urile proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Arată la pornire coloana valorilor „nice”">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Lățimea coloanei valorilor „nice”">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Arată la pornire coloana timpului de pornire">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Lățimea coloanei timpului de pornire">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Arată la pornire coloana cu timpul CPU total">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Lățimea coloanei cu timpul CPU total">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Arată la pornire coloana cu utilizarea CPU în procente">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Lățimea coloanei cu utilizarea CPU în procente">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Arată la pornire coloana memoriei X utilizate">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Lățimea coloanei memoriei X utilizate">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Arată la pornire coloana memoriei partajate">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Lățimea coloanei memoriei partajate">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Arată la pornire coloana memoriei neprotejate la scriere">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Lățimea coloanei memoriei neprotejate la scriere">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Arată la pornire coloana memoriei rezidente">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Lățimea coloanei memoriei rezidente">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Arată la pornire coloana memoriei virtuale">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Lățimea coloanei memoriei virtuale">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Arată la pornire coloana stării proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Lățimea coloanei stării proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Arată la pornire coloana deținătorilor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Lățimea coloanei deținătorilor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Arată la pornire coloana numelor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Lățimea coloanei numelor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Ordine de sortare a listei proceselor">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Ordine de sortare a coloanelor proceselor">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Coloană de ordonare a listei proceselor">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

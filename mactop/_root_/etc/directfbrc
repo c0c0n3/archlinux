@@ -1,0 +1,4 @@
+disable-module=keyboard
+disable-module=ps2mouse
+disable-module=serialmouse
+

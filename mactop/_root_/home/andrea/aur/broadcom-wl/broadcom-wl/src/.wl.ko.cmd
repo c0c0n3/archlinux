@@ -1,0 +1,1 @@
+cmd_/home/andrea/aur/broadcom-wl/broadcom-wl/src/wl.ko := ld -r -m elf_x86_64 -T /usr/src/linux-3.1.6-1-ARCH/scripts/module-common.lds --build-id  -o /home/andrea/aur/broadcom-wl/broadcom-wl/src/wl.ko /home/andrea/aur/broadcom-wl/broadcom-wl/src/wl.o /home/andrea/aur/broadcom-wl/broadcom-wl/src/wl.mod.o

@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Типовий колір графіку вхідного трафіку мережі">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Типовий колір графіку вхідного трафіку мережі">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Типовий колір графіку підкачки">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Типовий колір графіку пам&apos;яті">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Типовий колір графіку ЦП">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Типовий колір графіку ЦП">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Типовий колір графіку ЦП">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Типовий колір графіку ЦП">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Зберігає поточну активну вкладку">
+						<longdesc>0 — інформація про систему, 1 — список процесів, 2 — ресурсів, 3 — дисків</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Визначає, які процеси типово відображати. 0 - усі, 1 - користувача, 2 - активні">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Період оновлення переліку пристроїв (у мілісекундах)">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Чи буде відображатись інформація про усі файлові системи">
+						<longdesc>Чи буде відображатись інформація про усі файлові системи (включаючи такі типи файлових систем як &apos;autofs&apos; та &apos;procfs&apos;). Може бути корисно для отримання списку усіх підключених файлових систем.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Період оновлення графіків (у мілісекундах)">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Період оновлення огляду процесів (у мілісекундах)">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Показувати діалог попередження при знищенні процесів">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Увімкнути/вимкнути плавне оновлення">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Режим Solaris для показника використання процесору">
+						<longdesc>Якщо відмічено, системний монітор працює у режимі &apos;Solaris&apos;, у якому використання процесору ділиться на загальну кількість процесорів. У іншому випадку монітор працює у режимі &apos;Irix&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Показувати залежності процесів у вигляді дерева">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Висота головного вікна">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Ширина головного вікна">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Порядок сортування переліку процесів">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Стовпчик сортування переліку процесів">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Порядок стовпчиків перегляду диску">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Порядок сортування переліку процесів">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Стовпчик сортування переліку процесів">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Показувати на старті стовпчик очікування каналу">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Ширина стовпчика назви очікування каналу">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Показувати при старті стовпчик оціночного використання пам&apos;яті">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Ширина стовпчика розрахункового використання пам&apos;яті процесом">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Показувати на старті стовпчик аргументів процесів">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Ширина стовпчика аргументів процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Показувати на старті стовпчик контекстів безпеки процесів SELinux">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Ширина стовпчика контексту SELinux процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Показувати на старті PID процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Ширина стовпчика PID процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Показувати на старті стовпчик значення nice процесів">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Ширина стовпчика пріоритету процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Показувати на старі стовпчик часу запуску процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Ширина стовпчика часу запуску процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Показувати на старті стовпчик часу процесору">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Ширина стовпчика часу зайнятості ЦП процесом">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Показувати на старті стовпчик використання процесору.">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Ширина стовпчика завантаження ЦП">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Показувати на старті стовпчик використання пам&apos;яті X-вервера">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Ширина стовпчика пам&apos;яті X-сервера процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Показувати на старті стовпчик спільної пам&apos;яті процесів">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Ширина стовпчика спільної пам&apos;яті процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Показувати на старті стовпчик пам&apos;яті процесу доступної для запису">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Ширина стовпчика доступної для запису пам&apos;яті">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Показувати на старті стовпчик резидентної пам&apos;яті">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Ширина стовпчика резидентної пам&apos;яті процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Показувати на старті стовпчик віртуальної пам&apos;яті процесів">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Ширина стовпчика віртуальної пам&apos;яті процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Показувати на старті стовпчик статусу процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Ширина стовпчика стану процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Показувати на старті стовпчик власника процесів">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Ширина стовпчика власника процесу">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Показувати на старті стовпчик назв процесів">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Ширина стовпчика назви процесу">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Порядок сортування переліку процесів">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Порядок стовпчиків перегляду процесів">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Стовпчик сортування переліку процесів">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

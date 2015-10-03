@@ -1,0 +1,7 @@
+#! /bin/bash
+
+# This is provided as an example script about how to start text mode sessions
+# Note: of course this won't work if you don't have emacs or if it sits
+#       outside /usr/bin
+
+/usr/bin/emacs --eval "(dired \"~\")"

@@ -1,0 +1,258 @@
+===========================================================================================
+                                     ARCHLINUX
+	                SYSTEM INSTALLATION & CONFIGURATION
+===========================================================================================
+
+
+4. APPLICATIONS (https://wiki.archlinux.org/index.php/Lightweight_Applications,
+===============  https://wiki.archlinux.org/index.php/Common_Applications)
+
+We're only installing lightweight GTK apps which do not depend on Qt and KDE libs.
+Ideally, we should avoid dependencies on GNOME too; the following apps (listed in the
+instructions below) have some dependencies on GNOME:
+
+ * evince
+ * gnome-terminal
+ * gucharmap
+
+
+4.1. Haskell
+------------
+ * pacman -S haskell-platform 
+ * pacman -S darcs
+ * pacman -S emacs-haskell-mode
+
+4.2. Latex (https://wiki.archlinux.org/index.php/LaTeX,
+----------  https://wiki.archlinux.org/index.php/TeX_Live_FAQ)
+ * pacman -S texlive-most
+ * pacman -S auctex
+
+4.3. Internet
+-------------
+ * pacman -S chromium
+ * pacman -S aria2
+
+  NOTES
+  -----
+  1. Aria2 is a lightweight, command-line download manager featuring support for 
+  HTTP/HTTPS, FTP, BitTorrent and Metalink protocols.
+  See:
+    + https://wiki.archlinux.org/index.php/Aria2
+
+  It can also be used to speed up pacman, see:
+
+    + https://wiki.archlinux.org/index.php/Improve_Pacman_Performance
+
+  2. Flash Plugin.  Currently flashplugin only works on 32-bit architectures, so
+  I have not installed to avoid bringing in all the 32-bit compatibility libs.
+
+  3. Google Reader.  Install Chromium plugin --- extensions > RSS Subscription or
+  browse to its home page.
+
+4.4. Viewers
+------------
+ * pacman -S evince
+ * pacman -S feh
+
+  NOTES
+  -----
+  1. feh (https://wiki.archlinux.org/index.php/Feh)  
+  Command-line image viewer; can also set a background image if the WM doesn't support it.
+ 
+  2. CHM viewer.  If you ever need to view CHM files, do not install kchmviewer as it
+  requires Qt and lots of KDE libs.
+
+4.5. Graphics
+-------------
+Do not install gimp and inkscape as they bring in some GNOME deps as well as Python.
+Consider using Image Magick.
+
+4.6. Other
+----------
+ * pacman -S gnome-terminal
+ * pacman -S aspell aspell-en
+ * pacman -S gucharmap
+
+
+
+5. DESKTOP ENVIRONMENT
+======================
+
+5.1. Display Manager (https://wiki.archlinux.org/index.php/Display_Manager)
+--------------------
+Qingy (https://wiki.archlinux.org/index.php/Qingy,
+       http://en.gentoo-wiki.com/wiki/Qingy)
+It uses the framebuffer and so does not require to start X.  For this reason we prefer it
+over GDM.  (Also it has no GNOME dependencies.)
+
+ * pacman -S qingy
+
+ * edit /etc/inittab
+    + boot to console (i.e. use line 'id:3:initdefault:')
+  
+    + change tty manager for tty1; replace
+      	     c1:2345:respawn:/sbin/agetty -8 38400 tty1 linux
+      with:
+             c1:2345:respawn:/sbin/qingy tty1
+* Qingy/GDM integration:
+   + cp /etc/X11/sessions/xmonad.desktop /etc/X11/sessions/my.xmonad.desktop
+   + edit /etc/X11/sessions/my.xmonad.desktop:
+     - Name=My XMonad
+     - Exec=/usr/local/bin/start-xmonad
+    + comment out all lines for starting a login manager ('x:5:...')
+
+ * edit /etc/qingy/settings to add/change following:
+       log_facilities = console, file
+       screensaver "photos" = "/usr/share/qingy/themes/cape-lambda/screensaver"
+       theme = "cape-lambda"
+
+ * edit /etc/directfbrc to add line:
+      disable-module=linux_input
+
+ * edit /boot/grub/menu.lst to set kernel boot param: vga=795
+
+ * make cape-lambda Qingy theme
+    + cd to look-n-feel/qingy-themes/cape-lambda
+    + ./make-theme
+    + extract cape-lambda.tgz in /usr/share/qingy/themes/
+
+  NOTES
+  -----
+  1. Framebuffer.  It works with VESA, hence the use of the vga kernel parameter; this
+  avoids the hassle of installing and configuring e.g. uvesafb.  Going forward, consider
+  using KMS: still doesn't support nVidia at this stage, but support will be added in
+  the future.  See:
+      * https://wiki.archlinux.org/index.php/Kernel_Mode_Setting
+      * http://en.gentoo-wiki.com/wiki/KMS
+      * https://wiki.archlinux.org/index.php/Intel
+
+  2. Framebuffer resolutions.  Run (as root) 'hwinfo --framebuffer' to see which ones are
+  supported.
+
+
+5.2. Lightweight Desktop
+------------------------
+
+5.2.1. Xmonad (https://wiki.archlinux.org/index.php/Xmonad)
+-------------
+ * pacman -S xmonad xmonad-contrib
+ * mkdir ~/.xmonad and copy xmonad.hs over
+
+ * hotkeys; see:
+   + https://wiki.archlinux.org/index.php/Extra_Keyboard_Keys
+   + Documentation of XMonad.Util.EZConfig module
+ 
+ * start up script:
+   + cp /etc/X11/xinit/xinitrc /usr/local/bin/start-xmonad
+   + chmod +x /usr/local/bin/start-xmonad
+   + edit /usr/local/bin/start-xmonad:
+     - remove the lines (towards end of file) that launch programs --- twn, xterm, etc.
+     - add the following at end of file:
+   
+     syndaemon -t -k -i 2 -d &
+     exec xmonad 
+
+ * GDM/Qingy integration:
+   + cp /etc/X11/sessions/xmonad.desktop /etc/X11/sessions/my.xmonad.desktop
+   + edit /etc/X11/sessions/my.xmonad.desktop:
+     - Name=My XMonad
+     - Exec=/usr/local/bin/start-xmonad
+
+  NOTES
+  -----
+  1. Start up script.  It can be used to launch XMonad from any login manager or directly
+  from a console.  (In the latter case, you need to have a ~/.xinitrc to call the script;
+  then running startx from the console will start XMonad.)
+  The script allows to easly do some set up work before launching XMonad, most notably
+  launching some start up applications like syndaemon.  (Doing that in the XMonad config
+  file is hairy because every Mod+q would cause the script to be re-executed and so we'd
+  have to kill all start up apps before launching them again.) 
+
+  2. Misbehaving Touchpad.  The touchpad needs a 3-finger tap for the right-click.  (It
+  does work fine under GNOME though.)  I'm not going to fix this for now also because it
+  has nice side-effects: two-finger scrolling works in most apps and 2-finger tap in 
+  Chromium over a link opens it in a new tab;
+
+  3. Misbehaving Chromium.  Make sure to select the "Hide system title bar ..." option 
+  under Preferences->Personal Stuff->Appearence.  Otherwise Chromium will grab all
+  available screen space and will not respond to Super+C, Super+Shift+n, etc.
+ 
+  4. Fonts look smaller.  The same app (e.g. GNOME terminal, emacs) shows fonts smaller
+  than they look in GNOME --- NB the font size is the same, e.g. Monaco 11pt for emacs.
+  The screen resolution seems to be the same both in GNOME and XMonad, so maybe it's
+  got to do with the DPI?  In any case, the smaller look perhaps makes it for better 
+  use of screen real estate in XMonad.
+
+5.2.2. Applets
+--------------
+ * pacman -S conky
+ * cp look-n-feel/conky/conkyrc.xmonad ~/.conkyrc
+ * add it to start-xmonad --- command: conky
+
+ * pacman -S pcmanfm
+
+  NOTES
+  -----
+  1. Conky (https://wiki.archlinux.org/index.php/Conky)
+  We use it as a system dashboard for Xmonad.
+  Also look at this guy's nice idea:
+    + http://blog.brixandersen.dk/?p=67
+
+  2. PCManFM (https://wiki.archlinux.org/index.php/Pcmanfm)  
+  File manager.  It can show a desktop (--desktop option, see also --desktop-pref option); 
+  however, the desktop feature doesn't work nicely with Xmonad.
+
+5.2.3. L&F Tweaks (https://wiki.archlinux.org/index.php/GTK+)
+-----------------
+
+ * GTK 3 Theme.  
+    - Install Buuf icon theme from the AUR;
+    - Build & install malys-inversio---see its README for instructions. 
+      
+    NOTES
+    -----
+    1. malys-inversio is my modified version of the theme; if it becomes available in
+    the AUR, then ditch my own package?
+    2. My malys-inversio package brings in gtk-engine-unico as a dep.
+
+ * Cursor and Wallpaper.  Add to start-xmonad:
+     xsetroot -cursor_name left_ptr
+     feh --bg-scale /home/andrea/sys-install-n-conf/look-n-feel/wallpapers/lambda-radiance-1.jpg
+
+ * Terminal: use Monaco 11 font, hide menubar.
+
+5.2.4. XScreensaver (https://wiki.archlinux.org/index.php/Xscreensaver)
+-------------------
+ 
+ * pacman -S xscreensaver
+
+ * edit /usr/local/bin/start-xmonad to add: /usr/bin/xscreensaver -no-splash &
+
+ * launch xscreensaver-demo.
+     + Display Modes: select 'Only One Screensaver' and GLSlideshow.
+     + Advanced: check 'Choose Random Image' with dir: look-n-feel/cosmos-screensaver
+     + Settings: 
+        o Always show at least this much of the image: 100%
+        o Time until loading new image: 10 seconds
+        o Letterbox: uncheck
+   
+  NOTES
+  -----
+  1. You can manually start the screensaver any time with: 
+
+         xscreensaver-command -activate
+
+
+5.2.5. Other
+------------
+
+ * in rc.conf: MODULES=(... fuse ...)
+               DEAMONS=(... dbus ...)  # should be one of the first daemons to start
+
+  NOTES
+  -----
+  Some applications may require D-Bus so we add it to the deamons.  Also, FUSE may come in
+  handy.  You may also consider installing Gamin.  
+  See:
+    * https://wiki.archlinux.org/index.php/GNOME_2
+

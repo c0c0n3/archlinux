@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος εξερχομένων δικτύου">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος εισερχομένων δικτύου">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος swap">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος μνήμης">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Προεπιλεγμένο χρώμα γραφήματος cpu">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Αποθηκεύει την τρέχουσα προβαλλόμενη καρτέλα">
+						<longdesc>0 for the System Info, 1 for the processes list, 2 for the resources and 3 for the disks list</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Καθορίζει ποιες διεργασίες θα εμφανίζονται αρχικά. 0 είναι όλες. 1 είναι του χρήστη, και 2 οι ενεργές">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Χρόνος σε χιλιοστά δευτερολέπτου ανάμεσα στις ενημερώσεις λίστας συσκευών">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Αν θα προβάλλονται πληροφορίες για όλα τα συστήματα αρχείων">
+						<longdesc>Αν θα εμφανίζονται πληροφορίες για όλα τα συστήματα αρχείων (αυτό περιλαμβάνει τύπους συστημάτων αρχείων όπως &apos;autofs&apos; και &apos;procfs&apos;). Είναι χρήσιμο για τη λήψη όλων των τρεχόντων προσαρτημένων συστημάτων αρχείων.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Χρόνος σε χιλιοστά δευτερολέπτου ανάμεσα στις ενημερώσεις γραφημάτων">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Χρόνος σε χιλιοστά δευτερολέπτου ανάμεσα στις ενημερώσεις τις προβολής διεργασιών">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Εμφάνιση διαλόγου προειδοποίησης κατά τoν βίαιο τερματισμό διεργασιών">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Ενεργοποίηση/Απενεργοποίηση ομαλής ανανέωσης">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Λειτουργία Solaris για το ποσοστό της CPU">
+						<longdesc>If TRUE, system-monitor operates in &apos;Solaris mode&apos; where a task&apos;s cpu usage is divided by the total number of CPUs. Else it operates in &apos;Irix mode&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Εμφάνιση εξαρτήσεων διεργασιών σε μορφή δέντρου">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Ύψος κυρίου παραθύρου">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Πλάτος κύριου παραθύρου">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Σειρά ταξινόμησης προβολής διεργασίας">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Στήλη ταξινόμησης προβολής διεργασιών">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Σειρά ταξινόμησης προβολής δίσκου">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Σειρά ταξινόμησης προβολής διεργασίας">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Στήλη ταξινόμησης προβολής διεργασιών">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;κανάλι αναμονής&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;κανάλι αναμονής&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;εκτιμώμενη χρήση μνήμης&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;εκτιμώμενη χρήση μνήμης&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;ορισμάτων διεργασίας&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;ορίσματα&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;περιβάλλον ασφάλειας SELinux&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;περιβάλλον ασφάλειας SELinux&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;PID&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;PID&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;nice&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;nice&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;ώρα έναρξης&apos; διεργασίας κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;ώρα έναρξης&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;ώρας CPU&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;ώρα CPU&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;CPU %&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;CPU %&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;μνήμη εξυπηρετητή X&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;μνήμη εξυπηρετητή X&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;κοινόχρηστης μνήμη&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;κοινόχρηστη μνήμη&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;εγγράψιμη μνήμη&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;εγγράψιμη μνήμη&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;παραμένουσα μνήμη&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;παραμένουσα μνήμη&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;εικονική μνήμη&apos; διεργασίας κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;εικονική μνήμη&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;κατάσταση&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;κατάσταση&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;ιδιοκτήτης&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;ιδιοκτήτης&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Εμφάνιση στήλης &apos;όνομα&apos; κατά την εκκίνηση">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Πλάτος στήλης &apos;ονόματος&apos;">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Σειρά ταξινόμησης προβολής διεργασίας">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Σειρά ταξινόμησης προβολής διεργασίας">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Στήλη ταξινόμησης προβολής διεργασιών">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

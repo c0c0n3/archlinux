@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="awn-cpumeter">
+				<dir name="prefs">
+					<entry name="update_frequency">
+						<local_schema short_desc="Aph-gray update-ay equency-fray, in illiseconds-may.">
+							<longdesc>Aph-gray update-ay equency-fray, in illiseconds-may.</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

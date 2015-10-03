@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Sareko irteerako grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Sareko sarrerako grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Swap-aren grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Memoriaren grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="PUZ grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="PUZ grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="PUZ grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="PUZ grafikoaren kolore lehenetsia">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Gorde unean fitxan ikusten dena">
+						<longdesc>0 (sistemaren datuak), 1 (prozesuen zerrenda), 2 (baliabideak) eta 3 (diskoen zerrenda)</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Lehenetsi gisa zein prozesu erakutsiko diren zehazten du. 0 guztiak, 1 erabiltzailea eta 2 aktibatu">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Gailuen zerrendaren eguneratzeko tartearen denbora (milisegundotan)">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Fitxategi-sistema guztiei buruzko informazioa bistaratu behar den ala ez">
+						<longdesc>Fitxategi-sistema guztiei buruzko informazioa bistaratu ala ez (&apos;autofs&apos; eta &apos;procfs&apos; motak bezalakoak barne). Erabilgarria unean muntatuta dauden fitxategi-sistema guztiak zerrendatzeko.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Grafikoak eguneratzeko tartearen denbora (milisegundotan)">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Prozesuen ikuspegia eguneratzeko tartearen denbora (milisegundotan)">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Erakutsi abisuko elkarrizketa-koadroa prozesuak hiltzean">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Gaitu/Desgaitu freskatze leuna">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris moduaren PUZ ehunekoa">
+						<longdesc>TRUE (egia) bada, sistemako monitorea &apos;Solaris modua&apos;n funtzionatuko du, non atazen PUZ erabilpena PUZ kopuru osoaren artean zatituko den. Bestela &apos;Irix modua&apos;n funtziona dezake.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Erakutsi prozesuaren mendekotasunak zuhaitz eran">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Leiho nagusiaren altuera">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Leiho nagusiaren zabalera">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Prozesuen ikuspegiaren ordena">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Prozesuen ikuspegi-ordena zutabea">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Disko-ikuspegiko zutabeak">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Prozesuen ikuspegiaren ordena">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Prozesuen ikuspegi-ordena zutabea">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;Kanala zain&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Prozesuaren &apos;Kanala zain&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;memoriaren erabilpena&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Prozesuak &apos;erabilitako memoria&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;argumentuak&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Prozesuaren &apos;argumentuak&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;SELinux segurtasun testuingurua&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Prozesuaren &apos;SELinux segurtasun testuingurua&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;PID&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Prozesuaren &apos;PID&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;lehentasuna&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Prozesuaren &apos;lehentasuna&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;hasierako denbora&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Prozesuaren &apos;hasierako denbora&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;PUZ denbora&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Prozesuaren &apos;PUZ denbora&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;% PUZ&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Prozesuaren &apos;% PUZ&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;X zerbitzari-memoria&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Prozesuaren &apos;X zerbitzari-memoria&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;memoria partekatua&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Prozesuaren &apos;memoria partekatua&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;memoria idazgarria&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Prozesuaren &apos;memoria idazgarria&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;memoria egoiliarra&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Prozesuaren &apos;memoria egoiliarra&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;memoria birtuala&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Prozesuaren &apos;memoria birtuala&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;egoera&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Prozesuaren &apos;egoera&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;jabea&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Prozesuaren &apos;jabea&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Erakutsi prozesuaren &apos;izena&apos; zutabea abioan">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Prozesuaren &apos;izena&apos; zutabearen zabalera">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Prozesuen ikuspegiaren ordena">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Prozesu-ikuspegiko zutabeak">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Prozesuen ikuspegi-ordena zutabea">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

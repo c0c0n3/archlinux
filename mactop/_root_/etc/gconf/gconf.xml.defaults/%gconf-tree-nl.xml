@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Standaardgrafiek uitgaand netwerkverkeer kleur">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Standaardgrafiek inkomend netwerkverkeer kleur">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Standaardgrafiek wisselgeheugen-kleur">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Standaardgrafiek geheugen-kleur">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Standaardgrafiek cpu-kleur">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Standaardgrafiek cpu-kleur">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Standaardgrafiek cpu-kleur">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Standaardgrafiek cpu-kleur">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Onthoudt de huidige getoonde tab">
+						<longdesc>0 voor de systeeminfo, 1 voor de processenlijst, 2 voor de grafieken en 3 voor de bestandssystemenlijst</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Bepaalt welke processen standaard worden getoond. Bij 0 wordt alles getoond, Bij 1 alleen die van de gebruiker, en bij 2 de actieve.">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Tijd in milliseconden tussen updates van de stationslijst">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Of over alle bestandssystemen informatie moet worden weergeven">
+						<longdesc>Of over alle bestandssystemen informatie moet worden weergeven: dit is inclusief bestandssystemen als &apos;autofs&apos; en &apos;procfs&apos;. Het kan handig zijn om een lijst met alle aangekoppelde bestandssystemen te hebben.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Tijd in milliseconden tussen updates van de grafieken">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Tijd in milliseconden tussen updates van de processenlijst">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Waarschuwingsdialoog tonen bij het vernietigen van processen">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Vloeiend verversen aan/uit">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris-stand voor CPU-percentage">
+						<longdesc>Als ingesteld op waar, dan draait het processenbeheer in ‘Solaris-stand’ waar het CPU-gebruik van een taak is opgedeeld aan de hand van het totaal aantal CPU&apos;s. Anders staat het in ‘Irix-stand’.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Procesafhankelijkheden tonen in boomvorm">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Hoogte hoofdvenster">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Breedte hoofdvenster">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Proceslijst sorteerrichting">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Proceslijst sorteerkolom">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Kolomvolgorde in schijfweergave">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Proceslijst sorteerrichting">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Proceslijst sorteerkolom">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="De kolom ‘Wachtkanaal’ tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Breedte van kolom ‘Wachtkanaal’">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="De kolom Geschat geheugen tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Breedte van de kolom Geschat geheugengebruik">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="De kolom Argumenten tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Breedte van kolom Argumenten">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="De kolom SELinux beveiligingscontext tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Breedte van kolom SELinux Beveiligingscontext">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="De kolom PID tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Breedte van kolom PID">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="De kolom Nice tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Breedte van kolom Nice">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="De kolom Starttijd tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Breedte van de kolom Starttijd">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="De kolom CPU-tijd tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Breedte van kolom CPU-tijd">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="De kolom CPU-% tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Breedte van kolom % CPU">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="De kolom X-server geheugen tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Breedte van kolom X-server geheugen">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="De kolom Gedeeld geheugen tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Breedte van de kolom Gedeeld geheugen">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="De kolom Schrijfbaar geheugen tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Breedte van de kolom Schrijfbaar geheugen">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="De kolom Vast geheugen tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Breedte van de kolom Vast geheugen">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="De kolom Virtueel geheugen tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Breedte van de kolom Virtueel geheugen">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="De kolom Status tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Breedte van de kolom status">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Kolom Proceseigenaar tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Breedte van de kolom Eigenaar">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="De kolom Naam tonen bij opstarten">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Breedte van kolom Naam">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Proceslijst sorteerrichting">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Proceslijst kolomvolgorde">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Proceslijst sorteerkolom">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

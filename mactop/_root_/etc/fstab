@@ -1,0 +1,29 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>        <dir>         <type>    <options>          <dump> <pass>
+devpts                 /dev/pts      devpts    defaults            0      0
+shm                    /dev/shm      tmpfs     nodev,nosuid        0      0
+
+#/dev/cdrom             /media/cd   auto    ro,user,noauto,unhide   0      0
+#/dev/dvd               /media/dvd  auto    ro,user,noauto,unhide   0      0
+#/dev/fd0               /media/fl   auto    user,noauto             0      0
+
+
+# /dev/sda3
+LABEL=boot /boot ext2 defaults 0 2
+
+# /dev/sda4
+LABEL=swap swap swap defaults 0 0
+
+# /dev/sda5
+LABEL=root / ext3 defaults,noatime 0 1
+
+# /dev/sda6
+LABEL=tmp /tmp reiserfs defaults,noatime,notail 0 2
+
+# /dev/sda7
+LABEL=var /var reiserfs defaults,noatime,notail 0 2
+
+# /dev/sda8
+LABEL=home /home ext3 defaults,noatime 0 2

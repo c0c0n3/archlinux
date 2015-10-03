@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="اللون الافتراضي للرسم البياني لمرور الشبكة الخارج">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="اللون الافتراضي للرسم البياني لمرور الشبكة الداخل">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="اللون الافتراضي لخلفية الذاكرة البديلة">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="اللون الافتراضي للرسم البياني للذاكرة">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="اللون الافتراضي لخلفية الرسم البياني للمعالج">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="اللون الافتراضي لخلفية الرسم البياني للمعالج">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="اللون الافتراضي لخلفية الرسم البياني للمعالج">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="اللون الافتراضي لخلفية الرسم البياني للمعالج">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="يحفظ اللسان المعروض حاليًا">
+						<longdesc>0 لمعلومات النظام، 1 لقائمة العمليّات، 2 للموارد و 3 لقائمة الأقراص</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="تحدّد العمليات المعروضة افتراضيا. 0 للكل، 1 للمستخدم، و 2 للنشاط">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="الوقت بالمللي ثانية بين تحديثات قائمة الأجهزة">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="إذا يجب عرض معلومات حول كل أنظمة الملفات">
+						<longdesc>إذا كان يجب عرض معلومات حول كل أنظمة الملفات أم لا. تستعمل لإيجاد قائمة لكل أنظمة الملفات المستعملة.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="الوقت بالمللي ثانية بين تحديثات الرسم البياني">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="الوقت بالمللي ثانية بين تحديثات مشهد العمليات">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="اعرض حوار تنبيه عند إنهاء عمليات">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="تفعيل/تعطيل التحديث المرن">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="نمط سولاريس لنسبة استخدام المعالج المئوية">
+						<longdesc>إن كان TRUE، فسيعمل مرقاب النظام system-monitor في &apos;نمط سولاريس&apos; حيث استخدام المهمة للمعالج يُقسّم على العدد الكلي للمعالجات. وإلا فسيعمل في &apos;نمط آيريكس&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="اعرض علاقات العمليات على شكل شجرة">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ارتفاع النافذة الرئيسيّ">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="عرض النّافذة الرئيسيّ">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="اتجاه الترتيب في مشهد العمليات">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="العمود المرتب في مشهد العمليات">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ترتيب الأعمدة بمشهد القرص">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="اتجاه الترتيب في مشهد العمليات">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="العمود المرتب في مشهد العمليات">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="اعرض عمود &apos;قناة الانتظار&apos; عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="اتساع عمود &apos;قناة الانتظار&apos;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="اعرض عمود تقدير الذاكرة المستعملة عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="اتساع عمود استخدام العمليّة المقدّر من الذاكرة">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="اعرض عمود معطيات العملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="اتساع عمود معطيات العمليّة">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="اعرض عمود الوضع الأمني ل SELinux عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="اتساع عمود سياق أمن SELinux للعملية">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="اعرض عمود رقم العملية &apos;PID&apos; عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="اتساع عمود PID الخاص بالعمليّة">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="اعرض عمود قيمة الأولوية nice للعملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="اتساع عمود قيمة الأولوية nice للعملية">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="اعرض عمود وقت تشغيل العملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="اتساع عمود وقت بدء العملية">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="اعرض عمود وقت المعالج &apos;CPU time&apos; عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="اتساع عمود وقت المعالج المستخدَم من قبل العملية">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="اعرض عمود نسبة استخدام المعالج &apos;CPU %&apos; عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="اتساع عمود نسبة استخدام العملية للمعالج">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="اعرض عمود ذاكرة خادوم X للعملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="اتساع عمود ذاكرة خادوم X للعملية">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="اعرض عمود الذاكرة المشتركة للعملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="اتساع عمود الذاكرة المشتركة للعملية">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="اعرض عمود الذاكرة القابلة للكتابة للعملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="اتساع عمود ذاكرة العملية القابلة للكتابة">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="اعرض عمود الذاكرة المقيمة للعملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="اتساع عمود الذاكرة المقيمة للعملية">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="اعرض عمود الذاكرة الوهمية للعملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="اتساع عمود الذاكرة الافتراضية للعملية">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="اعرض عمود حالة العملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="اتساع عمود حالة العملية">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="اعرض عمود مستخدم العملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="اتساع عمود مستخدم العملية">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="اعرض عمود اسم العملية عند بدء التشغيل">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="اتساع عمود اسم العملية">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="اتجاه الترتيب في مشهد العمليات">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="ترتيب الأعمدة في مشهد العمليات">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="العمود المرتب في مشهد العمليات">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

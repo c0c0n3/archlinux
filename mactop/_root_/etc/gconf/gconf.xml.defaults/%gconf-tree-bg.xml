@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Стандартен цвят на графиката за изходящия трафик">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Стандартен цвят на графиката за входящия трафик">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Стандартен цвят на графиката за мястото за странициране">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Стандартен цвят на графиката за паметта">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Стандартен цвят на графиката за процесора">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Стандартен цвят на графиката за процесора">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Стандартен цвят на графиката за процесора">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Стандартен цвят на графиката за процесора">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Запазване на текущия подпрозорец">
+						<longdesc>„0“ за системната информация, „1“ за списъка с процесите, „2“ за ресурсите и „3“ за списъка с дискове</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Определяне на кои процеси да се показват стандартно. „0“ е за всички, „1“ е за потребителските и „2“ е за активните">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Време в милисекунди между интервалите за обновяване на списъка с устройства">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Дали да се показва информация за всички файлови системи.">
+						<longdesc>Дали да се показва информация за всички файлови системи — това включва и служебните „autofs“ и „procfs“. Тази настройка е полезна, ако искате да получите списък с всички монтирани файлови системи.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Време в милисекунди между интервалите за обновяване на графиките">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Време в милисекунди между интервалите за обновяване на списъка с процеси">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Показване на предупреждение при убиване на процес">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Включване/изключване на гладкото опресняване">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Режим на Solaris за процентите на процесорите">
+						<longdesc>Ако е истина, system-monitor работи в режим на Solaris, в който използването на процесора от задача се дели на общия брой процесори. В противен случай се работи в режим на Irix.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Показване на зависимостите на процес чрез дървовиден изглед">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Височина на основния прозорец">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Широчина на основния прозорец">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Ред за подреждане на процесите">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Колона за подреждане на процесите">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Подредба на колоните според дисковете">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Ред за подреждане на процесите">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Колона за подреждане на процесите">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Показване на колоната „Канал на изчакване“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Широчина на колоната „Канал на изчакване“">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Показване на колоната „Памет“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Широчина на колоната „Памет“">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Показване на колоната „Команден ред“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Широчина на колоната „Команден ред“">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Показване на колоната „Контекст на сигурността“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Широчина на колоната „Контекст на сигурността“">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Показване на колоната „ИдПр“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Широчина на колоната „ИдПр“">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Показване на колоната „Приоритет“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Широчина на колоната „Приоритет“">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Показване на колоната „Стартиран на“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Широчина на колоната „Стартиран на“">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Показване на колоната „Процесорно време“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Широчина на колоната „Процесорно време“">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Показване на колоната „% проц.“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Широчина на колоната „% проц.“">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Показване на колоната „Памет за X сървъра“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Широчина на колоната „Памет за X сървъра“">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Показване на колоната „Споделена памет“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Широчина на колоната „Споделена памет“">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Показване на колоната „Памет за запис“ стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Широчина на колоната „Памет за запис“">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Показване на колоната „Постоянна памет“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Широчина на колоната „Постоянна памет“">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Показване на колоната „Виртуална памет“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Широчина на колоната „Виртуална памет“">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Показване на колоната „Състояние“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Широчина на колоната „Състояние“">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Показване на колоната „Потребител“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Широчина на колоната „Потребител“">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Показване на колоната „Име на процес“ при стартиране">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Широчина на колоната „Име на процес“">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Ред за подреждане на процесите">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Ред на колоните за процесите">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Колона за подреждане на процесите">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

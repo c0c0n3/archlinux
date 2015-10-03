@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Màu dữ liệu ra mạng đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Màu dữ liệu vào mạng đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Màu trao đổi đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Màu bộ nhớ đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Màu CPU đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Màu CPU đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Màu CPU đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Màu CPU đồ thị mặc định">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Lưu thanh đang xem hiện thời">
+						<longdesc>0	thông tin hệ thống
+1	danh sách các tiến trình
+2	các tài nguyên
+3	danh sách các đĩa</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Quyết định hiển thị tiến trình nào theo mặc định: 0 là tất cả, 1 là người dùng và 2 là hoạt động">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Thời gian theo mili giây, giữa hai lần cập nhật danh sách thiết bị">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Có nên hiển thị thông tin về mọi hệ thống tập tin hay không">
+						<longdesc>Có nên hiển thị thông tin vê mọi hệ thống tập tin (gồm kiểu hệ thống tập tin như « autofs » và « procfs ») hay không. Có ích để lấy một danh sách các hệ thống tập tin được gắn kết hiện thời.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Thời gian theo mili giây, giữa hai lần cập nhật đồ thị">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Thời gian theo mili giây, giữa hai lần cập nhật ô xem tiến trình">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Hiện hộp thoại cảnh báo khi buộc kết thúc của tiến trình">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Bật/tắt cập nhật mịn">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Chế độ Solaris cho phần trăm CPU">
+						<longdesc>Nếu ĐÚNG thì bộ theo dõi hệ thống chạy trong « chế độ Solaris », trong đó độ sử dụng bộ xử lý trung tâm của tác vụ được chia cho tổng số CPU. Không thì nó chạy trong « chế độ Irix ».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Hiển thị cách phụ thuộc vào tiến trình, có dạng cây">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Độ cao cửa sổ chính">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Độ rộng của sổ chính">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Thứ tự sắp xếp ô xem tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sắp xếp cột ô xem tiến trình">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Thứ tự cột ô xem đĩa">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Thứ tự sắp xếp ô xem tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sắp xếp cột ô xem tiến trình">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Hiện cột « Kênh đợi » tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Độ rộng của cột « Kênh đợi » tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Hiện cột cách sử dụng bộ nhớ ước lượng khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Độ rộng của cột cách sử dụng bộ nhớ ước lượng tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Hiện cột đối số tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Độ rộng của cột đối số tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Hiện cột ngữ cảnh bảo mật SELinux tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Độ rộng của cột ngữ cảnh bảo mật SELinux tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Hiện cột PID tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Độ rộng của cột PID tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Hiện cột ưu tiên tài nguyên tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Độ rộng của cột ưu tiên tài nguyên tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Hiện cột giờ bắt đầu tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Độ rộng của cột giờ bắt đầu tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Hiện cột thời gian CPU tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Độ rộng của cột thời gian CPU tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Hiện cột phần tram CPU tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Độ rộng của cột phần tram CPU tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Hiện cột bộ nhớ trình phục vụ X tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Độ rộng của cột bộ nhớ trình phục vụ X tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Hiện cột bộ nhớ dùng chung của tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Độ rộng của cột bộ nhớ dùng chung của tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Hiện cột bộ nhớ ghi được của tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Độ rộng của cột bộ nhớ ghi được của tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Hiện cột bộ nhớ ở của tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Độ rộng của cột bộ nhớ ở của tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Hiện cột bộ nhớ ảo của tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Độ rộng của cột bộ nhớ ảo của tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Hiện cột trạng thái tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Độ rộng của cột trạng thái tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Hiện cột người sở hữu tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Độ rộng của cột người sở hữu tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Hiện cột tên tiến trình khi khởi chạy">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Độ rộng của cột tên tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Thứ tự sắp xếp ô xem tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Thứ tự cột ô xem tiến trình">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sắp xếp cột ô xem tiến trình">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

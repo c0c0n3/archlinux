@@ -1,0 +1,323 @@
+#################################
+#	MurrineBeige		#
+#				#
+# Inspired by the older		#
+# versions of Clearlook		#
+#				#
+# Created by Tsu Jan (nickname)	#
+# (Pedram Pourang)		#
+#				#
+# tsujan2000@gmail.com		#
+#################################
+
+style "murrine-default"
+{
+	GtkScale  ::slider-length = 29
+	GtkScale  ::trough-side-details = 1  # 0 = thin slider, >0 = thick slider
+
+	GtkButton      ::child-displacement-x = 1
+	GtkButton      ::child-displacement-y = 1
+	GtkButton      ::default-border       = { 0, 0, 0, 0 }
+	GtkCheckButton ::indicator-size       = 14
+
+	GtkExpander	::expander-size       = 16	# expander arrow size
+
+	GtkMenuItem	:: arrow-scaling      = 0.7	# scale of menu arrow
+	GtkMenuItem	:: horizontal-padding = 4	# padding to left and
+							# right of the menu item;
+							# is also related to
+							# panel
+
+	# these remove bar separators
+	GtkMenuBar     ::shadow_type          = GTK_SHADOW_NONE
+	#GtkToolbar     ::shadow_type          = GTK_SHADOW_NONE
+
+	fg[NORMAL]        = "#101010"
+	fg[PRELIGHT]      = "#000000"
+	fg[ACTIVE]        = "#000000"
+	fg[SELECTED]      = "#ffffff"
+	fg[INSENSITIVE]   = "#B3AFAB"
+
+	bg[NORMAL]        = "#efebe7"	# main bg
+	bg[PRELIGHT]      = "#E1D9D1"	# "#f5f3f0" when cursor is on buttons
+	bg[ACTIVE]        = "#D2CAC2"	# inactive tab, toggle, etc
+	bg[SELECTED]      = "#638CBF"	# selected scaler, its trough, GtkCombo
+					# text, selected (OK) button, etc
+	bg[INSENSITIVE]   = "#EBE7E3"
+
+	base[NORMAL]      = "#ffffff"
+	base[PRELIGHT]    = "#ffffff"
+	base[ACTIVE]      = "#E1D9D1"
+	base[SELECTED]    = "#7C99AD"
+	base[INSENSITIVE] = "#EBE7E3"
+
+	text[NORMAL]      = "#000000"
+	text[PRELIGHT]    = "#000000"
+	text[ACTIVE]      = "#000000"
+	text[SELECTED]    = "#FFFFFF"
+	text[INSENSITIVE] = "#B3AFAB"
+
+	GtkMenuBar      ::internal-padding      = 0
+
+	xthickness = 1		# corrects Combo, also affects scaler width
+	ythickness = 1		# corrects Combo, also affects scaler width
+
+    engine "murrine" 
+    {
+	#arrowstyle = 1		# triangular arrows
+	menubaritemstyle = 1	# 0 = menuitem look, 1 = button look
+	menubarstyle = 0	# 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+	toolbarstyle = 1	# 0 = flat, 1 = glassy, 2 = gradient
+        roundness = 3
+	rgba = TRUE
+    }
+}
+
+style "murrine-scrollbar"
+{
+	GtkScrollbar    ::min-slider-length = 30
+	GtkScrollbar    ::slider-width = 13		# scrillbar width
+	bg[NORMAL]      = "#ffffff"
+	bg[INSENSITIVE] = "#EFEBE7"
+	bg[SELECTED] = "#E0E0E0"	# sets the scrollbar color
+
+    engine "murrine" 
+    {
+        highlight_shade     = 1.02
+	gradient_shades     = {1.15, 1.0, 1.0, 1.15}
+	colorize_scrollbar  = TRUE
+	scrollbarstyle      = 3
+        contrast = 1.135
+	roundness = 3
+    }
+}
+
+style "murrine-hscrollbar"
+{
+}
+
+style "murrine-vscrollbar"
+{
+}
+
+class "GtkScrollbar"	style "murrine-scrollbar"
+class "GtkVScrollbar"	style "murrine-vscrollbar"
+class "GtkHScrollbar"	style "murrine-hscrollbar"
+
+style "murrine-wide"
+{
+    xthickness = 2
+    ythickness = 2
+}
+
+style "murrine-wider"
+{
+    xthickness = 3
+    ythickness = 3
+}
+
+style "murrine-menu" = "murrine-wider"
+{
+    bg[NORMAL] = "#EFEBE7"	#menu bg
+
+    engine "murrine" 
+    {
+        menustyle = 0			# without vertical bar
+    }
+}
+
+style "murrine-menu-item" = "murrine-wider"
+{
+    bg[PRELIGHT] = "#EFEBE7"	# matches bg[NORMAL] of "murrine-menu"
+    bg[SELECTED] = "#D4D4D4"
+    fg[PRELIGHT] = "#000000"
+
+    engine "murrine" 
+    {
+        highlight_shade = 1.03
+        roundness = 3
+    }
+}
+
+style "murrine-radiocheck" = "murrine-default"
+{
+    base[NORMAL]    = "#ffffff" 
+    text[NORMAL]    = "#000000"		# Text in window
+    text[PRELIGHT]  = "#000000"		# Text on Mouseover
+    bg[SELECTED]    = "#ffffff"		# bg
+
+    engine "murrine" 
+    {
+        highlight_shade = 1.0
+    }
+}
+
+class "GtkRadio*"                       style "murrine-radiocheck"
+class "GtkCheck*"                       style "murrine-radiocheck"
+
+style "murrine-scale"
+{
+    GtkRange	::slider-width = 13		# sets the slider width
+    GtkScale	::trough-side-details = 1
+    bg[NORMAL] = shade (0.95, "#EFEBE7")
+    bg[INSENSITIVE] = shade (0.99, "#EFEBE7")
+
+    engine "murrine" 
+    {
+        contrast = 1.130
+    }
+}
+
+class "GtkScale"                        style "murrine-scale"
+
+style "murrine-progressbar"
+{
+    xthickness = 0
+    ythickness = 0
+    bg[SELECTED] = "#C5C5C5"		# sets the progressbar color
+    engine "murrine" 
+    {
+	glow_shade = 2.0
+	gradient_shades     = {3.0, 1.0, 1.0, 3.0}
+	progressbarstyle    = 1		# 0 = nothing, 1 = striped, 2 = cells
+        contrast = 1.125 # Darken unfilled progressbar background
+	#animation           = TRUE
+    }
+}
+
+style "metacity-frame" = "murrine-default"
+{
+	bg[SELECTED] = "#86ABD9"
+}
+
+style "clearlooks-tooltips" = "clearlooks-default"
+{
+	xthickness = 4
+	ythickness = 4
+	bg[NORMAL] = { 1.0,1.0,0.75 }
+}
+
+style "entry" {
+	xthickness = 3
+	ythickness = 3
+}
+
+style "murrine-menubar"
+{
+  #bg[NORMAL]= "#EFEBE7"
+
+  #xthickness = 3
+  #ythickness = 3
+}
+
+style "theme-toolbar" = "murrine-default"	# gets the default settings
+{
+  xthickness = 3
+  ythickness = 0
+
+    bg[NORMAL] = "#e0d9d2"	#"#EFEBE7"	# sets toolbar color
+    engine "murrine" 
+    {
+        glow_shade = 2.0
+        gradient_shades     = {1.15, 1.0, 1.0, 1.15}
+    }
+}
+
+style "murrine-tooltips" = "murrine-wider"
+{
+    bg[NORMAL] = "#FFFFCC"
+    fg[NORMAL] = "#000000"
+    engine "murrine" 
+    {
+    }
+}
+style "murrine-tasklist" = "murrine-default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "misc-panel" = "murrine-default"
+{
+	engine "murrine" {
+		contrast = 0.8
+		roundness = 2
+	}
+}
+
+#style "murrine-button" = "murrine-default"
+#{
+
+ #bg[NORMAL] = "#000000"
+ #bg[ACTIVE] = "#000000"
+ #bg[INSENSITIVE] = "#000000"
+
+ #xthickness = 0
+ #ythickness = 0
+	#engine "murrine" {
+#}
+#}
+
+style "murrine-combo" #= "murrine-button"
+{
+# These set the size of button arrow:
+# the greater they are, the smaller the arrow.
+# This won't be the case if GtkButton is set.
+  xthickness = 3
+  ythickness = 3
+	engine "murrine" {
+}
+}
+
+style "murrine-comboboxentry"
+{
+#this is the size of ComboBoxEntry
+  xthickness = 3
+  ythickness = 3
+}
+
+#style "murrine-notebook"
+#{
+  #bg[NORMAL] = "#000000"
+  #bg[SELECTED] = "#c5c5c5"
+# tab sizes
+ # xthickness = 0
+  #ythickness = 0
+#}
+
+# common default
+class "GtkWidget"      style "murrine-default"
+class "GtkFrame"       style "murrine-wide"
+class "MetaFrames"     style "metacity-frame"
+class "GtkWindow"      style "metacity-frame"
+class "GtkProgressBar" style "murrine-progressbar"
+class "GtkRange"       style "murrine-wide"
+class "GtkEntry" style "murrine-wider"
+class "GtkToolbar"	style "theme-toolbar"
+class "GtkCombo"       style "murrine-combo"
+#class "GtkButton"      style "murrine-button"
+#class "GtkNotebook"    style "murrine-notebook"
+
+# tooltips
+widget_class "*.tooltips.*.GtkToggleButton" style "murrine-tasklist"
+widget "gtk-tooltip*" style "murrine-tooltips"
+
+# panel
+class "*Panel*"				style "misc-panel"
+class "*Separator*"			style "misc-panel"
+
+# combobox
+widget_class "*.GtkComboBox.GtkButton" style "murrine-combo"
+widget_class "*.GtkCombo.GtkButton"    style "murrine-combo"
+widget_class "*<GtkComboBoxEntry>*"    style "murrine-comboboxentry"
+
+#widget_class "*<GtkButton>*"    style "murrine-button"
+
+# notebook
+#widget_class "*.GtkNotebook.*.GtkEventBox" style "murrine-notebook"
+#widget_class "*.GtkNotebook.*.GtkViewport" style "murrine-notebook"
+
+widget_class "*<GtkMenu>*"	style "murrine-menu"
+widget_class "*<GtkMenuItem>*"		style "murrine-menu-item"
+
+widget_class "*<GtkMenuBar>*"   style "murrine-menubar"

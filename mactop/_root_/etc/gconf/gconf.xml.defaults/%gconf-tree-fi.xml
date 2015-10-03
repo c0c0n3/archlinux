@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Oletusarvoinen verkkokäyrän lähtevän liikenteen väri">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Oletusarvoinen verkkokäyrän saapuvan liikenteen väri">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Oletusarvoinen sivutuskäyrän väri">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Oletusarvoinen muistikäyrän väri">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Oletusarvoinen CPU-käyrän väri">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Oletusarvoinen CPU-käyrän väri">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Oletusarvoinen CPU-käyrän väri">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Oletusarvoinen CPU-käyrän väri">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Tallentaa nyt katseltavan välilehden">
+						<longdesc>0 järjestelmätiedot, 1 prosessilista, 2 resurssit ja 3 levylista</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Määrittelee, mitkä prosessit näkyvät oletusarvoisesti. Mahdollisia valintoja ovat: 0 (kaikki), 1 (käyttäjän prosessit), 2 (aktiiviset prosessit).">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Aika (ms) laiteluettelon päivitysten välillä">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Näytetäänkö kaikkien tiedostojärjestelmien tiedot">
+						<longdesc>Näytetäänkö tiedot kaikista tiedostojärjestelmistä, mukaanlukien tyypit kuten &quot;autofs&quot; tai &quot;procfs&quot;. Tämä tieto voi olla hyödyllinen, kun halutaan tietoa kaikista juuri nyt liitetyistä tiedostojärjestelmistä.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Aika (ms) käyrien päivitysten välillä">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Aika (ms) prosessinäkymän päivitysten välillä">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Näytä varoitusikkuna ennen prosessin lopettamista väkisin">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Käytä tai älä käytä pehmeää päivitystä">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Käytä Solaris-tilaa CPU-prosenteille">
+						<longdesc>Jos tosi, system-monitor toimii &apos;Solaris-tilassa&apos;, jossa tehtävän suorittimenkäyttö jaetaan suorittimien lukumäärällä. Muutoin toimitaan &apos;IRIX-tilassa&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Näytä prosessien riippuvuudet puuna">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Pääikkunan korkeus">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Pääikkunan leveys">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Prosessinäkymän järjestys">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Prosessinäkymän lajittelusarake">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Levynäkymän sarakkeiden järjestys">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Prosessinäkymän järjestys">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Prosessinäkymän lajittelusarake">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Näytä prosessin &quot;Odottaa kanavaa&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Prosessin &quot;Odottaa kanavaa&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Näytä arvioitu &quot;arvioitu muistinkäyttö&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Prosessin &quot;arvioitu muistinkäyttö&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Näytä prosessin &quot;valitsimet&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Prosessin &quot;valitsimet&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Näytä prosessin &quot;SELinux turvakonteksti&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Prosessin &quot;SELinux-turvakonteksti&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Näytä prosessin &quot;PID&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Prosessin &quot;PID&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Näytä prosessin &quot;nice&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Prosessin &quot;nice&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Näytä prosessin &quot;käynnistysaika&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Prosessin &quot;käynnistysaika&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Näytä prosessin &quot;CPU-aika&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Prosessin &quot;CPU-aika&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Näytä prosessin &quot;CPU %&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Prosessin &quot;CPU %&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Näytä prosessin &quot;X-palvelimen muistinkäyttö&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Prosessin &quot;X-palvelinmuisti&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Näytä prosessin &quot;jaettu muisti&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="prosessin &quot;jaettu muisti&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Näytä prosessin &quot;kirjoitettava muisti&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Prosessin &quot;kirjoitettava muisti&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Näytä prosessin &quot;ladattu muisti&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Prosessin &quot;ladattu muisti&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Näytä prosessin &quot;virtuaalimuisti&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Prosessin &quot;virtuaalimuisti&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Näytä prosessin &quot;tila&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Prosessin &quot;tila&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Näytä prosessin &quot;omistaja&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Prosessin &quot;omistaja&quot;-sarakkeen leveys">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Näytä prosessin &quot;nimi&quot;-sarake käynnistyttyä">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Prosessin &quot;nimi&quot;-sarake leveys">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Prosessinäkymän järjestys">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Prosessinäkymän sarakkeiden järjestys">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Prosessinäkymän lajittelusarake">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

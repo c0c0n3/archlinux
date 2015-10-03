@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 𐑬𐑑𐑜𐑴𐑦𐑙 𐑯𐑧𐑑𐑢𐑻𐑒 𐑑𐑮𐑨𐑓𐑦𐑒 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 𐑦𐑯𐑒𐑳𐑥𐑦𐑙 𐑯𐑧𐑑𐑢𐑻𐑒 𐑑𐑮𐑨𐑓𐑦𐑒 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 𐑕𐑢𐑪𐑐 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 CPU 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 CPU 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 CPU 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="𐑛𐑦𐑓𐑷𐑤𐑑 𐑜𐑮𐑭𐑓 CPU 𐑒𐑳𐑤𐑼">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="𐑕𐑱𐑝𐑟 𐑞 𐑒𐑳𐑮𐑩𐑯𐑑𐑤𐑦 𐑝𐑿𐑛 𐑑𐑨𐑚">
+						<longdesc>0 𐑓𐑹 𐑞 𐑕𐑦𐑕𐑑𐑩𐑥 𐑦𐑯𐑓𐑴, 1 𐑓𐑹 𐑞 𐑐𐑮𐑴𐑕𐑧𐑕𐑩𐑟 𐑤𐑦𐑕𐑑, 2 𐑓𐑹 𐑞 𐑮𐑦𐑟𐑹𐑕𐑩𐑟 𐑯 3 𐑓𐑹 𐑞 𐑛𐑦𐑕𐑒𐑕 𐑤𐑦𐑕𐑑</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="𐑛𐑦𐑑𐑻𐑥𐑦𐑯𐑟 𐑢𐑦𐑗 𐑐𐑮𐑴𐑕𐑧𐑕𐑩𐑟 𐑑 𐑖𐑴 𐑚𐑲 𐑛𐑦𐑓𐑷𐑤𐑑. 0 𐑦𐑟 𐑷𐑤, 1 𐑦𐑟 𐑿𐑟𐑼, 𐑯 2 𐑦𐑟 𐑨𐑒𐑑𐑦𐑝">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="𐑑𐑲𐑥 𐑦𐑯 𐑥𐑦𐑤𐑦𐑕𐑧𐑒𐑩𐑯𐑛𐑟 𐑚𐑦𐑑𐑢𐑰𐑯 𐑳𐑐𐑛𐑱𐑑𐑕 𐑝 𐑞 𐑛𐑦𐑝𐑲𐑕𐑩𐑟 𐑤𐑦𐑕𐑑">
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="𐑑𐑲𐑥 𐑦𐑯 𐑥𐑦𐑤𐑦𐑕𐑧𐑒𐑩𐑯𐑛𐑟 𐑚𐑦𐑑𐑢𐑰𐑯 𐑳𐑐𐑛𐑱𐑑𐑕 𐑝 𐑞 𐑜𐑮𐑭𐑓𐑕">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="𐑑𐑲𐑥 𐑦𐑯 𐑥𐑦𐑤𐑦𐑕𐑧𐑒𐑩𐑯𐑛𐑟 𐑚𐑦𐑑𐑢𐑰𐑯 𐑳𐑐𐑛𐑱𐑑𐑕 𐑝 𐑞 𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="𐑖𐑴 𐑢𐑹𐑯𐑦𐑙 𐑛𐑲𐑩𐑤𐑪𐑜 𐑢𐑧𐑯 𐑒𐑦𐑤𐑦𐑙 𐑐𐑮𐑴𐑕𐑧𐑕𐑩𐑟">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="𐑦𐑯𐑱𐑚𐑩𐑤/𐑛𐑦𐑕𐑱𐑚𐑩𐑤 𐑕𐑥𐑵𐑞 𐑮𐑰𐑓𐑮𐑧𐑖">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="𐑕𐑴𐑤𐑧𐑮𐑦𐑕 𐑥𐑴𐑛 𐑓𐑹 CPU 𐑐𐑼𐑕𐑧𐑯𐑑𐑦𐑡">
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 𐑛𐑦𐑐𐑧𐑯𐑛𐑩𐑯𐑕𐑰𐑟 𐑦𐑯 𐑑𐑮𐑰 𐑓𐑹𐑥">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="𐑥𐑱𐑯 𐑢𐑦𐑯𐑛𐑴 𐑣𐑲𐑑">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="𐑥𐑱𐑯 𐑢𐑦𐑯𐑛𐑴 𐑢𐑦𐑛𐑔">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑕𐑹𐑑 𐑹𐑛𐑼">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑕𐑹𐑑 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="𐑛𐑦𐑕𐑒 𐑝𐑿 𐑒𐑪𐑤𐑩𐑥𐑟 𐑹𐑛𐑼">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑕𐑹𐑑 𐑹𐑛𐑼">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑕𐑹𐑑 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑢𐑱𐑑𐑦𐑙 𐑗𐑨𐑯𐑩𐑤&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑢𐑱𐑑𐑦𐑙 𐑗𐑨𐑯𐑩𐑤&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑧𐑕𐑑𐑦𐑥𐑱𐑑𐑩𐑛 𐑥𐑧𐑥𐑼𐑦 𐑿𐑕𐑦𐑡&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑧𐑕𐑑𐑦𐑥𐑱𐑑𐑩𐑛 𐑥𐑧𐑥𐑼𐑦 𐑿𐑕𐑦𐑡&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑸𐑜𐑿𐑥𐑩𐑯𐑑𐑕&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑸𐑜𐑿𐑥𐑩𐑯𐑑𐑕&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑯𐑲𐑕&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑯𐑲𐑕&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑕𐑑𐑸𐑑 𐑑𐑲𐑥&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑕𐑑𐑸𐑑 𐑑𐑲𐑥&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;CPU 𐑑𐑲𐑥&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;CPU 𐑑𐑲𐑥&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;CPU %&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;CPU %&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;X 𐑕𐑻𐑝𐑼 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;X 𐑕𐑻𐑝𐑼 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑖𐑺𐑛 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑖𐑺𐑛 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑮𐑲𐑑𐑩𐑚𐑩𐑤 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑮𐑲𐑑𐑩𐑚𐑩𐑤 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑮𐑧𐑟𐑦𐑛𐑩𐑯𐑑 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑮𐑧𐑟𐑦𐑛𐑩𐑯𐑑 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑝𐑻𐑗𐑫𐑩𐑤 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑝𐑻𐑗𐑫𐑩𐑤 𐑥𐑧𐑥𐑼𐑦&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑕𐑑𐑱𐑑𐑫𐑕&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑕𐑑𐑱𐑑𐑫𐑕&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑴𐑯𐑼&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑴𐑯𐑼&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="𐑖𐑴 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑯𐑱𐑥&apos; 𐑒𐑪𐑤𐑩𐑥 𐑪𐑯 𐑕𐑑𐑸𐑑𐑳𐑐">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="𐑢𐑦𐑛𐑔 𐑝 𐑐𐑮𐑴𐑕𐑧𐑕 &apos;𐑯𐑱𐑥&apos; 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑕𐑹𐑑 𐑹𐑛𐑼">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑒𐑪𐑤𐑩𐑥𐑟 𐑹𐑛𐑼">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="𐑐𐑮𐑴𐑕𐑧𐑕 𐑝𐑿 𐑕𐑹𐑑 𐑒𐑪𐑤𐑩𐑥">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

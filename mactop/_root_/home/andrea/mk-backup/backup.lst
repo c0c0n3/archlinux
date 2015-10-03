@@ -1,0 +1,22 @@
+# Include
++ /dev/console
++ /dev/initctl
++ /dev/null
++ /dev/zero
++ /media/cd
++ /media/dvd
++ /media/fl
+
+# Exclude
+- /dev/*
+- /media/*
+- /mnt/*
+- /proc/*
+- /sys/*
+- /tmp/*
+- *lost+found
+- /var/cache/pacman/pkg/*
+- /var/lib/pacman/sync/*
+- /home/andrea/Downloads
+- /home/andrea/mk-backup/log
+- /home/andrea/.gvfs

@@ -1,0 +1,10 @@
+[GdmGreeterTheme]
+Encoding=UTF-8
+Greeter=cape_lambda.xml
+Name=Cape Lambda GDM Theme
+Description=Adapted from Ubuntu Natural
+Author=Me (tweaks); Fuz2y (real work)
+Copyright=GPL
+Screenshot=screenshot.png
+
+

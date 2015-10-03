@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gpilot_applet">
+				<dir name="prefs">
+					<entry name="exec_when_clicked">
+						<local_schema short_desc="Umyalelo wokuphumeza ngelixa ucofa i-applet">
+							<longdesc>Umyalelo wokuphumeza ngelixa ucofa i-applet</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pop_ups">
+						<local_schema short_desc="Bonisa izaziso kwifestile evela ngokukhawuleza">
+							<longdesc>Bonisa izaziso kwifestile evela ngokukhawuleza</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

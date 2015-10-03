@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Color predetermináu de la gráfica de tráficu saliente">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Color predetermináu de la gráfica de tráficu entrante">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Color predetermináu del gráficu d&apos;intercambéu">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Color predetermináu del gráficu de memoria">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Color predetermináu de la gráfica de la cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Color predetermináu de la gráfica de la cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Color predetermináu de la gráfica de la cpu">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Color predetermináu de la gráfica de la cpu">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Guarda la solapa autualmente vista">
+						<longdesc>0 pa la Información del Sistema, 1 pa la llista de procesos, 2 pa los recursos y 3 pa la llista de discos</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Determina qué procesos s&apos;amosarán por omisión. 0 ye toos, 1 ye usuariu, y 2 ye activu">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Tiempu en milisegundos ente les autualizaciones de la llista de dispositivos">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Conseña si tien d&apos;amosase información sobro tolos sistemes de ficheros">
+						<longdesc>Conseña si tien d&apos;amosase información sobro tolos sistemes de ficheros (incluyendo tipos como «autofs» y «procfs»). Pue ser útil pa obtener una llista de tolos sistemes de ficheros montaos anguaño.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Tiempu en milisegundos ente les autualizaciones de les gráfiques">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Tiempu en milisegundos ente les autualizaciones de la vista de procesos">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Amoar un diálogu d&apos;alvertencia al matar procesos">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Activar/Desactivar refrescu dondu">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Mou Solaris pal porcentax de CPU">
+						<longdesc>Si ye TRUE, el monitor del sistema opera nel «Mou Solaris» au l&apos;usu de CPU d&apos;una xera divídese ente&apos;l númberu total deCPUs. D&apos;otra miente opera nel «Mou Irix».</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Amosar les dependencies del procesu en forma d&apos;árbol">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Altor de la ventana principal">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Anchor de la ventana principal">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Orde de colocación de la vista de procesos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Columna d&apos;ordenación de la vista de procesos">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Orde de les columnes de la vista de discu">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Orde de colocación de la vista de procesos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Columna d&apos;ordenación de la vista de procesos">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Amosar la columna «Canal n&apos;espera» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Anchor de la columna «Canal n&apos;espera» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Amosar la columna «usu de memoria estimáu» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Anchor de la columna «usu estimáu de memoria» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Amosar la columna «argumentos» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Anchor de la columna «argumentos» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Amosar la columna «contestu de seguridá SELinux» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Anchor de la columna «contestu de seguridá SELinux» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Amosar la columna «PID» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Anchor de la columna «PID» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Amosar la columna «prioridá» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Anchor de la columna «prioridá» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Amosar la columna «tiempu d&apos;aniciu» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Anchor de la columna «tiempu d&apos;aniciu» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Amosar la columna «tiempu de CPU» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Anchor de la columna «tiempu de CPU» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Amosar la columna «% de CPU» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Anchor de la columna «% de CPU» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Amosar la columna «memoria del servidor X» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Anchor de la columna «memoria el servidor X» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Amosar la columna «memoria compartía» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Anchor de la columna «memoria compartía» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Amosar columna «memoria escribible» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Anchor de la columna «memoria escribible» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Amosar la columna «memoria residente» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Anchor de la columna «memoria residente» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Amosar columna «memoria virtual» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Anchor de la columna «memoria virtual» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Amosar la columna «estáu» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Anchor de la columna «estáu» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Amosar la columna «propietariu» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Anchor de la columna «propietariu» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Amosar la columna «nome del procesu» del procesu al entamu">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Anchor de la columna «nome» del procesu">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Orde de colocación de la vista de procesos">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Orde de les columnes de la vista de procesos">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Columna d&apos;ordenación de la vista de procesos">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

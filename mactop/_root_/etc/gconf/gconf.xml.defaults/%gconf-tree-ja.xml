@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="ネットワーク送信グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="ネットワーク受信グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="スワップ・グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="メモリ・グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="CPU グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="CPU グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="CPU グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="CPU グラフの色 (デフォルト)">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="現在表示しているタブを保存するか">
+						<longdesc>0: システム情報、1: プロセスの一覧、2: リソース、3: ファイルシステム</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="デフォルトでどのレベルのプロセスを表示するか (0: すべて、1: ユーザ・プロセス、2: 動作中のプロセス)">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="デバイス一覧の更新間隔 (ミリ秒)">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="すべてのファイルシステムの情報を表示するかどうか">
+						<longdesc>すべてのファイルシステムの情報を表示するかどうかです (これは &apos;autofs&apos; や &apos;procfs&apos; のような類も含まれます)。現在マウントされているすべてのファイルシステムの一覧を取得する際に使用します。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="グラフの更新間隔 (ミリ秒)">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="プロセス一覧の更新間隔 (ミリ秒)">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="プロセスを強制終了する際に警告ダイアログを表示するか">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="スムース・リフレッシュの有効/無効">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU の使用率を Solaris モードで表示する">
+						<longdesc>TRUE にすると &apos;Solaris モード&apos; で動作するようになります。これはタスクの CPU 使用率を CPU の個数で割った値になるモードです。それ以外は &apos;IRIX モード&apos; で動作します。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="ツリー表示でプロセスの依存関係を表示するか">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="メイン・ウィンドウの高さ">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="メイン・ウィンドウの幅">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="プロセス一覧の並べ方">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="プロセス一覧の項目の並べ方">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="デバイスの一覧表示で表示する項目の順番">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="プロセス一覧の並べ方">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="プロセス一覧の項目の並べ方">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="起動時に休止中の関数名の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="休止中の関数名の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="起動時にメモリ使用量の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="メモリ使用量の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="起動時に引数の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="引数の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="起動時に SELinux のセキュリティ・コンテキストの項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="SELinux のセキュリティ・コンテキストの項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="起動時に PID の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="PID の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="起動時に Nice 値の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Nice 値の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="起動時に起動日時の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="起動日時の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="起動時に CPU 時間の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="CPU 時間の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="起動時に CPU 使用率の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="CPU 使用率の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="起動時にXサーバ・メモリの項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Xサーバ・メモリ使用率の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="起動時に共有メモリの項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="共有メモリの項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="起動時に書き込み可能なメモリの項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="書き込み可能なメモリの項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="起動時に Resident メモリの項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Resident メモリの項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="起動時に仮想メモリの項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="仮想メモリの項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="起動時に状態の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="状態の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="起動時にユーザ名の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="ユーザ名の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="起動時にプロセス名の項目を表示するか">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="プロセス名の項目の幅">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="プロセス一覧の並べ方">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="プロセス表示の項目の順番">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="プロセス一覧の項目の並べ方">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

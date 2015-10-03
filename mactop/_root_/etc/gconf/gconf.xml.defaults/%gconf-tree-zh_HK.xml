@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="預設網絡圖表（流出）的顏色">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="預設網絡圖表（流入）的顏色">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="圖表預設表示交換記憶的顏色">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="圖表預設表示記憶體的顏色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="圖表預設表示 CPU 的顏色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="圖表預設表示 CPU 的顏色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="圖表預設表示 CPU 的顏色">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="圖表預設表示 CPU 的顏色">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="本數值表示程式下次啟動時顯示的分頁">
+						<longdesc>0  為系統資訊，1 為程序清單，2 為資源，3 為磁碟清單</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="決定顯示哪一類程序。0 表示全部，1 只顯示用家自己的程序，2 只顯示目前仍然活躍的程序。">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="儲存裝置清單每次更新的時間，以毫秒表示">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="是否要顯示關於所有檔案系統的資訊">
+						<longdesc>是否要顯示關於所有檔案系統的資訊（這裏包括了像‘autofs’和‘procfs’這種檔案類型）。在取得目前所有掛載的檔案系統清單時會很有用。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="資源圖表每次更新的時間，以毫秒表示">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="程序清單每次更新的時間，以毫秒表示">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="準備強行終止程序時顯示警告訊息對話方塊">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="啟用/停用平滑更新">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU 百分比使用 Solaris 模式">
+						<longdesc>如設為 TRUE，system-monitor 會以「Solaris 模式」運行，即每個工作的 CPU 使用量會除以總 CPU 數來均分。否則它會以「Irix 模式」運行。</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="以樹狀方式顯示程序間的相根據性">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="主視窗高度">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="主視窗闊度">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="排列程序的次序">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="程序根據哪一欄排序">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="磁碟顯示欄位次序">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="排列程序的次序">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="程序根據哪一欄排序">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「等待頻道」">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="程序欄中「等待頻道」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「預計記憶體使用量」">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="程序欄中「預計記憶體使用量」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「參數」">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="程序欄中「參數」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「SELinux 安全性內容」">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="程序欄中「SELinux 安全性內容」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示‘PID’">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="程序欄中‘PID’的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示‘Nice’">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="程序欄中‘Nice’的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「開始時間」">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="程序欄中「開始時間」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「CPU 運行時間」">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="程序欄中「CPU 運行時間」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示‘CPU %’">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="程序欄中‘CPU %’的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「X 伺服器記憶體」">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="程序欄中「X 伺服器記憶體」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「分享記憶體」">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="程序欄中「分享記憶體」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「可寫記憶體」">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="程序欄中「可寫記憶體」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「常駐記憶體」">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="程序欄中「常駐記憶體」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「虛擬記憶體」">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="程序欄中「虛擬記憶體」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「狀態」">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="程序欄中「狀態」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「擁有者」">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="程序欄中「擁有者」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="啟動時在程序欄位中顯示「程序名稱」">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="程序欄中「程序名稱」的闊度">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="排列程序的次序">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="程序顯示欄的順序">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="程序根據哪一欄排序">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

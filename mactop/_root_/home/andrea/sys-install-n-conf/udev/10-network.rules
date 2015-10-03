@@ -1,0 +1,12 @@
+#
+# Make sure the wired/wireless network interface names are not swapped.
+# This is a known problem with the broadcom-wl wireless driver --- on this machine, the
+# wired Ethernet usually gets the name of 'eth0', whereas 'eth1' is the wireless.  
+# However, a couple of times they got swapped --- i.e. eth0 for wireless, eth1 for wired.
+# Note that we keep the 'eth0' name for the wired interface, whereas we use 'wlan0' for
+# the wireless; besides it being a 'popular' choice, it's also explicit --- i.e. eth0 and
+# eth1 don't tell you much about which one is which.
+#
+
+SUBSYSTEM=="net", ATTR{address}=="c4:2c:03:39:1c:a3", NAME="eth0"
+SUBSYSTEM=="net", ATTR{address}=="c8:bc:c8:ce:98:91", NAME="wlan0"

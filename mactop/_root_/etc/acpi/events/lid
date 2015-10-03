@@ -1,0 +1,12 @@
+#
+# Dispatch 'lid closed/lid opened' events.
+# On this machine, when the lid is closed, acpi_listen shows:
+#
+#   button/lid LID0 00000080 00000001
+#
+# whereas this is what we get when it is lifted back up:
+#
+#   button/lid LID0 00000080 00000002
+#
+event=button/lid.*
+action=/etc/acpi/actions/lid.sh %e

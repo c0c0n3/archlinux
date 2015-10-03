@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="swap_color">
+					<local_schema short_desc="Default graph swap colour">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Default graph mem colour">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Default graph CPU colour">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Default graph CPU colour">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Default graph CPU colour">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Default graph CPU colour">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Saves the currently viewed tab">
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Determines which processes to show by default. 0 is All, 1 is user, and 2 is active">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Time in milliseconds between updates of the devices list">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Whether information about all filesystems should be displayed">
+						<longdesc>Whether to display information about all filesystems (including types like &apos;autofs&apos; and &apos;procfs&apos;). Useful for getting a list of all currently mounted filesystems.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Time in milliseconds between updates of the graphs">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Time in milliseconds between updates of the process view">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Show warning dialogue when killing processes">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Enable/Disable smooth refresh">
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Show process dependencies in tree form">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Main Window height">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Main Window width">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Process view sort order">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Process view sort column">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Disk view columns order">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Process view sort order">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Process view sort column">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="sort_order">
+						<local_schema short_desc="Process view sort order">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Process view columns order">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Process view sort column">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

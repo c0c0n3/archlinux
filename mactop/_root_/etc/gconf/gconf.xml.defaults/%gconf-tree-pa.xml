@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ ਜਾ ਰਿਹਾ ਨੈਟਵਰਕ ਟਰੈਫਿਕ ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ ਆ ਰਿਹਾ ਨੈਟਵਰਕ ਟਰੈਫਿਕ ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ ਸਵੈਪ ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ ਮੈਮੋਰੀ ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ cpu ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ cpu ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ cpu ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="ਡਿਫਾਲਟ ਗਰਾਫ਼ cpu ਰੰਗ">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="ਮੌਜੂਦਾ ਵੇਖੀ ਟੈਬ ਸੰਭਾਲੋ">
+						<longdesc>0 ਸਿਸਟਮ ਜਾਣਕਾਰੀ ਲਈ, 1 ਪਰੋਸੈੱਸਾਂ ਲਿਸਟ ਲਈ, 2 ਸਰੋਤਾਂ ਲਈ ਅਤੇ 3 ਡਿਸਕ ਲਿਸਟ ਲਈ</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="ਉਹ ਚੁਣੋ ਕਿ ਕਿਹੜੇ ਪਰੋਸੈੱਸ ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ ਵੇਖਾਉਣੇ ਹਨ, 0 ਸਭ, 1 ਯੂਜ਼ਰ, ਅਤੇ 2 ਐਕਟਿਵ ਲਈ">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ਜੰਤਰ ਲਿਸਟ ਦੇ ਅੱਪਡੇਟ ਦਾ ਸਮਾਂ (ਮਿਲੀ ਸਕਿੰਟ ਵਿੱਚ)">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="ਕੀ ਸਭ ਫਾਇਲ-ਸਿਸਟਮਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਨੂੰ ਵਿਖਾਇਆ ਜਾਵੇ">
+						<longdesc>ਕੀ ਸਭ ਫਾਇਲ-ਸਿਸਟਮਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਖਾਇਆ ਜਾਵੇ (ਫਾਇਲ ਸਿਸਟਮਾਂ, ਜਿਵੇਂ ਕਿ &apos;autofs&apos; ਅਤੇ &apos;procfs&apos; ਸਮੇਤ)। ਇਹ ਇਸ ਸਮੇਂ ਸਭ ਮਾਊਟ ਫਾਇਲ-ਸਿਸਟਮਾਂ ਦੀ ਲਿਸਟ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="ਗਰਾਫ਼ ਦੇ ਅੱਪਡੇਟ ਦਾ ਸਮਾਂ (ਮਿਲੀ ਸਕਿੰਟ ਵਿੱਚ)">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਦੇ ਅੱਪਡੇਟ ਦਾ ਸਮਾਂ (ਮਿਲੀ ਸਕਿੰਟ ਵਿੱਚ)">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="ਜਦੋਂ ਪਰੋਸੈੱਸ ਖਤਮ (kill) ਕਰਨੇ ਹੋਣ ਤਾਂ ਚੇਤਾਵਨੀ ਡਾਈਲਾਗ ਵੇਖੋ">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="ਸਮੂਥ ਤਾਜ਼ਾ ਯੋਗ/ਅਯੋਗ">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU ਫੀਸਦੀ ਲਈ ਸਲੋਰਸ ਮੋਡ">
+						<longdesc>ਜੇ ਠੀਕ ਹੈ ਤਾਂ ਸਿਸਟਮ-ਮਾਨੀਟਰ &apos;ਸਲੋਰਸ ਢੰਗ&apos; ਵਿੱਚ ਚੱਲੇਗਾ, ਜਿੱਥੇ ਕਿ CPU ਵਰਤੋਂ ਦਾ ਕੰਮ ਕੁੱਲ CPU ਦੀ ਗਿਣਤੀ ਮੁਤਾਬਕ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ। ਜਾਂ ਇਹ &apos;Irix ਢੰਗ&apos; ਵਿੱਚ ਚੱਲਦਾ ਹੈ।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="ਟਰੀ ਰੂਪ ਵਿੱਚ ਪਰੋਸੈੱਸ ਨਿਰਭਰਤਾ ਵੇਖੋ">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="ਮੁੱਖ ਵਿੰਡੋ ਉਚਾਈ">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="ਮੁੱਖ ਵਿੰਡੋ ਚੌੜਾਈ">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕ੍ਰਮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕ੍ਰਮ ਕਾਲਮ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ਡਿਸਕ ਝਲਕ ਕਾਲਮ ਕ੍ਰਮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕ੍ਰਮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕ੍ਰਮ ਕਾਲਮ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਉਡੀਕ ਚੈਨਲ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਉਡੀਕ ਚੈਨਲ&apos; ਕਾਮਲ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਅਨੁਮਾਨਿਤ ਮੈਮੋਰੀ ਵਰਤੋਂ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਅਨੁਮਾਨਿਤ ਮੈਮੋਰੀ&apos; ਵਰਤੋਂ ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਆਰਗੂਮੈਂਟ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਆਰਗੂਮੈਂਟ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;SELinux ਸੁਰੱਖਿਆ ਪਰਸੰਗ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;SELinux ਸੁਰੱਖਿਆ ਪਰਸੰਗ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;PID&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;PID&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਨਾਈਸ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਨਾਈਸ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਸ਼ੁਰੂ ਸਮਾਂ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਸ਼ੁਰੂ ਸਮਾਂ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;CPU ਸਮਾਂ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;CPU ਸਮੇਂ&apos; ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;CPU %&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;CPU %&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;X ਸਰਵਰ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਸਿਫ਼ਰ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;X ਸਰਵਰ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਸਾਂਝੀ ਮੈਮੋਰੀ&apos; ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਸਾਂਝੀ ਮੈਮੋਰੀ&apos; ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਲਿਖਣਯੋਗ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਲਿਖਣਯੋਗ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਰੈਜ਼ੀਡੈਂਟ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਰੈਜ਼ੀਡੈਂਟ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਵੁਰਚੁਅਲ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਵੁਰਚੁਅਲ ਮੈਮੋਰੀ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਹਾਲਤ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਹਾਲਤ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਓਨਰ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਓਨਰ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="ਸ਼ੁਰੂ ਵੇਲੇ ਪਰੋਸੈੱਸ &apos;ਨਾਂ&apos; ਕਾਲਮ ਵੇਖੋ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ &apos;ਨਾਂ&apos; ਕਾਲਮ ਦੀ ਚੌੜਾਈ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕ੍ਰਮ">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕਾਲਮ ਕ੍ਰਮ">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="ਪਰੋਸੈੱਸ ਝਲਕ ਕ੍ਰਮ ਕਾਲਮ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

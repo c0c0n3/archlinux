@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="বাহিরমূখী নেটওয়ার্ক ট্র্যাফিকের গ্রাফের ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="আগমণকারী নেটওয়ার্ক ট্র্যাফিকের গ্রাফের ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="গ্রাফ swap&apos;র ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="গ্রাফ mem&apos;র ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="গ্রাফ cpu&apos;র ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="গ্রাফ cpu&apos;র ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="গ্রাফ cpu&apos;র ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="গ্রাফ cpu&apos;র ডিফল্ট রং">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="বর্তমানে প্রদর্শিত ট্যাব সংরক্ষণ করতে ব্যবহৃত">
+						<longdesc>সিস্টেমের তথ্যের জন্য 0, প্রসেস তালিকার জন্য 1, রিসোর্সের জন্য 2 ও ডিস্কের তালিকার জন্য 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="ডিফল্টরূপে প্রদর্শিত প্রসেসের তালিকা নির্ধারণ করতে ব্যবহৃত। মান 0(০) হলে সমস্ত, 1(১) হলে শুধুমাত্র ব্যবহারকারীর ও 2(২) হলে বর্তমানে সক্রিয় প্রসেস।">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="ডিভাইস তালিকা আপডেট করার মধ্যে অন্তর্বর্তী সময়কাল, মিলিসেকেন্ডে ব্যক্ত">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="সমস্ত ফাইল-সিস্টেম সংক্রান্ত তথ্য প্রদর্শিত হবে কি না">
+						<longdesc>সর্বধরনের ফাইল-সিস্টেম সম্পর্কিত তথ্য প্রদর্শিত হবে কি না (&apos;autofs&apos; ও &apos;procfs&apos; সহ)। বর্তমানে মাউন্ট করা সমস্ত ফাইল-সিস্টেম সম্পর্কিত তথ্য প্রাপ্ত করতে সহায়ক।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="গ্রাফ আপডেটের মধ্যবর্তী সময়, মিলিসেকেন্ডে ব্যক্ত">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="প্রসেস প্রদর্শন আপডেটের মধ্যবর্তী সময়, মিলিসেকেন্ডে ব্যক্ত">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="প্রসেস kill করার সময় সতর্কতাসূচক ডায়লগ বক্স প্রদর্শন করা হবে">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="স্মুথ রিফ্রেশ ব্যবস্থা সক্রিয়/নিষ্ক্রিয় করুন">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU-র শতাংশের জন্য Solaris মোড">
+						<longdesc>মান TRUE (সত্য) হলে, &apos;Solaris মোড&apos;-এ system-monitor সঞ্চালিত হবে এবং কর্ম দ্বারা ব্যবহৃত cpu-র সর্বমোট পরিমাণ, উপস্থিত CPU-র সংখ্যা দ্বারা বিভাগ করা যায়। অন্যথা এটি &apos;Irix মোড&apos;-এ সঞ্চালিত হবে।</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="প্রসেসের নির্ভরত ট্রি-বিন্যাসে প্রদর্শিত হবে">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="প্রধান উইন্ডোর উচ্চতা">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="প্রধান উইন্ডোর প্রস্থ">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনের অনুক্রম সুবিন্যস্ত করুন">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনে কলামের ক্রম সুবন্যস্ত করুন">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="ডিস্ক প্রদর্শন ব্যবস্থায় কলামের ক্রম">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনের অনুক্রম সুবিন্যস্ত করুন">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনে কলামের ক্রম সুবন্যস্ত করুন">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেস &apos;অপেক্ষারত চ্যানেল&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="প্রসেস &apos;অপেক্ষারত চ্যানেল&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="প্রারম্ভে &apos;আনুমানিক মেমরি ব্যবহার&apos; সংক্রান্ত কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="প্রসেস &apos;আনুমানিক মেমরি ব্যবহার&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেস &apos;আর্গুমেন্ট&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="প্রসেস &apos;আর্গুমেন্ট&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেস &apos;SELinux সিকিউরিট কনটেক্সট&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="প্রসেস &apos;SELinux সিকিউরিট কনটেক্সট&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেস &apos;PID&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="প্রসেস &apos;PID&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;nice&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="প্রসেস &apos;nice&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসর &apos;আরম্ভকাল&apos; সংক্রান্ত কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="প্রসেস &apos;আরম্ভকাল&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেস &apos;CPU-র সময়&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="প্রসেস &apos;CPU-র সময়&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেস &apos;CPU %&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="প্রসেস CPU % কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="প্রসেসের &apos;X সার্ভার মেমরি&apos; কলামের কলাম শূণ্য প্রারম্ভে প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="প্রসেস &apos;X সার্ভার মেমরি&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;শেয়ার মেমরি&apos; সংক্রান্ত কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="প্রসেস &apos;শেয়ার মেমরি&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;লিখনযোগ্য মেমরি&apos; কলাম প্রদর্শন করা হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="প্রসেস &apos;লিখনযোগ্য মেমরি&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;অভ্যন্তরীণ মেমরি&apos; কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="প্রসেস &apos;অভ্যন্তরীণ মেমরি&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;ভার্চুয়াল মেমরি&apos; কলাম প্রদর্শন করা হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="প্রসেস &apos;ভার্চুয়াল মেমরি&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;অবস্থা&apos; সংক্রান্ত কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="প্রসেস &apos;অবস্থা&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="প্রারম্ভে প্রসেসের &apos;মালিকানা&apos; সংক্রান্ত কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="প্রসেস &apos;মালিকানা&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="প্রারম্ভের প্রসেসের &apos;নাম&apos; শীর্ষক কলাম প্রদর্শিত হবে">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="প্রসেস &apos;নাম&apos; কলামের প্রস্থ">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনের অনুক্রম সুবিন্যস্ত করুন">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনে কলামের ক্রম">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="প্রসেস অনুযায়ী প্রদর্শনে কলামের ক্রম সুবন্যস্ত করুন">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

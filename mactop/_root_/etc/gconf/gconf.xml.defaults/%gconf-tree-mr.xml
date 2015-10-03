@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="बाहेर जाण्याकरीताचे संजाळ ट्राफीट रंगाचा मुलभूत ग्राफ">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="आगत करीताचे संजाळ ट्राफीट रंगाचा मुलभूत ग्राफ">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="मुलभूत आलेख स्वॅप रंग">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="मुलभूत आलेख mem रंग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="मुलभूत आलेख cpu रंग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="मुलभूत आलेख cpu रंग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="मुलभूत आलेख cpu रंग">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="मुलभूत आलेख cpu रंग">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="सध्या दिसत असलेली टॅब सुरक्षित करा">
+						<longdesc>प्रणाली माहिती करीता 0, क्रिया यादी करीता 1, सत्रोत करीता 2 व डीस्क यादीकरीता 3</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="मुलभूतरित्या कोणत्या प्रक्रिया दाखवाव्यात हे ठरवते. ० आहे सर्व, १ आहे उपयोक्ता आणि २ आहे कार्यान्वित">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="यंत्र यादीच्या अद्यतनांमधील वेळ मिलीसेकंदांत">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="सर्व फाइल प्रणाल्या विषयी माहिती दाखवावी कि नाही">
+						<longdesc>सर्व फाइल प्रणाल्या(&apos;autofs&apos; आणि &apos;procfs&apos; सारख्या प्रकारांच्या समावेशासह) विषयी माहिती दाखवावी कि नाही. सध्या आरोहित सर्व फाइल प्रणाल्यांची यादी मिळवण्यासाठी उपयुक्त.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="आलेखांच्या अद्यतनांमधील वेळ मिलीसेकंदांत">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="प्रक्रिया दृश्यांच्या अद्यतनांमधील वेळ मिलीसेकंदात">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="प्रक्रिया मारून टाकताना सुचना संवाद दाखवा">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="कार्यान्वित/अकार्यान्वित हळुवार ताजेकरण">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="CPU टक्केवारी करीता Solaris पध्दती">
+						<longdesc>खरे असल्यास, system-monitor &apos;Solaris पध्दत&apos; मध्ये कार्यरत आहे जेथे कार्याची cpu वापरणी CPU च्या एकूण संख्याशी भागाकार करा . नाहीतर ते &apos;Irix पध्दत&apos; मध्ये कार्यरत राहील.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="प्रक्रिया अवलंबने वृक्ष स्वरुपात दाखवा">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="मुख्य खिडकी उंची">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="मुख्य खिडकी रुंदी">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="प्रक्रिया दृश्य क्रमबद्ध क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="प्रक्रिया दृश्य क्रमबद्ध स्तंभ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="डिस्क दृश्य स्तंभ क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="प्रक्रिया दृश्य क्रमबद्ध क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="प्रक्रिया दृश्य क्रमबद्ध स्तंभ">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="प्रारंभवेळी क्रिया पद्धती &apos;मार्ग करीता प्रतिक्षेत&apos; स्तंभ दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="प्रक्रिया &apos;प्रतिक्षा मार्ग&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="आरंभवेळी &apos;अंदाजित स्मृती वापर&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="प्रक्रिया &apos;अंदाजीत स्मृती वापर&apos; स्तंभची सुरक्षीत रुंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;बाब&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="प्रक्रिया &apos;बाब&apos; स्तंभ रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="प्रारंभवेळी प्रक्रिया &apos;SELinux सुरक्षा संदर्भ&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="प्रक्रिया &apos;SELinux सुरक्षा संदर्भ&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="प्रारंभवेळी प्रक्रिया &apos;PID&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="प्रक्रिया &apos;PID&apos; स्तंभ रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;छान&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="प्रक्रिया &apos;छान&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;आरंभ वेळ&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="प्रक्रिया &apos;आरंभ वेळ&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="प्रक्रिया &apos;CPU वेळ&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="प्रक्रिया &apos;CPU वेळ&apos; स्तंभ रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="प्रक्रिया CPU % स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="प्रक्रिया &apos;CPU %&apos; स्तंभ रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;X सर्वर स्मृती&apos; स्तंभ दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="प्रक्रिया &apos;X सर्वर स्मृती&apos; स्तंभ">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;भागिदारीतील स्मृती&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="प्रक्रिया &apos;सभागीय स्मृती&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;लिहिण्याजोगी स्मृती&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="प्रकिया &apos;लिहिण्याजोगी स्मृती&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;स्थायी स्मृती&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="प्रक्रिया &apos;स्थायी स्मृती&apos; स्तंभ रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;आभासी स्मृती&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="प्रक्रिया &apos;आभासी स्मृती&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया स्थिती स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="प्रक्रिया &apos;स्थिती&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;मालक&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="प्रक्रिया &apos;मालक&apos; स्तंभ रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="आरंभवेळी प्रक्रिया &apos;नाव&apos; स्तंभ रूंदी दर्शवा">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="प्रक्रिया &apos;नाव&apos; स्तंभची रूंदी">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="प्रक्रिया दृश्य क्रमबद्ध क्रम">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="प्रक्रिया दृश्य स्तंभ क्रम">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="प्रक्रिया दृश्य क्रमबद्ध स्तंभ">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

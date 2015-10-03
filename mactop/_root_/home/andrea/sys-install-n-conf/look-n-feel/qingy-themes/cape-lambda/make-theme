@@ -1,0 +1,18 @@
+#!/bin/sh
+
+target=cape-lambda
+
+rm -rf ${target}*
+mkdir ${target}
+
+cp theme ${target}
+cp fonts/Isabella.ttf ${target}/
+cp master-graphics/wallpaper.jpg ${target}/
+cp support-graphics/arrow.png ${target}/
+cp support-graphics/halt_* ${target}/
+cp support-graphics/reboot_* ${target}/
+cp support-graphics/screensaver_* ${target}/
+cp -r screensaver/ ${target}/
+
+tar -czf ${target}.tgz ${target}
+rm -rf ${target}/

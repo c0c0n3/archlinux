@@ -1,0 +1,60 @@
+#!/bin/bash
+
+# =========================================================================================
+#
+# NAME
+# ----
+#    lcd-bl - adjusts LCD backlight
+# 
+# SYNOPSIS
+# --------   
+#    lcd-bl [down | up | perc value]
+#
+# DESCRIPTION
+# -----------
+# This scripts adjusts the brightness of the LCD screen.  When invoked with no arguments,
+# it just displays the current brightness value.  If down (up) is specified, then the
+# current brightness is decreased (increased) one level.  You can also specify a percent
+# value (any number between 0 and 100) to have the script set the corresponding brightness
+# level.
+#
+# DEPENDENCIES
+# ------------
+# * apple_bl module seems to provide the functionality?
+#
+# =========================================================================================
+
+
+bl_dir="/sys/class/backlight/apple_backlight"
+bl_max=$( cat $bl_dir/max_brightness )
+bl_min=0
+bl_file="$bl_dir/brightness"
+bl_val=$( cat $bl_file )
+
+step=$(( bl_max / 10 ))
+
+
+case $1 in
+    up) 
+	bl_val=$(( bl_val + step ))
+	;;
+    down)
+	bl_val=$(( bl_val - step ))
+	;;
+    [0-9]|[1-9][0-9]|100)
+	bl_val=$(( bl_max * $1/100  ))
+	;;
+    *)
+	echo $bl_val
+	exit 0
+	;;
+esac
+
+if [ $bl_val -gt $bl_max ] 
+then bl_val=$bl_max
+fi
+if [ $bl_min -gt $bl_val ] 
+then bl_val=$bl_min
+fi
+
+echo $bl_val > $bl_file

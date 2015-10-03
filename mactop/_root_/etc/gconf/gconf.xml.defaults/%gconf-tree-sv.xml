@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Färg på standarddiagram för utgående nätverkstrafik">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Färg på standarddiagram för inkommande nätverkstrafik">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Färg på standarddiagram för växlingsutrymme">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Färg på standarddiagram för minne">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Färg på standarddiagram för processor">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Färg på standarddiagram för processor">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Färg på standarddiagram för processor">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Färg på standarddiagram för processor">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Sparar den för tillfället visade fliken">
+						<longdesc>0 för systeminformation, 1 för processlista, 2 för resurser och 3 för lista över diskar</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Bestämmer vilka processer som visas som standard. 0 är alla, 1 är användare, och 2 är aktiva">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Tid i millisekunder mellan uppdateringar av enhetslistan">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Huruvida information om alla filsystem ska visas">
+						<longdesc>Huruvida information om alla filsystem ska visas (inklusive filsystemstyper som &quot;autofs&quot; och &quot;procfs&quot;). Det kan vara användbart att få en lista över för tillfället monterade filsystem.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Tid i millisekunder mellan uppdateringar av diagrammen">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Tid i millisekunder mellan uppdateringar av processvyn">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Visa varningsdialog då processer dödas">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Aktivera/Inaktivera mjuk uppdatering">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris-läge för procentandel för processor">
+						<longdesc>Om TRUE kommer system-monitor att köra i &quot;Solaris-läge&quot; där en processoranvändningen för en process delas med det totala antalet processorer. Annars kommer det att köra i &quot;Irix-läge&quot;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Visa processberoenden i trädform">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Höjd på huvudfönstret">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Bredd på huvudfönstret">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Sorteringsordning för processvyn">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sorteringskolumn för processvyn">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Kolumnordning för diskvyn">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Sorteringsordning för processvyn">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sorteringskolumn för processvyn">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;Väntande kanal&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;Väntande kanal&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;beräknad minnesanvändning&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;beräknad minnesanvändning&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;argument&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;argument&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;SELinux säkerhetskontext&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;SELinux säkerhetskontext&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;PID&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;PID&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;processprioritet&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;Processprioritet&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;starttid&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;starttid&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;Processortid&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;Processortid&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;Processor %&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;Processor %&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;X-serverminne&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;X-serverminne&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;delat minne&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;delat minne&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;skrivbart minne&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;skrivbart minne&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;fast minne&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;fast minne&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;virtuellt minne&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;virtuellt minne&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;status&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;status&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;ägare&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;ägare&quot;">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Visa processkolumnen &quot;namn&quot; vid uppstart">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Bredd på processkolumnen &quot;namn&quot;">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Sorteringsordning för processvyn">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Kolumnordning för processvyn">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Sorteringskolumn för processvyn">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

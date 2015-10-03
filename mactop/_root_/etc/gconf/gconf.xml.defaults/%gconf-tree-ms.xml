@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="gpilot_applet">
+				<dir name="prefs">
+					<entry name="exec_when_clicked">
+						<local_schema short_desc="Arahan untuk melaksanakan apabila aplet diklik">
+							<longdesc>Arahan untuk melaksanakan apabila aplet diklik</longdesc>
+						</local_schema>
+					</entry>
+					<entry name="pop_ups">
+						<local_schema short_desc="Paparkan notis dalam tetingkap Pop-up">
+							<longdesc>Paparkan notis dalam tetingkap Pop-up</longdesc>
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

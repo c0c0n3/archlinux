@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<gconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="procman">
+				<entry name="net_out_color">
+					<local_schema short_desc="Noklusētā izejošās tīkla plūsmas grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="net_in_color">
+					<local_schema short_desc="Noklusētā ienākošās tīkla plūsmas grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="swap_color">
+					<local_schema short_desc="Noklusēta maiņvietas grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="mem_color">
+					<local_schema short_desc="Noklusētā atmiņas grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color3">
+					<local_schema short_desc="Noklusētā cpu grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color2">
+					<local_schema short_desc="Noklusētā cpu grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color1">
+					<local_schema short_desc="Noklusētā cpu grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="cpu_color0">
+					<local_schema short_desc="Noklusētā cpu grafika krāsa">
+					</local_schema>
+				</entry>
+				<entry name="current_tab">
+					<local_schema short_desc="Saglābāt tekošo cilni">
+						<longdesc>0 sistēmas informācijai, 1 procesu sarakstam, 2 resursiem un 3 disku sarakstam</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="view_as">
+					<local_schema short_desc="Noskaidro, kuru procesu parādīt kā noklusēto. 0 ir visi, 1 ir lietotāja, un 2 ir aktīvie">
+					</local_schema>
+				</entry>
+				<entry name="disks_interval">
+					<local_schema short_desc="Laiks milisekundēs starp atjauninājumiem ierīču sarakstā">
+					</local_schema>
+				</entry>
+				<entry name="show_all_fs">
+					<local_schema short_desc="Vai rādīt informāciju par visām failsistēmām">
+						<longdesc>Vai rādīt informāciju par visu failsistēmu (ieskaitot tipus &apos;autofs&apos; un &apos;procfs&apos;). Ērti saraksta ar visām piemontētam failsistēmam iegūšanai.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="graph_update_interval">
+					<local_schema short_desc="Laiks milisekundēs starp atjauninājumiem grafā">
+					</local_schema>
+				</entry>
+				<entry name="update_interval">
+					<local_schema short_desc="Laiks milisekundēs starp procesu skata atjauninājumiem">
+					</local_schema>
+				</entry>
+				<entry name="kill_dialog">
+					<local_schema short_desc="Parādīt brīdinājumu, pirms nogalināt procesus">
+					</local_schema>
+				</entry>
+				<entry name="smooth_refresh">
+					<local_schema short_desc="Aktivizēt/deaktivizēt gludeno atjaunināšanu">
+					</local_schema>
+				</entry>
+				<entry name="solaris_mode">
+					<local_schema short_desc="Solaris režīms CPU noslogojumam">
+						<longdesc>Ja PATIESS, sistēmas pārraugs darbojas &apos;Solaris režīmā&apos;, kur uzdevuma cpu slodze tiek dalīta ar kopējo CPU skaitu. Pretējā gadījumā darbojas &apos;Irix režīmā&apos;.</longdesc>
+					</local_schema>
+				</entry>
+				<entry name="show_tree">
+					<local_schema short_desc="Palaižot rādīt procesa atkarību koka kolonnu">
+					</local_schema>
+				</entry>
+				<entry name="height">
+					<local_schema short_desc="Galvenā loga augstums">
+					</local_schema>
+				</entry>
+				<entry name="width">
+					<local_schema short_desc="Galvenā loga platums">
+					</local_schema>
+				</entry>
+				<dir name="memmapstree">
+					<entry name="sort_order">
+						<local_schema short_desc="Procesu skata kārtošanas secība">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Procesu skata kārtošanas kolonna">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="disktreenew">
+					<entry name="columns_order">
+						<local_schema short_desc="Disku skata kolonnu secība">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Procesu skata kārtošanas secība">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Procesu skata kārtošanas kolonna">
+						</local_schema>
+					</entry>
+				</dir>
+				<dir name="proctree">
+					<entry name="col_16_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;gaidīšanas kanāla&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_16_width">
+						<local_schema short_desc="Procesa &apos;gaidīšanas kanāla&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_15_visible">
+						<local_schema short_desc="Palaižot rādīt &apos;paredzamā atmiņas izmantojuma&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_15_width">
+						<local_schema short_desc="Procesa &apos;paredzamā atmiņas izmantojuma&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_14_visible">
+						<local_schema short_desc="Palaižot rādīt &apos;argumentu&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_14_width">
+						<local_schema short_desc="Procesa &apos;argumentu&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_13_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;SELinux drošības konteksta&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_13_width">
+						<local_schema short_desc="Procesa &apos;SELinux drošības konteksta&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_12_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;PID&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_12_width">
+						<local_schema short_desc="Procesa &apos;PID&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_11_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;jaukuma koeficienta&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_11_width">
+						<local_schema short_desc="Procesa &apos;jaukuma&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_10_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;palaišanas laika&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_10_width">
+						<local_schema short_desc="Procesa &apos;palaišanas laika&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_9_visible">
+						<local_schema short_desc="Palaižot rādīt &apos;CPU laika&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_9_width">
+						<local_schema short_desc="&apos;CPU laika&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_8_visible">
+						<local_schema short_desc="Palaižot rādīt &apos;CPU %&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_8_width">
+						<local_schema short_desc="&apos;CPU %&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_7_visible">
+						<local_schema short_desc="Palaižot rādīt izmantotās &apos;X servera atmiņas&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_7_width">
+						<local_schema short_desc="&apos;X servera atmiņas&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_6_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;koplietošanas atmiņas&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_6_width">
+						<local_schema short_desc="Procesa &apos;koplietotās atmiņas&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_5_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;rakstāmās atmiņas&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_5_width">
+						<local_schema short_desc="Procesa &apos;rakstāmās atmiņas&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_4_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;pastāvīgās atmiņas&apos; izmantojuma kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_4_width">
+						<local_schema short_desc="Procesa &apos;aizņemtās atmiņas&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_3_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;virtuālās atmiņas&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_3_width">
+						<local_schema short_desc="Procesa &apos;virtuālās atmiņas&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_2_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;statusa&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_2_width">
+						<local_schema short_desc="Procesa &apos;statusa&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_1_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;īpašnieka&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_1_width">
+						<local_schema short_desc="Procesa &apos;īpašnieka&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="col_0_visible">
+						<local_schema short_desc="Palaižot rādīt procesa &apos;nosaukuma&apos; kolonnu">
+						</local_schema>
+					</entry>
+					<entry name="col_0_width">
+						<local_schema short_desc="Procesa &apos;nosaukuma&apos; kolonnas platums">
+						</local_schema>
+					</entry>
+					<entry name="sort_order">
+						<local_schema short_desc="Procesu skata kārtošanas secība">
+						</local_schema>
+					</entry>
+					<entry name="columns_order">
+						<local_schema short_desc="Procesu skata kolonnu secība">
+						</local_schema>
+					</entry>
+					<entry name="sort_col">
+						<local_schema short_desc="Procesu skata kārtošanas kolonna">
+						</local_schema>
+					</entry>
+				</dir>
+			</dir>
+		</dir>
+	</dir>
+</gconf>

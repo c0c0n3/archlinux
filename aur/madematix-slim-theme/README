@@ -1,0 +1,16 @@
+Madematix SLiM Theme
+====================
+
+This directory contains the stuff needed to create the 'madematix-slim-theme' 
+Arch package. 
+
+Instructions
+------------
+1. make                              (will create the pkg in bin dir)
+2. cd bin
+3. pacman -U madematix-<...>.xz      (install the package)
+4. cd .. && make clean               (optionally, remove bin dir)
+5. In /etc/slim.config:
+	
+	current_theme	    madematix-slim-theme		
+

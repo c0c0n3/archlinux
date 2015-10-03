@@ -1,0 +1,19 @@
+pkgname=madematix-slim-theme
+pkgver=1.0
+pkgrel=1
+license=('GPL')
+depends=('slim' 'fontconfig' 'xorg-font-utils')
+pkgdesc="Madematix SLiM Theme"
+arch=('any')
+source=('src.tar')
+
+install=$pkgname.install
+
+build()
+{
+    mkdir -p $pkgdir/usr/share/slim/themes/$pkgname
+    cp $srcdir/theme/* $pkgdir/usr/share/slim/themes/$pkgname
+    mkdir -p $pkgdir/usr/share/fonts/TTF
+    cp $srcdir/font/*.ttc $pkgdir/usr/share/fonts/TTF
+}
+

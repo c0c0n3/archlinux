@@ -1,0 +1,19 @@
+pkgname=malys-inversio
+pkgver=1.0
+pkgrel=1
+license=('GPL')
+depends=('gtk-engine-unico' 'fontconfig' 'xorg-font-utils')
+pkgdesc="malys-inversio GTK3 theme (modified)"
+arch=('any')
+source=('src.tar')
+
+install=$pkgname.install
+
+build()
+{
+    mkdir -p $pkgdir/usr/share/themes/$pkgname
+    cp -r $srcdir/gtk-3.0 $pkgdir/usr/share/themes/$pkgname
+    mkdir -p $pkgdir/usr/share/fonts/TTF
+    cp $srcdir/bahamas-font/*.ttf $pkgdir/usr/share/fonts/TTF
+}
+

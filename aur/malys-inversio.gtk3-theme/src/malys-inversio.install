@@ -1,0 +1,14 @@
+post_install() {
+    echo -n "Updating font cache... "
+    fc-cache -fs >/dev/null
+
+#    mkfontscale /usr/share/fonts/TTF /usr/share/fonts/Type1
+#    mkfontdir /usr/share/fonts/TTF /usr/share/fonts/Type1
+# NB the above is only needed for old apps; not applicable to my machine.
+
+    echo "done"
+}
+
+post_upgrade() {
+    post_install
+}

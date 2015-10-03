@@ -1,0 +1,42 @@
+TODO: * Bahamas -> package is available in AUR, so list as a dep in PKGBUILD
+      * Theme not displaying properly (as in picture) as of Oct 2013; tried
+        to use original theme, but had same issue.
+
+Malys Inversio GTK3 Theme
+=========================
+
+This directory contains the stuff needed to create a 'malys-inversio' Arch 
+package to install my modified version of the Malys Inversio White theme---
+see 
+ * http://gnome-look.org/content/show.php/malys+-+inversio++?content=152965
+
+
+Modifications
+-------------
+I took out the bahamas font and gtk-3.0 dirs of the theme and ditched all the
+rest.  Also within the gtk-3.0 dir I removed most of the css files as they
+weren't needed without GNOME and modified the inlcudes in gtk.css accordingly.
+Finally I fixed up a whole bunch of errors in gtk-widgets.css---not using px,
+space after url, etc; these would result in annoying warnings on stdout when
+launching a GTK app.
+
+
+Instructions
+------------
+1. make                              (will create the pkg in bin dir)
+2. cd bin
+3. pacman -U malys-<...>.xz          (install the package)
+4. cd .. && make clean               (optionally, remove bin dir)
+5. Put the following in ~/.config/gtk-3.0/settings.ini
+
+[Settings]
+gtk-application-prefer-dark-theme = false
+gtk-theme-name = malys-inversio
+gtk-fallback-icon-theme = gnome
+gtk-icon-theme-name = buuficontheme
+gtk-font-name = Bahamas 12
+
+(NB you should have installed the Buuf Icon Theme from AUR.)
+
+For more on GTK+ see 
+  * https://wiki.archlinux.org/index.php/GTK%2B

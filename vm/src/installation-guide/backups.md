@@ -14,9 +14,9 @@ sym-linked in the VM) which are pushed to GitHub and Dropbox.  Also note:
 
 So the VM will only contain configuration files and scripts; these will change overtime
 and should be backed up regularly using the backup script, which backs up `/boot`, `/etc`,
-and `/home` (symlinks excluded) to `data/projects/archlinux/vm/backup`.  This directory
+and `/home` (symlinks excluded) to `data/github/archlinux/vm/backup`.  This directory
 is in the git repository so we can also track changes (remember to commit after backing
-up).
+up and then push the changes to GitHub).
 
 
 

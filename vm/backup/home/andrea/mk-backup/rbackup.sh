@@ -5,7 +5,7 @@
 # (/etc/suoders can only be accessed by root.)
 #
 
-BKDIR=/home/andrea/projects/archlinux/vm/backup
+BKDIR=/home/andrea/github/archlinux/vm/backup
 LOGFILE=/home/andrea/mk-backup/log
 
 #

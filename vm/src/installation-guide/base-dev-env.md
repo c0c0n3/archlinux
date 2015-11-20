@@ -95,7 +95,7 @@ Configuration
 
 Notes
 -----
-1.**Haskell**. We use [Stackage][stackage] to get a stable enviromnent. Because we have
+1. **Haskell**. We use [Stackage][stackage] to get a stable enviromnent. Because we have
 the latest GHC, we use the nightly snapshot (as opposed to LTS).
 The default configuration of the Stackage Cabal file doesn't specify a remote repo from
 where to download, so packages will be fetched from Hackage. However, package versions
@@ -106,7 +106,17 @@ part of the snapshot.
 When using Cabal, by default Haskell packages will be installed locally (`~/.cabal` for
 libs and execs; `~/.ghc` for package DB). This way, if dependency issues arise, we can
 easily just delete the `.ghc` and `.cabal` directories and re-install from a clean slate.
+2. **Git**. Consider adding a minimal `~/.gitconfig`, e.g.
 
+        [user]
+	        name = Andrea Falconi
+	        email = andrea.falconi@gmail.com
+        [credential]
+	        helper = cache --timeout=86400
+        [core]
+	        editor = emacs
+        [alias]
+            graph = log --graph --full-history --all --color --pretty=tformat:"%x1b[0m%h%x09%x1b[32m%D%x1b[0m%x20%s%x1b[0m"
 
 
 

@@ -45,8 +45,10 @@ Haskell
 
   * XML libraries: `cabal install xml-conduit hxt hexpat hxt-expat`
 
-  * Here docs: `cabal install heredoc`
+  * Here docs: `cabal install heredoc here`
 
+    (Note: `heredoc` only used by old code; use `here` going forward.)
+ 
   * Persistence: `cabal install acid-state`
 
   * Web Apps: not installing globally; rather make Yesod sandbox...

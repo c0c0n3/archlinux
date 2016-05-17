@@ -69,5 +69,5 @@
 (defun user-config-hook ()
   (load "~/.spacemacs.d/edit.el" nil t)
   ;;(load "~/.spacemacs.d/shell.el" nil t)
-  ;;(load "~/.spacemacs.d/speedbar.el" nil t)
+  (load "~/.spacemacs.d/speedbar.el" nil t)
   )

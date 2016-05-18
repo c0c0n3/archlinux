@@ -22,7 +22,7 @@
    dotspacemacs-startup-lists nil
    dotspacemacs-themes '(solarized-dark zenburn)
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 20
+                               :size 17
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)

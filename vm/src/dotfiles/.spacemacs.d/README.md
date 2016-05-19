@@ -49,37 +49,24 @@ with no config and selecting the Holy mode option (Emacs editing style) when
 prompted. Then
 
     mkdir ~/.spacemacs.d
-    mv  ~/.spacemacs ~/.spacemacs.d/init.el
+    mv  ~/.spacemacs ~/.spacemacs.d/.spacemacs.original
+    cp ~/.spacemacs.d/.spacemacs.original ~/.spacemacs.d/init.el
 
-Finally I added a configuration hook for each function provided by Spacemacs.
-The idea is to keep the Spacemacs defaults in `init.el` as they were generated
-by Spacemacs and override only what I need to in my configuration hooks. This
-way I can organise my config options better as I can modularise the settings.
-Also, when the time comes to regenerate the initial Spacemacs config file I
-can just override my old `init.el` and then easily plonk my hooks in again.
-In fact, they consist of five lines in total, the first one being
+I then arranged most of the settings in configuration groups (frame, editing,
+etc.) and moved each group out of `init.el` into its own file. Each of these
+files provides suitable `init`, `user-config`, etc. functions I call from the
+Spacemacs hooks in `init.el`. This way I can organise my config options better
+as I can modularise the settings.
 
-    (load "~/.spacemacs.d/spacemacs-hooks.el" nil t)
+I'm keeping `.spacemacs.original` exactly as Spacemacs spit it out for future
+reference, should the Spacemacs config options change.
 
-at the top of `init.el` to import the hooks and then the code to call each
-hook as the last statement of each Spacemacs-provided config function:
+In the `terminal` directory I've got a derivative of my main config meant to
+provide a Spacemacs-based terminal emulator. To launch it, you need to set
+`SPACEMACSDIR` with the path to the `terminal` directory so that Spacemacs
+will use `terminal/init.el` as config file. A typical invocation looks like
+this
 
-    (defun dotspacemacs/layers ()
-    ...
-    (layers-hook)
-    )
+    SPACEMACSDIR=/home/andrea/.spacemacs.d/terminal emacs
 
-    (defun dotspacemacs/init ()
-    ...
-    (init-hook)
-    )
-    
-    (defun dotspacemacs/user-init ()
-    ...
-    (user-init-hook)
-    )
-
-    (defun dotspacemacs/user-config ()
-    ...
-    (user-config-hook)
-    )
+This is also the command line I use to launch the terminal from Xmonad.

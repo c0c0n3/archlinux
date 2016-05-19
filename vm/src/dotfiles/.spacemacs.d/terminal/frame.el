@@ -26,13 +26,16 @@
   ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
   (set-frame-parameter (selected-frame) 'alpha '(85 85))
   (add-to-list 'default-frame-alist '(alpha 85 85))
+
+  ;; Get rid of initial Spacemacs buffer. It will be recreated later but
+  ;; basically empty.
   (kill-buffer (get-buffer spacemacs-buffer-name))
   )
 
 ;; quit emacs when the shell exits
 ;;(advice-add 'multi-term-handle-close :after #'save-buffers-kill-emacs)
 
-(advice-add 'kill-buffer :after #'term-test)
+;;(advice-add 'kill-buffer :after #'term-test)
 (defvar test-cnt 0)
 (defun term-test (&optional buffer)
   (interactive)
@@ -43,12 +46,19 @@
     )
   )
 
-(defun my-sentinel ()
-  (set-process-sentinel (get-buffer-process (current-buffer))
-                        (lambda (proc change)
-                          (when (string-match "\\(finished\\|exited\\)" change)
-                            (message "SENTINEL => buffer: %S" (process-buffer proc)))))
-  )
+(defun msg-me (process event)
+  (princ
+   (format "Process: %s had the event `%s'" process event)))
+;;(set-process-sentinel (get-process "shell") 'msg-me)
+;;(let (proc (ansi-term "/bin/bash"))
+;;     (set-process-sentinel proc 'msg-me))
+
+;;(defun my-sentinel ()
+;;  (set-process-sentinel (get-process "ansi-term")
+;;                        (lambda (proc change)
+;;                          (when (string-match "\\(finished\\|exited\\)" change)
+;;                            (message "SENTINEL => buffer"))))
+;;  )
 
 
 

@@ -2,16 +2,20 @@
 ;; This file is loaded by Spacemacs at startup.
 ;; It must be stored in your home directory.
 
-;; SPACEMACSDIR=~/.spacemacs.d/terminal emacs
+;; Spacemacs-based terminal emulator.
+;; Start it with the following command line:
+;;
+;;     SPACEMACSDIR=~/.spacemacs.d/terminal emacs
+
 
 (load "~/.spacemacs.d/terminal/frame.el" nil t)
+(load "~/.spacemacs.d/terminal/edit.el" nil t)
 (load "~/.spacemacs.d/edit.el" nil t)
 (load "~/.spacemacs.d/theme.el" nil t)
 
 (defun dotspacemacs/layers ()
   (setq-default
-   dotspacemacs-configuration-layers '((shell :variables
-                                              shell-default-shell 'multi-term))
+   dotspacemacs-configuration-layers '()
    dotspacemacs-excluded-packages '(vi-tilde-fringe)
    ;; Do *not* delete any orphan packages as they're needed by
    ;; '~/.spacemacs.d/init.el'.
@@ -29,15 +33,16 @@
 
 (defun dotspacemacs/user-config ()
   (frame/user-config)
-  (edit/user-config)
-  (multi-term)
+  (term-edit/user-config)
+  (ansi-term "/bin/bash")
   )
 ;; NOTES
-;; 1. CUA. Enabled in 'edit/user-config'. It doesn't seem to interfere with
-;; shell control (except for Ctrl+z not working) but doesn't work in terminal
-;; line mode anyway---you have to use M-w (copy), C-y (paste) instead.
-;; However the benefit is that in char mode Ctrl-v pastes from the clipboard
-;; and if you have to edit something in a text mode buffer, then CUA is there.
+;; 1. Do *not* enable CUA. (Enabled in 'edit/user-config'.). As noted in the
+;; AnsiTerm docs, CUA keybindings interfere with the term keybindings and,
+;; in fact, AnsiTerm disables CUA. However, 'term-edit/user-config' remedies
+;; this partially so we can still use Ctrl+v to paste from the clipboard when
+;; in char mode. For line mode, you have to use Emacs bindings:  M-w (copy),
+;; C-y (paste), etc.
 
 
 ;; Do not write anything past this comment. This is where Emacs will

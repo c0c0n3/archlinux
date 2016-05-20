@@ -9,7 +9,7 @@
 
 
 (load "~/.spacemacs.d/terminal/frame.el" nil t)
-(load "~/.spacemacs.d/terminal/edit.el" nil t)
+(load "~/.spacemacs.d/terminal/term.el" nil t)
 (load "~/.spacemacs.d/edit.el" nil t)
 (load "~/.spacemacs.d/theme.el" nil t)
 
@@ -33,15 +33,14 @@
 
 (defun dotspacemacs/user-config ()
   (frame/user-config)
-  (term-edit/user-config)
-  (ansi-term "/bin/bash")
+  (term/user-config)
   )
 ;; NOTES
 ;; 1. Do *not* enable CUA. (Enabled in 'edit/user-config'.). As noted in the
 ;; AnsiTerm docs, CUA keybindings interfere with the term keybindings and,
-;; in fact, AnsiTerm disables CUA. However, 'term-edit/user-config' remedies
-;; this partially so we can still use Ctrl+v to paste from the clipboard when
-;; in char mode. For line mode, you have to use Emacs bindings:  M-w (copy),
+;; in fact, AnsiTerm disables CUA. However, 'term/user-config' remedies this
+;; partially so we can still use Ctrl+v to paste from the clipboard when in
+;; char mode. For line mode, you'll have to use Emacs bindings:  M-w (copy),
 ;; C-y (paste), etc.
 
 

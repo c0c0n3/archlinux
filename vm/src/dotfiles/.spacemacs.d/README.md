@@ -70,3 +70,28 @@ this
     SPACEMACSDIR=/home/andrea/.spacemacs.d/terminal emacs
 
 This is also the command line I use to launch the terminal from Xmonad.
+
+
+Issues
+------
+There are some annoyances, but nothing I can't live with.
+
+###### Performance
+Spacemacs takes a couple of seconds to start up. This is no problem when I
+launch the editor, but it's sort of annoying when starting the terminal
+emulator (i.e. Spacemacs started with `terminal/init.el`) as I'd like it to
+be as snappy as in my old config. Excluding packages improves startup times
+just slightly, see `terminal/init.el`.
+
+###### Smooth Scrolling
+Seems to cause sluggish performance on my Ubuntu workstation after a few
+hours of editing. No noticeable issue in my Arch Linux VM though...
+
+###### Transparency
+Active/inactive transparency settings seem to have no effect. See `frame.el`
+and `terminal\frame.el`. Switching themes in the terminal emulator (i.e.
+Spacemacs started with `terminal/init.el`) causes transparency issues.
+
+###### Spacemacs Buffer
+Could not find a clean way to inhibit it. See notes in `frame.el` and
+`terminal\frame.el`.

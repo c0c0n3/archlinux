@@ -35,7 +35,7 @@
 (add-hook 'emacs-startup-hook 'kill-spacemacs-buffer)
 
 
-;; NOTES
+;; NOTE
 ;; 1. Think Spacemacs hides the initial splash screen with
 ;;     (setq inhibit-startup-screen t)
 ;; and replaces it with its own buffer ("spacemacs") which I managed to kill

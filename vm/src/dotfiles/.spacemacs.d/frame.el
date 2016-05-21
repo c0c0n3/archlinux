@@ -23,11 +23,12 @@
    dotspacemacs-line-numbers t
    )
   )
-;; NOTES
+;; NOTE
 ;; 1. Think Spacemacs hides the initial splash screen with
 ;;     (setq inhibit-startup-screen t)
 ;; but replaces it with its own buffer ("spacemacs").
-;; Could not find a way to hide the "spacemacs" buffer.
+;; Could not find a clean way to hide the "spacemacs" buffer---for an
+;; acceptable solution, look at 'terminal/frame.el'.
 ;;
 ;; 2. Could display a scroll bar on the right with
 ;;     (scroll-bar-mode (quote right))

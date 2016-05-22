@@ -7,6 +7,9 @@
   (define-key term-raw-map (kbd "C-v") 'term-paste))
 (add-hook 'term-mode-hook 'term-paste-hook)
 
+;; NOTE
+;; 1. UTF8. Spacemacs sets the buffer's process coding system to UTF8, which
+;; is what I want.
 
 ;; Quit emacs when the shell exits.
 ;; This is similar to what 'multi-term.el' does but we quit emacs instead of

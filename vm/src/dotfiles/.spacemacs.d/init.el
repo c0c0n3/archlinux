@@ -4,6 +4,7 @@
 
 (load "~/.spacemacs.d/frame.el" nil t)
 (load "~/.spacemacs.d/edit.el" nil t)
+(load "~/.spacemacs.d/shell.el" nil t)
 (load "~/.spacemacs.d/speedbar.el" nil t)
 (load "~/.spacemacs.d/theme.el" nil t)
 
@@ -68,6 +69,7 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (edit/user-config)
+  (shell/user-config)
   (speedbar/user-config)
   )
 

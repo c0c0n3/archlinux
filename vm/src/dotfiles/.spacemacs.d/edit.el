@@ -49,4 +49,8 @@
   ;;(show-paren-mode 1)
   ;;(setq show-paren-delay 0) ;; get rid of delay before showing match
   ;; spacemacs does that already
+
+  ;; Activate fill column indicator in prog-mode and text-mode.
+  (add-hook 'prog-mode-hook 'turn-on-fci-mode)
+  (add-hook 'text-mode-hook 'turn-on-fci-mode)
   )

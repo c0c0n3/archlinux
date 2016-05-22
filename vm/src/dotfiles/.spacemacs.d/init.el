@@ -71,6 +71,7 @@ you should place your code here."
   (edit/user-config)
   (shell/user-config)
   (speedbar/user-config)
+  (theme/user-config)
   )
 
 

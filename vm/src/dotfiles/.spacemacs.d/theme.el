@@ -16,3 +16,14 @@
                                :powerline-scale 1.1)
    )
   )
+
+(defun theme/user-config ()
+  ;; Fill column indicator style.
+  (setq fci-rule-width 1)
+  (setq fci-rule-color "#073642")  ;; Solarized Base02
+  )
+;; NOTE
+;; 1. Hard-coded fill column indicator colour.
+;; Any way I can avoid hard-coding it? Ideally it should be some constant
+;; that is defined in both themes I'm using so that when switching themes
+;; the colour is switched too.

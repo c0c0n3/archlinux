@@ -119,6 +119,8 @@ easily just delete the `.ghc` and `.cabal` directories and re-install from a cle
 	        editor = emacs
         [alias]
             graph = log --graph --full-history --all --color --pretty=tformat:"%x1b[0m%h%x09%x1b[32m%D%x1b[0m%x20%s%x1b[0m"
+        [push]
+            default = simple
 
 
 

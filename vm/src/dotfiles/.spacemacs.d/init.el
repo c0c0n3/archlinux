@@ -18,6 +18,7 @@ values."
                                        emacs-lisp
                                        git
                                        markdown
+                                       latex
                                        (shell :variables
                                               shell-default-shell 'multi-term
                                               shell-default-height 30

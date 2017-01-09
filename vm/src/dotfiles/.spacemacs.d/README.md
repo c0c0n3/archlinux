@@ -36,7 +36,7 @@ if you want to switch back to it.
 
 ###### Default Font
 Spacemacs uses "Source Code Pro" as default font. I use that too in my config,
-so install it with
+so install it or change the font settings. To install it on Arch Linux, do
 
     pacman -S adobe-source-code-pro-fonts
 

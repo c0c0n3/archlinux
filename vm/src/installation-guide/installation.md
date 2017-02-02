@@ -93,11 +93,16 @@ Configure Base System
 
         echo madematix > /etc/hostname
 
-   Then append it to both lines in `/etc/hosts`:
+   Then append this line to `/etc/hosts`:
+	
+        127.0.1.1 madematix.localdomain madematix
 
+   At this point your `/etc/hosts` should probably look like this:
+    
         #<ip-address> <hostname.domain.org> <hostname>
-        127.0.0.1 localhost.localdomain localhost madematix
-        ::1   localhost.localdomain localhost madematix
+        127.0.0.1 localhost.localdomain localhost
+        ::1       localhost.localdomain localhost
+        127.0.1.1 madematix.localdomain madematix
 
 6. Network: `systemctl enable dhcpcd@enp0s3.service`
    (NB interface name `enp0s3` retrieved through `ip link`.)
